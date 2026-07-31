@@ -1,0 +1,22 @@
+:root {
+  --bt-bg: #faf6f2;
+  --bt-surface: #ffffff;
+  --bt-warm-white: #fffdfb;
+  --bt-cream: #f7f0e8;
+  --bt-blush: #f3e4e6;
+  --bt-dusty-rose: #d4a5ae;
+  --bt-rose: #c9959f;
+  --bt-mauve: #8f6f7a;
+  --bt-plum: #5c4450;
+  --bt-gold: #b8986a;
+  --bt-gold-soft: rgba(184, 152, 106, 0.18);
+  --bt-sage: #e8eee8;
+  --bt-font: "Inter", system-ui, sans-serif;
+  --bt-display: "Newsreader", "Georgia", serif;
+  --bt-ku: "Noto Sans Arabic", "Inter", system-ui, sans-serif;
+  --bt-shadow-sm: 0 2px 8px rgba(92, 68, 80, 0.04);
+  --bt-shadow: 0 10px 36px rgba(92, 68, 80, 0.08);
+  --bt-shadow-lg: 0 18px 48px rgba(92, 68, 80, 0.1);
+  --bt-radius: 22px;
+  --bt-radius-lg: 28px;
+}

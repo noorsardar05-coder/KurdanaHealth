@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurdana Health — Beauty & Self-Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Noto+Naskh+Arabic:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../shared/kurdana-game-celebration.css?v=1" />
+    <link rel="stylesheet" href="beauty.css" />
+  </head>
+  <body>
+    <div class="beauty-bg" aria-hidden="true"></div>
+    <div class="beauty-orb o1" aria-hidden="true"></div>
+    <div class="beauty-orb o2" aria-hidden="true"></div>
+    <div class="beauty-orb o3" aria-hidden="true"></div>
+
+    <div class="beauty-app" id="beautyApp">
+      <header class="beauty-hero glass-card fade-up">
+        <p class="beauty-badge" data-i="badge"></p>
+        <h1 class="beauty-title" data-i="heroTitle"></h1>
+        <p class="beauty-sub" data-i="heroSub"></p>
+        <p class="beauty-quote" data-i="heroQuote"></p>
+        <div class="beauty-hero-cta">
+          <button type="button" class="btn-primary btn-glow" id="btnQuizJump" data-i="btnQuiz"></button>
+          <button type="button" class="btn-soft" id="btnAiJump" data-i="btnAi"></button>
+          <button type="button" class="btn-soft" id="btnTrendsJump" data-i="btnTrends"></button>
+        </div>
+      </header>
+
+      <p class="safety-disclaimer glass-card" data-i="disclaimer"></p>
+
+      <nav class="beauty-tabs glass-card" aria-label="Beauty navigation">
+        <button type="button" class="b-tab active" data-tab="home" data-i="tabHome"></button>
+        <button type="button" class="b-tab" data-tab="quiz" data-i="tabQuiz"></button>
+        <button type="button" class="b-tab" data-tab="routine" data-i="tabRoutine"></button>
+        <button type="button" class="b-tab" data-tab="track" data-i="tabTrack"></button>
+        <button type="button" class="b-tab" data-tab="trends" data-i="tabTrends"></button>
+        <button type="button" class="b-tab" data-tab="learn" data-i="tabLearn"></button>
+        <button type="button" class="b-tab" data-tab="play" data-i="tabPlay"></button>
+      </nav>
+
+      <section id="panel-home" class="b-panel active">
+        <div class="glass-card panel-inner fade-up">
+          <h2 class="panel-h" data-i="homeTitle"></h2>
+          <p class="panel-desc" data-i="homeDesc"></p>
+          <div id="homeSummary" class="home-summary"></div>
+          <div id="planPreview" class="plan-preview"></div>
+        </div>
+      </section>
+
+      <section id="panel-quiz" class="b-panel">
+        <div class="glass-card panel-inner">
+          <h2 class="panel-h" data-i="quizTitle"></h2>
+          <p class="panel-desc" data-i="quizDesc"></p>
+          <div class="quiz-progress"><span id="quizProgBar"></span></div>
+          <div id="quizRoot" class="quiz-root"></div>
+          <div id="quizActions" class="quiz-actions hidden">
+            <button type="button" class="btn-primary" id="quizNext" data-i="next"></button>
+            <button type="button" class="btn-link" id="quizBack" data-i="back"></button>
+          </div>
+          <div id="quizResultArea" class="quiz-result-area hidden"></div>
+          <div class="ai-row">
+            <button type="button" class="btn-primary btn-glow" id="openAiModal" data-i="btnAi"></button>
+            <p class="mini privacy" data-i="aiPrivacyShort"></p>
+          </div>
+          <div id="analysisResults" class="analysis-results hidden"></div>
+          <div id="personalizedPlan" class="personalized-plan hidden"></div>
+        </div>
+      </section>
+
+      <section id="panel-routine" class="b-panel">
+        <div class="glass-card panel-inner">
+          <h2 class="panel-h" data-i="routineSecTitle"></h2>
+          <p class="panel-desc" data-i="routineSecDesc"></p>
+          <div class="routine-streak-bar"><span id="routineStreakFill"></span></div>
+          <p class="streak-label"><span data-i="streakLabel"></span>: <strong id="routineStreakNum" class="ltr-num">0</strong></p>
+          <div class="routine-columns">
+            <div class="routine-col">
+              <h3 data-i="morningTitle"></h3>
+              <ul id="morningSteps" class="routine-checklist"></ul>
+            </div>
+            <div class="routine-col">
+              <h3 data-i="nightTitle"></h3>
+              <ul id="nightSteps" class="routine-checklist"></ul>
+            </div>
+          </div>
+          <div class="weekly-box">
+            <h3 data-i="weeklyRoutineTitle"></h3>
+            <ul id="weeklySteps" class="routine-checklist"></ul>
+          </div>
+          <button type="button" class="btn-primary" id="saveRoutineDay" data-i="saveRoutine"></button>
+        </div>
+      </section>
+
+      <section id="panel-track" class="b-panel">
+        <div class="glass-card panel-inner">
+          <h2 class="panel-h" data-i="trackerTitle"></h2>
+          <p class="panel-desc" data-i="trackerDesc"></p>
+          <form id="trackerForm" class="tracker-form">
+            <label><span data-i="lblSkinMood"></span><select id="trMood"></select></label>
+            <label><span data-i="lblHydration"></span><input type="range" id="trHydration" min="0" max="10" value="5" /></label>
+            <label><span data-i="lblSleep"></span><input type="number" id="trSleep" min="0" max="14" step="0.5" class="ltr-num" /></label>
+            <label><span data-i="lblBreakout"></span><input type="range" id="trBreakout" min="0" max="10" value="0" /></label>
+            <label><span data-i="lblOil"></span><input type="range" id="trOil" min="0" max="10" value="5" /></label>
+            <label class="full"><span data-i="lblNotes"></span><textarea id="trNotes" rows="2"></textarea></label>
+            <button type="submit" class="btn-primary" data-i="saveEntry"></button>
+          </form>
+          <div id="trackerHistory" class="tracker-history"></div>
+        </div>
+      </section>
+
+      <section id="panel-trends" class="b-panel">
+        <div class="glass-card panel-inner">
+          <h2 class="panel-h" data-i="trendsTitle"></h2>
+          <p class="panel-desc" data-i="trendsDesc"></p>
+          <div id="trendsGrid" class="trends-grid"></div>
+        </div>
+      </section>
+
+      <section id="panel-learn" class="b-panel">
+        <div class="glass-card panel-inner">
+          <h2 class="panel-h" data-i="learnTitle"></h2>
+          <p class="panel-desc" data-i="learnDesc"></p>
+          <div id="learnGrid" class="learn-grid"></div>
+        </div>
+      </section>
+
+      <section id="panel-play" class="b-panel">
+        <div class="glass-card panel-inner">
+          <h2 class="panel-h" data-i="playTitle"></h2>
+          <p class="panel-desc" data-i="playDesc"></p>
+          <div class="play-grid-inner">
+            <article class="play-card glass-card">
+              <h3 data-i="gameOrderTitle"></h3>
+              <div id="gameOrder"></div>
+            </article>
+            <article class="play-card glass-card">
+              <h3 data-i="gameMatchTitle"></h3>
+              <div id="gameMatch"></div>
+            </article>
+            <article class="play-card glass-card">
+              <h3 data-i="gameRoutineTitle"></h3>
+              <div id="gameRoutine"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="beauty-footer">
+        <button type="button" class="btn-lang" id="langToggle"></button>
+      </footer>
+    </div>
+
+    <!-- AI Face overlay modal -->
+    <div id="aiModal" class="ai-modal hidden" aria-hidden="true">
+      <div class="ai-modal-inner glass-card">
+        <button type="button" class="ai-close" id="aiClose" aria-label="Close">×</button>
+        <div id="aiPermissionGate" class="ai-permission-gate hidden">
+          <h3 class="ai-perm-title" data-i="camPermTitle"></h3>
+          <p class="ai-perm-text" data-i="camPermBody"></p>
+          <ul class="ai-perm-tips">
+            <li data-i="camTipFace"></li>
+            <li data-i="camTipLight"></li>
+            <li data-i="camTipGlasses"></li>
+            <li data-i="camTipHair"></li>
+          </ul>
+          <p id="aiHttpsNote" class="ai-https-note hidden" data-i="camHttpsWarn"></p>
+          <p id="aiCamError" class="ai-cam-error hidden" role="alert"></p>
+          <button type="button" class="btn-primary" id="aiAllowCamera" data-i="camPermAllow"></button>
+        </div>
+        <div id="aiCameraPhase" class="ai-camera-phase hidden">
+          <div id="aiChecklist" class="ai-checklist"></div>
+          <div class="ai-video-wrap">
+            <video id="aiVideo" playsinline muted></video>
+            <canvas id="aiCanvas" class="ai-canvas"></canvas>
+            <svg class="ai-oval-guide" viewBox="0 0 100 100" aria-hidden="true">
+              <ellipse cx="50" cy="48" rx="32" ry="40" fill="none" stroke="rgba(255,255,255,0.65)" stroke-width="0.8" stroke-dasharray="3 2" />
+            </svg>
+            <div id="aiAnalyzing" class="ai-analyzing hidden">
+              <div class="ai-spinner"></div>
+              <p data-i="analyzing"></p>
+              <div class="ai-progress"><span id="aiProgSpan"></span></div>
+            </div>
+          </div>
+          <p class="privacy mini" data-i="aiPrivacy"></p>
+          <div class="ai-actions">
+            <button type="button" class="btn-primary" id="aiAnalyzeBtn" data-i="analyzeBtn"></button>
+            <button type="button" class="btn-soft" id="aiCancelBtn" data-i="cancel"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <canvas id="confettiBeauty" class="confetti-canvas" aria-hidden="true"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+    <script src="../shared/kurdana-game-celebration.js?v=1"></script>
+    <script src="beauty-face.js"></script>
+    <script src="beauty-app.js"></script>
+  </body>
+</html>

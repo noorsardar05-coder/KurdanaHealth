@@ -1,0 +1,10 @@
+node_modules
+dist
+.vite-out
+.vite-build
+.build-cache
+dist-vite-staging
+build-test-out
+dist-build-test
+.env
+*.local

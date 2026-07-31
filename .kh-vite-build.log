@@ -1,0 +1,198 @@
+﻿node.exe : 2026-07-15T17:56:32.549Z vite:config bundled config file loaded in 348.79ms
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-07-15T17:5...ded in 348.79ms:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-07-15T17:56:32.683Z vite:config using resolved config: {
+  base: './',
+  plugins: [
+    'vite:build-metadata',
+    'vite:watch-package-data',
+    'vite:pre-alias',
+    'alias',
+    'vite:react-babel',
+    'vite:react-refresh',
+    'vite:modulepreload-polyfill',
+    'vite:resolve',
+    'vite:html-inline-proxy',
+    'vite:css',
+    'vite:esbuild',
+    'vite:json',
+    'vite:wasm-helper',
+    'vite:worker',
+    'vite:asset',
+    'vite:wasm-fallback',
+    'vite:define',
+    'vite:css-post',
+    'vite:build-html',
+    'vite:worker-import-meta-url',
+    'vite:asset-import-meta-url',
+    'vite:force-systemjs-wrap-complete',
+    'commonjs',
+    'vite:data-uri',
+    'vite:dynamic-import-vars',
+    'vite:import-glob',
+    'vite:build-import-analysis',
+    'vite:esbuild-transpile',
+    'vite:terser',
+    'vite:reporter',
+    'vite:load-fallback'
+  ],
+  server: {
+    preTransformRequests: true,
+    host: '127.0.0.1',
+    port: 5173,
+    sourcemapIgnoreList: [Function: isInNodeModules$1],
+    middlewareMode: false,
+    fs: {
+      strict: true,
+      allow: [Array],
+      deny: [Array],
+      cachedChecks: undefined
+    }
+  },
+  preview: {
+    port: 5500,
+    strictPort: undefined,
+    host: '127.0.0.1',
+    allowedHosts: undefined,
+    https: undefined,
+    open: undefined,
+    proxy: undefined,
+    cors: undefined,
+    headers: undefined
+  },
+  build: {
+    target: [ 'es2020', 'edge88', 'firefox78', 'chrome87', 'safari14' ],
+    cssTarget: [ 'es2020', 'edge88', 'firefox78', 'chrome87', 'safari14' ],
+    outDir: '.kh-beauty-out2',
+    assetsDir: 'assets',
+    assetsInlineLimit: 4096,
+    cssCodeSplit: true,
+    sourcemap: false,
+    rollupOptions: { onwarn: [Function: onwarn] },
+    minify: 'esbuild',
+    terserOptions: {},
+    write: true,
+    emptyOutDir: false,
+    copyPublicDir: true,
+    manifest: false,
+    lib: false,
+    ssr: false,
+    ssrManifest: false,
+    ssrEmitAssets: false,
+    reportCompressedSize: true,
+    chunkSizeWarningLimit: 500,
+    watch: null,
+    commonjsOptions: { include: [Array], extensions: [Array] },
+    dynamicImportVarsOptions: { warnOnError: true, exclude: [Array] },
+    modulePreload: { polyfill: true },
+    cssMinify: true
+  },
+  esbuild: { jsxDev: false, jsx: 'automatic', jsxImportSource: undefined },
+  optimizeDeps: {
+    holdUntilCrawlEnd: true,
+    esbuildOptions: { preserveSymlinks: false, jsx: 'automatic' },
+    include: [
+      'react',
+      'react-dom',
+      'react/jsx-dev-runtime',
+      'react/jsx-runtime'
+    ]
+  },
+  resolve: {
+    mainFields: [ 'browser', 'module', 'jsnext:main', 'jsnext' ],
+    conditions: [],
+vite v5.4.21 building for production...
+    extensions: [
+      '.mjs',  '.js',
+      '.mts',  '.ts',
+      '.jsx',  '.tsx',
+      '.json'
+    ],
+    dedupe: [ 'react', 'react-dom' ],
+    preserveSymlinks: false,
+    alias: [ [Object], [Object] ]
+  },
+  configFile: 'C:/Users/pc/Desktop/kurdanahealthh/vite.config.js',
+  configFileDependencies: [ 'C:/Users/pc/Desktop/kurdanahealthh/vite.config.js' ],
+  inlineConfig: {
+    root: undefined,
+    base: undefined,
+    mode: undefined,
+    configFile: undefined,
+    logLevel: undefined,
+    clearScreen: undefined,
+    build: { outDir: '.kh-beauty-out2', emptyOutDir: false }
+  },
+  root: 'C:/Users/pc/Desktop/kurdanahealthh',
+  decodedBase: './',
+  rawBase: './',
+  publicDir: 'C:/Users/pc/Desktop/kurdanahealthh/public',
+  cacheDir: 'C:/Users/pc/Desktop/kurdanahealthh/node_modules/.vite',
+  command: 'build',
+  mode: 'production',
+  ssr: {
+    target: 'node',
+    optimizeDeps: { noDiscovery: true, esbuildOptions: [Object] }
+  },
+  isWorker: false,
+  mainConfig: null,
+  bundleChain: [],
+  isProduction: true,
+  css: { lightningcss: undefined },
+  envDir: 'C:/Users/pc/Desktop/kurdanahealthh',
+  env: { BASE_URL: './', MODE: 'production', DEV: false, PROD: true },
+  assetsInclude: [Function: assetsInclude],
+  logger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  packageCache: Map(1) {
+    'fnpd_C:/Users/pc/Desktop/kurdanahealthh' => {
+      dir: 'C:/Users/pc/Desktop/kurdanahealthh',
+      data: [Object],
+      hasSideEffects: [Function: hasSideEffects],
+      webResolvedImports: {},
+      nodeResolvedImports: {},
+      setResolvedCache: [Function: setResolvedCache],
+      getResolvedCache: [Function: getResolvedCache]
+    },
+    set: [Function (anonymous)]
+  },
+  createResolver: [Function: createResolver],
+  worker: { format: 'iife', plugins: '() => plugins', rollupOptions: {} },
+  appType: 'spa',
+  experimental: { importGlobRestoreExtension: false, hmrPartialAccept: false },
+  webSocketToken: '9Vn0ebkgaSjY',
+  additionalAllowedHosts: [ '127.0.0.1', '127.0.0.1' ],
+  getSortedPlugins: [Function: getSortedPlugins],
+  getSortedPluginHooks: [Function: getSortedPluginHooks]
+}
+transforming...
+2026-07-15T17:56:42.025Z vite:resolve 7.80ms ./fitness-design-system.css -> 
+C:/Users/pc/Desktop/kurdanahealthh/src/features/fitness/fitness-design-system.css
+2026-07-15T17:56:43.164Z vite:resolve 0.45ms ./beauty-tokens.css -> 
+C:/Users/pc/Desktop/kurdanahealthh/src/features/beauty/beauty-tokens.css
+Γ£ô 2327 modules transformed.
+rendering chunks...
+computing gzip size...
+.kh-beauty-out2/index.html                           2.54 kB Γöé gzip:   1.20 kB
+.kh-beauty-out2/assets/WorkoutPlayer-n7O76R8n.css   17.92 kB Γöé gzip:   4.05 kB
+.kh-beauty-out2/assets/index-YjrPFGub.css          156.49 kB Γöé gzip:  29.02 kB
+.kh-beauty-out2/assets/WorkoutPlayer-DbwIfYws.js    14.65 kB Γöé gzip:   4.41 kB
+.kh-beauty-out2/assets/index-Bl7xKlXf.js           681.02 kB Γöé gzip: 216.16 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: 
+https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+Γ£ô built in 19.79s

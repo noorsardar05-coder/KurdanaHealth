@@ -1,0 +1,121 @@
+/* Kurdana — lightweight confetti + game celebration overlay (no external libs) */
+
+.kurdana-confetti-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100000;
+  overflow: hidden;
+}
+
+.kurdana-confetti-piece {
+  position: absolute;
+  top: -12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  opacity: 0.95;
+  will-change: transform, opacity;
+  animation: kurdana-confetti-fall linear forwards;
+}
+
+@keyframes kurdana-confetti-fall {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--kx), 110vh, 0) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.kurdana-game-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(20, 35, 45, 0.45);
+  backdrop-filter: blur(6px);
+  animation: kurdana-game-fade 0.25s ease;
+}
+
+@keyframes kurdana-game-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.kurdana-game-card {
+  max-width: 420px;
+  width: 100%;
+  padding: 1.5rem 1.35rem;
+  border-radius: 18px;
+  background: linear-gradient(165deg, #fff 0%, #f3faf8 100%);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+  text-align: center;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.kurdana-game-card h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1.35rem;
+  color: #0d4a5c;
+}
+
+.kurdana-game-card p {
+  margin: 0 0 1rem;
+  line-height: 1.55;
+  color: #3d5a66;
+  font-size: 1rem;
+}
+
+.kurdana-game-card .kurdana-game-points {
+  font-weight: 700;
+  color: #2a8f9e;
+  font-size: 1.05rem;
+}
+
+.kurdana-game-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-top: 1.1rem;
+}
+
+.kurdana-game-actions button {
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: 0.65rem 1.1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.kurdana-game-actions button:active {
+  transform: scale(0.98);
+}
+
+.kurdana-game-btn-primary {
+  background: linear-gradient(135deg, #3dad9a, #2a8f9e);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(42, 143, 158, 0.35);
+}
+
+.kurdana-game-btn-secondary {
+  background: #fff;
+  color: #1e2a32;
+  border: 1px solid rgba(30, 42, 50, 0.12) !important;
+}
+
+[dir="rtl"] .kurdana-game-card {
+  text-align: center;
+}

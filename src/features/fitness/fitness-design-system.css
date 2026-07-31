@@ -1,0 +1,36 @@
+/* Kurdana Fitness — unified premium design tokens */
+
+.ft-root,
+.wp-root {
+  --kh-emerald: #3d9970;
+  --kh-emerald-deep: #2f8f6b;
+  --kh-emerald-soft: #e8f6f0;
+  --kh-emerald-glow: rgba(61, 153, 112, 0.18);
+  --kh-surface: #fafaf8;
+  --kh-surface-raised: #ffffff;
+  --kh-surface-sunken: #f3f5f2;
+  --kh-ink: #141414;
+  --kh-ink-secondary: #3d3d3a;
+  --kh-muted: #6b6560;
+  --kh-border: rgba(20, 20, 20, 0.08);
+  --kh-border-strong: rgba(20, 20, 20, 0.12);
+  --kh-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --kh-shadow-md: 0 8px 30px rgba(15, 23, 42, 0.07);
+  --kh-shadow-lg: 0 20px 50px rgba(15, 23, 42, 0.1);
+  --kh-radius-sm: 12px;
+  --kh-radius-md: 18px;
+  --kh-radius-lg: 24px;
+  --kh-radius-xl: 32px;
+  --kh-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --kh-warn: #e67e22;
+  --kh-danger: #d64545;
+  --kh-info: #4a90a4;
+  --kh-accent-purple: #8b6cb8;
+
+  /* Anatomical illustration */
+  --ill-skin: #f0e6dc;
+  --ill-muscle: #e2ebe6;
+  --ill-active: rgba(61, 153, 112, 0.55);
+  --ill-active-stroke: #2f8f6b;
+  --ill-stroke: rgba(20, 20, 20, 0.12);
+}

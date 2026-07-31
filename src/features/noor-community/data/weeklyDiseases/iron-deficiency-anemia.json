@@ -1,0 +1,333 @@
+{
+  "id": "iron-deficiency-anemia",
+  "slug": "iron-deficiency-anemia",
+  "weekNumber": 1,
+  "releaseDate": "2026-07-28",
+  "estimatedMinutes": 8,
+  "bodySystem": "blood",
+  "heroIllustration": "blood",
+  "badge": {
+    "id": "iron-aware",
+    "en": "Iron Aware",
+    "ckb": "ئاگاداری ئاسن"
+  },
+  "title": {
+    "en": "Iron-Deficiency Anemia",
+    "ckb": "کەمی خوێن بەهۆی کەمی ئاسن"
+  },
+  "shortTitle": {
+    "en": "Iron & Energy",
+    "ckb": "ئاسن و وزە"
+  },
+  "introduction": {
+    "en": "Iron-deficiency anemia happens when the body does not have enough iron to make healthy red blood cells. Those cells carry oxygen. When iron is low, oxygen delivery can drop and you may feel tired or weak. It is common and often treatable when properly assessed by a clinician.",
+    "ckb": "کەمی خوێن بەهۆی کەمی ئاسن کاتێک ڕوودەدات کە جەستە ئاسنی پێویستی نییە بۆ دروستکردنی خانەی سووری تەندروستی خوێن. ئەو خانانە ئۆکسجین دەگوازنەوە. کاتێک ئاسن کەم بێت، گەیاندنی ئۆکسجین کەم دەبێتەوە و لەوانەیە ماندوو یان لاواز هەست بکەیت. ئەم دۆخە باوە و زۆرجار چارەسەرکراوە کاتێک پزیشک هەڵیدەسەنگێنێت."
+  },
+  "flow": [
+    {
+      "en": "The body uses iron to build hemoglobin in red blood cells.",
+      "ckb": "جەستە ئاسن بەکاردێنێت بۆ دروستکردنی هیموگلۆبین لە خانەی سووری خوێندا."
+    },
+    {
+      "en": "Iron stores fall — from diet gaps, blood loss, or higher need.",
+      "ckb": "کۆگای ئاسن کەم دەبێتەوە — لە کەمی خۆراک، لەدەستدانی خوێن، یان پێویستی زیاتر."
+    },
+    {
+      "en": "Fewer healthy red cells mean less oxygen — fatigue and other signs may follow.",
+      "ckb": "کەمی خانەی سووری تەندروست واتای کەمی ئۆکسجینە — ماندوویی و نیشانەی تر دەردەکەون."
+    }
+  ],
+  "symptoms": [
+    {
+      "id": "fatigue",
+      "title": { "en": "Unusual tiredness", "ckb": "ماندوویی نائاسایی" },
+      "detail": {
+        "en": "Feeling drained even after rest can happen when tissues get less oxygen.",
+        "ckb": "هەستکردن بە ماندوویی تەنانەت دوای پشوو دەکرێت کاتێک شانەکان ئۆکسجینی کەمتر وەردەگرن."
+      }
+    },
+    {
+      "id": "pale",
+      "title": { "en": "Pale skin or inner eyelids", "ckb": "زەردی پێست یان پڵکی ناوەوە" },
+      "detail": {
+        "en": "Lower red-cell levels can make skin or the lining of the eyelids look paler.",
+        "ckb": "کەمی خانەی سوور دەتوانێت پێست یان بەتانی پڵک کاڵتر نیشان بدات."
+      }
+    },
+    {
+      "id": "breath",
+      "title": { "en": "Shortness of breath on effort", "ckb": "کورتبوونەوەی هەناسە لە کاتی جووڵەدا" },
+      "detail": {
+        "en": "The body may breathe harder during activity to meet oxygen needs.",
+        "ckb": "جەستە لەوانەیە لە کاتی چالاکیدا زیاتر هەناسە بدات بۆ دابینکردنی ئۆکسجین."
+      }
+    },
+    {
+      "id": "heartbeat",
+      "title": { "en": "Fast or pounding heartbeat", "ckb": "لێدانی خێرا یان بەهێزی دڵ" },
+      "detail": {
+        "en": "The heart may work harder to move oxygen around the body.",
+        "ckb": "دڵ لەوانەیە زیاتر کار بکات بۆ گەیاندنی ئۆکسجین بە جەستەدا."
+      }
+    },
+    {
+      "id": "cold",
+      "title": { "en": "Cold hands and feet", "ckb": "ساردی دەست و پێ" },
+      "detail": {
+        "en": "Circulation of oxygen-rich blood to the extremities may feel reduced.",
+        "ckb": "گەیاندنی خوێنی پڕ لە ئۆکسجین بۆ دەست و پێ لەوانەیە کەمتر هەست پێبکرێت."
+      }
+    }
+  ],
+  "causes": [
+    {
+      "en": "Not enough iron in the diet over time",
+      "ckb": "کەمی ئاسن لە خۆراکدا بە درێژایی کات"
+    },
+    {
+      "en": "Blood loss (for example heavy periods or digestive bleeding)",
+      "ckb": "لەدەستدانی خوێن (وەک سوڕی مانگانەی قورس یان خوێن لە سیستەمی هەرسدا)"
+    },
+    {
+      "en": "Higher iron needs in pregnancy or rapid growth",
+      "ckb": "پێویستی زیاتری ئاسن لە دووگیانی یان گەشەی خێرادا"
+    },
+    {
+      "en": "Reduced iron absorption in the gut",
+      "ckb": "کەمی مژینی ئاسن لە ڕیخۆڵەدا"
+    }
+  ],
+  "riskFactors": [
+    {
+      "en": "Menstruating adolescents and adults",
+      "ckb": "هەرزەکاران و گەورەسالانی خاوەن سوڕی مانگانە"
+    },
+    {
+      "en": "Pregnancy",
+      "ckb": "دووگیانی"
+    },
+    {
+      "en": "Limited variety of iron-rich foods",
+      "ckb": "کەمی جۆراوجۆری خۆراکی دەوڵەمەند بە ئاسن"
+    },
+    {
+      "en": "Certain long-term digestive conditions",
+      "ckb": "هەندێک دۆخی درێژخایەنی هەرس"
+    }
+  ],
+  "diagnosis": [
+    {
+      "en": "Talking about symptoms, diet, periods, and medical history",
+      "ckb": "قسەکردن لەسەر نیشانەکان، خۆراک، سوڕی مانگانە، و مێژووی پزیشکی"
+    },
+    {
+      "en": "Physical examination",
+      "ckb": "پشکنینی جەستەیی"
+    },
+    {
+      "en": "Blood tests (such as a complete blood count and iron studies)",
+      "ckb": "شیکاری خوێن (وەک ژماردنی گشتیی خوێن و پشکنینی ئاسن)"
+    },
+    {
+      "en": "Further tests if the cause of low iron is unclear",
+      "ckb": "پشکنینی زیاتر ئەگەر هۆکاری کەمی ئاسن ڕوون نەبێت"
+    }
+  ],
+  "treatment": [
+    {
+      "en": "Finding and addressing the cause of iron loss or low intake",
+      "ckb": "دۆزینەوە و چارەسەرکردنی هۆکاری لەدەستدان یان کەمی وەرگرتنی ئاسن"
+    },
+    {
+      "en": "Iron supplementation when recommended by a clinician",
+      "ckb": "پێدانی ئاسنی زیادە کاتێک پزیشک پێشنیاری دەکات"
+    },
+    {
+      "en": "Dietary guidance to include iron-rich foods",
+      "ckb": "ڕێنمایی خۆراکی بۆ خۆراکی دەوڵەمەند بە ئاسن"
+    },
+    {
+      "en": "Treating underlying bleeding or absorption problems when present",
+      "ckb": "چارەسەری کێشەی خوێن بەربوون یان مژین کاتێک هەبێت"
+    }
+  ],
+  "prevention": [
+    {
+      "en": "A balanced diet with iron-rich foods when appropriate",
+      "ckb": "خۆراکی هاوسەنگ لەگەڵ خۆراکی دەوڵەمەند بە ئاسن کاتێک گونجاو بێت"
+    },
+    {
+      "en": "Seeking care for unusually heavy periods or unexplained bleeding",
+      "ckb": "سەردانی پزیشک بۆ سوڕی مانگانەی زۆر قورس یان خوێن بەربوونی نەزانراو"
+    },
+    {
+      "en": "Following prenatal advice on iron needs in pregnancy",
+      "ckb": "شوێنکەوتنی ڕێنمایی پێش لەدایکبوون سەبارەت بە پێویستی ئاسن لە دووگیانیدا"
+    }
+  ],
+  "myths": [
+    {
+      "myth": {
+        "en": "Feeling tired always means you have anemia.",
+        "ckb": "ماندوویی هەمیشە واتای کەمی خوێنە."
+      },
+      "fact": {
+        "en": "Fatigue has many causes. Only tests and clinical review can confirm anemia.",
+        "ckb": "ماندوویی زۆر هۆکاری هەیە. تەنها شیکاری و پشکنینی پزیشکی دەتوانێت کەمی خوێن پشتڕاست بکاتەوە."
+      }
+    },
+    {
+      "myth": {
+        "en": "Eating one iron-rich meal fixes iron-deficiency anemia overnight.",
+        "ckb": "یەک ژەمی دەوڵەمەند بە ئاسن کەمی خوێن لە شەوێکدا چارەسەر دەکات."
+      },
+      "fact": {
+        "en": "Rebuilding iron stores takes time and often needs guided treatment.",
+        "ckb": "دوبارە پڕکردنەوەی کۆگای ئاسن کاتی دەوێت و زۆرجار پێویستی بە چارەسەری ڕێنماییکراو هەیە."
+      }
+    },
+    {
+      "myth": {
+        "en": "Only women get iron-deficiency anemia.",
+        "ckb": "تەنها ژنان تووشی کەمی خوێن بەهۆی کەمی ئاسن دەبن."
+      },
+      "fact": {
+        "en": "It can affect children, men, and adults of any gender — risk patterns differ.",
+        "ckb": "دەتوانێت منداڵان، پیاوان، و گەورەسالانی هەر ڕەگەزێک بگرێتەوە — شێوازی مەترسی جیاوازە."
+      }
+    },
+    {
+      "myth": {
+        "en": "You can safely diagnose and dose iron yourself from the internet.",
+        "ckb": "دەتوانیت خۆت لەسەر ئینتەرنێت کەمی خوێن دەستنیشان بکەیت و ئاسن بخۆیت."
+      },
+      "fact": {
+        "en": "Extra iron can be harmful. Diagnosis and treatment belong with a clinician.",
+        "ckb": "ئاسنی زیادە دەتوانێت زیانبەخش بێت. دەستنیشانکردن و چارەسەر هی پزیشکن."
+      }
+    }
+  ],
+  "funFacts": [
+    {
+      "en": "Most of the body’s iron sits inside hemoglobin in red blood cells.",
+      "ckb": "زۆربەی ئاسنی جەستە لەناو هیموگلۆبیندا لە خانەی سووری خوێندایە."
+    },
+    {
+      "en": "Vitamin C–rich foods can help the gut absorb iron from plant sources.",
+      "ckb": "خۆراکی دەوڵەمەند بە ڤیتامین سی یارمەتی مژینی ئاسنی ڕووەکی دەدات."
+    },
+    {
+      "en": "Iron needs rise in pregnancy because blood volume and baby growth increase.",
+      "ckb": "پێویستی ئاسن لە دووگیانیدا زیاد دەکات چونکە قەبارەی خوێن و گەشەی کۆرپەلە زیاد دەکات."
+    }
+  ],
+  "seekHelp": [
+    {
+      "en": "Severe or worsening fatigue, dizziness, or fainting",
+      "ckb": "ماندوویی توند یان خراپبوو، سەرگێژخۆری، یان لەدەستدانی هۆش"
+    },
+    {
+      "en": "Chest pain, trouble breathing at rest, or a very fast heartbeat",
+      "ckb": "ئازاری سنگ، کێشەی هەناسەدان لە پشوودا، یان لێدانی زۆر خێرای دڵ"
+    },
+    {
+      "en": "Black stools, vomiting blood, or heavy uncontrolled bleeding",
+      "ckb": "پیسایی ڕەش، ڕشانەوەی خوێن، یان خوێن بەربوونی قورسی کۆنترۆڵنەکراو"
+    },
+    {
+      "en": "Symptoms in pregnancy — contact your maternity care team promptly",
+      "ckb": "نیشانە لە دووگیانیدا — خێرا پەیوەندی بە تیمی چاودێری دووگیانی بکە"
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Iron-deficiency anemia mainly affects the body’s ability to:",
+        "ckb": "کەمی خوێن بەهۆی کەمی ئاسن سەرەکی کاریگەری لەسەر توانای جەستە دادەنێت بۆ:"
+      },
+      "options": [
+        {
+          "en": "Carry oxygen in the blood",
+          "ckb": "گواستنەوەی ئۆکسجین لە خوێندا"
+        },
+        {
+          "en": "Produce digestive enzymes only",
+          "ckb": "تەنها دروستکردنی ئەنزیمی هەرس"
+        },
+        {
+          "en": "Store vitamin D in skin",
+          "ckb": "کۆگاکردنی ڤیتامین دی لە پێستدا"
+        }
+      ],
+      "correct": 0,
+      "explain": {
+        "en": "Iron is needed to build hemoglobin, which carries oxygen in red blood cells.",
+        "ckb": "ئاسن پێویستە بۆ دروستکردنی هیموگلۆبین، کە ئۆکسجین لە خانەی سووردا دەگوازێتەوە."
+      }
+    },
+    {
+      "q": {
+        "en": "Which statement is true?",
+        "ckb": "کام ڕستە ڕاستە؟"
+      },
+      "options": [
+        {
+          "en": "Tiredness alone proves you have anemia",
+          "ckb": "ماندوویی بە تەنها پشتڕاستی دەکاتەوە کە کەمی خوێنت هەیە"
+        },
+        {
+          "en": "Blood tests and clinical review are needed to confirm anemia",
+          "ckb": "شیکاری خوێن و پشکنینی پزیشکی پێویستن بۆ پشتڕاستکردنەوەی کەمی خوێن"
+        },
+        {
+          "en": "Only elderly men develop iron deficiency",
+          "ckb": "تەنها پیاوانی بەتەمەن تووشی کەمی ئاسن دەبن"
+        }
+      ],
+      "correct": 1,
+      "explain": {
+        "en": "Fatigue has many causes. Diagnosis needs proper clinical assessment.",
+        "ckb": "ماندوویی زۆر هۆکاری هەیە. دەستنیشانکردن پێویستی بە هەڵسەنگاندنی پزیشکی هەیە."
+      }
+    },
+    {
+      "q": {
+        "en": "Self-prescribing high-dose iron from the internet is:",
+        "ckb": "خۆبەخۆ خواردنی ئاسنی بەرزی دۆز لەسەر ئینتەرنێت:"
+      },
+      "options": [
+        {
+          "en": "Always safe for everyone",
+          "ckb": "هەمیشە سەلامەتە بۆ هەموو کەس"
+        },
+        {
+          "en": "Potentially harmful — guidance should come from a clinician",
+          "ckb": "لەوانەیە زیانبەخش بێت — ڕێنمایی دەبێت لە پزیشکەوە بێت"
+        },
+        {
+          "en": "The fastest way to diagnose anemia",
+          "ckb": "خێراترین ڕێگای دەستنیشانکردنی کەمی خوێن"
+        }
+      ],
+      "correct": 1,
+      "explain": {
+        "en": "Too much iron can harm the body. Treatment plans are individualized.",
+        "ckb": "ئاسنی زۆر دەتوانێت زیان بە جەستە بگەیەنێت. پلانی چارەسەر بۆ هەر کەس جیاوازە."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "en": "World Health Organization — Anaemia fact sheets",
+      "ckb": "ڕێکخراوی تەندروستی جیهانی — زانیاری کەمی خوێن"
+    },
+    {
+      "en": "Centers for Disease Control and Prevention — Iron and iron deficiency",
+      "ckb": "ناوەندەکانی کۆنترۆڵ و خۆپارێزی نەخۆشی — ئاسن و کەمی ئاسن"
+    },
+    {
+      "en": "National Institutes of Health Office of Dietary Supplements — Iron",
+      "ckb": "ئەنجومەنی نیشتمانی تەندروستی — نووسینگەی پێوەرە خۆراکییەکان — ئاسن"
+    }
+  ]
+}

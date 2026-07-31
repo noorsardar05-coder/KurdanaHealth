@@ -1,0 +1,33 @@
+{
+  "brandName": "Beauty of Joseon",
+  "currentSku": {
+    "imageAltText": "Beauty of Joseon - Green Plum Refreshing Cleanser for Gentle Daily Wash\t\t\t\t\t\t",
+    "isAppExclusive": false,
+    "isBI": false,
+    "isLimitedEdition": false,
+    "isLimitedTimeOffer": false,
+    "isNew": false,
+    "isOnlineOnly": false,
+    "isSephoraExclusive": false,
+    "listPrice": "$13.00",
+    "skuId": "2896264",
+    "isBestseller": true
+  },
+  "displayName": "Green Plum Refreshing Cleanser for Gentle Daily Wash",
+  "heroImage": "https://www.sephora.com/productimages/sku/s2896264-main-zoom.jpg?imwidth=270",
+  "image135": "https://www.sephora.com/productimages/sku/s2896264-main-zoom.jpg?imwidth=270",
+  "image250": "https://www.sephora.com/productimages/sku/s2896264-main-zoom.jpg?imwidth=270",
+  "image450": "https://www.sephora.com/productimages/sku/s2896264-main-zoom.jpg?imwidth=270",
+  "altImage": "https://www.sephora.com/productimages/sku/s2896264-main-zoom.jpg?imwidth=270",
+  "onSaleData": "NONE",
+  "pickupEligible": false,
+  "productId": "P517670",
+  "productName": "Green Plum Refreshing Cleanser for Gentle Daily Wash",
+  "rating": "4.4962",
+  "reviews": "131",
+  "sameDayEligible": false,
+  "shipToHomeEligible": false,
+  "targetUrl": "/product/green-plum-refreshing-cleanser-P517670?skuId=2896264",
+  "url": "https://www.sephora.com/api/catalog/products/P517670?preferedSku=2896264",
+  "sponsored": false
+}

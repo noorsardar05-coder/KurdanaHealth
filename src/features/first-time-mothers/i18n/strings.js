@@ -1,0 +1,140 @@
+/** Natural EN + Kurdish Sorani — written for warmth, not machine tone. */
+
+export const STRINGS = {
+  brand: { en: "Kurdana", ku: "کوردانا" },
+  companion: { en: "for first-time mothers", ku: "بۆ دایکانی یەکەمجار" },
+  back: { en: "Back", ku: "گەڕانەوە" },
+  home: { en: "Home", ku: "سەرەتا" },
+  recovery: { en: "Recovery", ku: "چاکبوونەوە" },
+  feeding: { en: "Feeding", ku: "شیرپێدان" },
+  baby: { en: "Baby", ku: "کۆرپەلە" },
+  discover: { en: "Discover", ku: "دۆزینەوە" },
+  essentials: { en: "Essentials", ku: "پێداویستیەکان" },
+  langEn: { en: "EN", ku: "EN" },
+  langKu: { en: "کوردی", ku: "کوردی" },
+  leave: { en: "Leave", ku: "دەرچوون" },
+
+  greetMorning: { en: "Good morning", ku: "بەیانی باش" },
+  greetAfternoon: { en: "Good afternoon", ku: "نیوەڕۆ باش" },
+  greetEvening: { en: "Good evening", ku: "ئێوارە باش" },
+
+  howAreYou: { en: "How are you today?", ku: "ئەمڕۆ هەستت چۆنە؟" },
+  howBabySleep: { en: "How was baby’s sleep?", ku: "خەوی کۆرپەلەکەت چۆن بوو؟" },
+  lastFeeding: { en: "Last feeding", ku: "دوایین شیرپێدان" },
+  noFeedYet: { en: "Not logged yet", ku: "هێشتا تۆمار نەکراوە" },
+  drinkWater: { en: "Drink water", ku: "ئاو بخۆرەوە" },
+  waterGoal: { en: "glasses today", ku: "گڵاسی ئەمڕۆ" },
+  gentleReminder: { en: "Gentle reminder", ku: "بیرخستنەوەیەکی نەرم" },
+  watch20: { en: "Watch · 20 sec", ku: "سەیر بکە · ٢٠ چرکە" },
+  basedOnMood: { en: "Because of how you feel today", ku: "لەبەر هەستت ئەمڕۆ" },
+  basedOnAge: { en: "For your baby’s age", ku: "بۆ تەمەنی کۆرپەلەکەت" },
+  tapToLog: { en: "Tap to log", ku: "دەستی لێبدە بۆ تۆمار" },
+  saved: { en: "Saved", ku: "پاشەکەوت کرا" },
+  done: { en: "Done", ku: "تەواو" },
+  next: { en: "Next", ku: "دواتر" },
+  skip: { en: "Skip", ku: "تێپەڕاندن" },
+  continue: { en: "Continue", ku: "بەردەوام بە" },
+  celebrate: { en: "Beautiful progress", ku: "پێشکەوتنێکی جوان" },
+
+  quizTitle: { en: "A few soft questions", ku: "چەند پرسیارێکی نەرم" },
+  quizSub: {
+    en: "So Kurdana can stay close to your real days — not generic advice.",
+    ku: "تا کوردانا لەگەڵ ڕۆژە ڕاستەقینەکانت بێت — نەک ئامۆژگاری گشتی.",
+  },
+  quizStart: { en: "Begin gently", ku: "بە نەرمی دەست پێبکە" },
+  quizDone: { en: "Enter your companion", ku: "بچۆ ناو هاوڕێیەکەت" },
+
+  recoveryTitle: { en: "Your body is healing", ku: "جەستەت خەریکی چاکبوونەوەیە" },
+  recoverySub: {
+    en: "Check in. Track gently. Celebrate small wins.",
+    ku: "هەستت بڵێ. بە نەرمی تۆمار بکە. سەرکەوتنە بچووکەکان ئاهەنگ بگرە.",
+  },
+  painCheck: { en: "Pain check", ku: "پشکنینی ئازار" },
+  moodCheck: { en: "Mood check", ku: "پشکنینی هەست" },
+  timeline: { en: "Recovery timeline", ku: "هێڵی کاتی چاکبوونەوە" },
+  dailyGoals: { en: "Today’s recovery goals", ku: "ئامانجەکانی چاکبوونەوەی ئەمڕۆ" },
+  scarCare: { en: "Scar care moment", ku: "ساتی چاودێری شوێنی برین" },
+  healing: { en: "Healing pulse", ku: "لێدانی چاکبوونەوە" },
+  weekOf: { en: "Week", ku: "هەفتە" },
+  postpartum: { en: "postpartum", ku: "دوای لەدایکبوون" },
+
+  feedTitle: { en: "Feeding, made simple", ku: "شیرپێدان، بە سادەیی" },
+  feedSub: {
+    en: "Log in one tap. Patterns appear later.",
+    ku: "بە یەک دەستلێدان تۆماری بکە. دواتر شێوازەکان دەردەکەون.",
+  },
+  breastL: { en: "Left", ku: "چەپ" },
+  breastR: { en: "Right", ku: "ڕاست" },
+  both: { en: "Both", ku: "هەردووک" },
+  bottle: { en: "Bottle", ku: "بۆتل" },
+  formula: { en: "Formula", ku: "شیرخۆراکی دەستکرد" },
+  startTimer: { en: "Start timer", ku: "کاتژمێر دەست پێبکە" },
+  stopTimer: { en: "Stop & save", ku: "بوەستێنە و پاشەکەوت بکە" },
+  logNow: { en: "Log now", ku: "ئێستا تۆمار بکە" },
+  todayFeeds: { en: "Today", ku: "ئەمڕۆ" },
+  patternHint: { en: "What we’re noticing", ku: "ئەوەی تێبینی دەکەین" },
+  quickQ: { en: "Quick answers", ku: "وەڵامی خێرا" },
+
+  babyTitle: { en: "This week with baby", ku: "ئەم هەفتەیە لەگەڵ کۆرپەلە" },
+  babySub: {
+    en: "What first-time parents usually notice — not a checklist to fear.",
+    ku: "ئەوەی دایک و باوکی یەکەمجار زۆرجار تێبینی دەکەن — نەک لیستێک بۆ ترساندن.",
+  },
+  milestones: { en: "Milestones", ku: "قۆناغەکان" },
+  markDone: { en: "We noticed this", ku: "ئەمەمان بینی" },
+  growth: { en: "Growth feel", ku: "هەستی گەشە" },
+  notice: { en: "Parents often notice", ku: "دایک و باوک زۆرجار تێبینی دەکەن" },
+  expected: { en: "Expected changes", ku: "گۆڕانکاری پێشبینیکراو" },
+
+  discoverTitle: { en: "Swipe. Learn. Breathe.", ku: "بکشێنە. فێر ببە. هەناسە بدە." },
+  discoverSub: {
+    en: "One useful idea per card. No essays.",
+    ku: "هەر کارتێک یەک بیرۆکەی سوودبەخش. بێ وتار.",
+  },
+  myth: { en: "Myth", ku: "ئەفسانە" },
+  fact: { en: "Fact", ku: "ڕاستی" },
+  hack: { en: "Quick hack", ku: "فێڵی خێرا" },
+  story: { en: "Real parent", ku: "دایکێکی ڕاستەقینە" },
+  doctor30: { en: "Doctor in 30s", ku: "پزیشک لە ٣٠ چرکەدا" },
+  swipeNext: { en: "Swipe for next", ku: "بۆ داهاتوو بکشێنە" },
+  saveCard: { en: "Save", ku: "پاشەکەوت" },
+
+  essTitle: { en: "Baby Essentials", ku: "پێداویستیەکانی کۆرپەلە" },
+  essSub: {
+    en: "A calm product guide — not a shop. No prices. No carts.",
+    ku: "ڕێبەرێکی ئارام بۆ بەرهەمەکان — نەک فرۆشگا. بێ نرخ. بێ سەبەتە.",
+  },
+  essGuide: {
+    en: "Educational only. Compare thoughtfully. Buy where you trust.",
+    ku: "تەنها پەروەردەییە. بە بیرکردنەوە بەراورد بکە. لە شوێنێک بکڕە کە متمانەت پێیەتی.",
+  },
+  smartMatch: { en: "Smart Match", ku: "هاوتابوونی زیرا" },
+  whatIs: { en: "What it is", ku: "ئەمە چییە" },
+  whyLove: { en: "Why parents love it", ku: "بۆچی دایک و باوک خۆشیان دەوێت" },
+  bestFor: { en: "Best for", ku: "باشترینە بۆ" },
+  notFor: { en: "Maybe not for", ku: "لەوانەیە بۆ تۆ نەبێت" },
+  pros: { en: "Pros", ku: "لایەنە باشەکان" },
+  cons: { en: "Cons", ku: "لایەنە لاوازەکان" },
+  cleaning: { en: "Cleaning tips", ku: "ئامۆژگاری پاککردنەوە" },
+  safety: { en: "Safety notes", ku: "تێبینی سەلامەتی" },
+  ageRec: { en: "Age", ku: "تەمەن" },
+  alternatives: { en: "Alternatives", ku: "جێگرەوەکان" },
+  similar: { en: "Similar", ku: "هاوشێوە" },
+  faq: { en: "FAQ", ku: "پرسیارە باوەکان" },
+  compare: { en: "Compare", ku: "بەراورد" },
+  addCompare: { en: "Add to compare", ku: "زیادی بکە بۆ بەراورد" },
+  clearCompare: { en: "Clear", ku: "سڕینەوە" },
+  reset: { en: "Reset", ku: "نوێکردنەوە" },
+  seeGuide: { en: "Open guide", ku: "ڕێبەر بکەرەوە" },
+
+  disclaimer: {
+    en: "Kurdana supports first-time mothers with education and calm tools. It does not diagnose or treat.",
+    ku: "کوردانا پشتگیری دایکانی یەکەمجار دەکات بە پەروەردە و ئامرازی ئارام. دەستنیشانکردن یان چارەسەر ناکات.",
+  },
+};
+
+export function t(key, lang) {
+  const row = STRINGS[key];
+  if (!row) return key;
+  return lang === "ku" ? row.ku : row.en;
+}

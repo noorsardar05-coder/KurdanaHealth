@@ -1,0 +1,118 @@
+.kh-settings {
+  --ks-bg: #f8f7f3;
+  --ks-card: #ffffff;
+  --ks-ink: #1c1c1a;
+  --ks-muted: #8a8680;
+  --ks-border: #ebe8e2;
+  --ks-sage: #4a7c6f;
+  --ks-font: "Inter", system-ui, sans-serif;
+  --ks-display: "Newsreader", "Georgia", serif;
+  --ks-ku: "Noto Sans Arabic", "Inter", system-ui, sans-serif;
+
+  min-height: 100dvh;
+  background: var(--ks-bg);
+  color: var(--ks-ink);
+  font-family: var(--ks-font);
+  -webkit-font-smoothing: antialiased;
+}
+
+.kh-settings.lang-ku {
+  font-family: var(--ks-ku);
+}
+
+.kh-settings__wrap {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 1.5rem clamp(1rem, 4vw, 2rem) 3rem;
+}
+
+.kh-settings__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-bottom: 1.75rem;
+}
+
+.kh-settings__back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-top: 0.15rem;
+  border: 1px solid var(--ks-border);
+  border-radius: 50%;
+  background: var(--ks-card);
+  color: var(--ks-muted);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.kh-settings__back:hover {
+  color: var(--ks-ink);
+  border-color: #d8d4cc;
+}
+
+.kh-settings__title {
+  font-family: var(--ks-display);
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 0 0 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+.kh-settings.lang-ku .kh-settings__title {
+  font-family: var(--ks-ku);
+}
+
+.kh-settings__sub {
+  margin: 0;
+  color: var(--ks-muted);
+  font-size: 0.95rem;
+}
+
+.kh-settings__card {
+  padding: 1.35rem;
+  border-radius: 20px;
+  background: var(--ks-card);
+  border: 1px solid var(--ks-border);
+  box-shadow: 0 1px 2px rgba(28, 28, 26, 0.04), 0 4px 16px rgba(28, 28, 26, 0.03);
+}
+
+.kh-settings__section-title {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.kh-settings__section-sub {
+  margin: 0 0 1rem;
+  font-size: 0.88rem;
+  color: var(--ks-muted);
+  line-height: 1.5;
+}
+
+.kh-settings__lang-cards {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.kh-settings__hint {
+  margin: 1rem 0 1.5rem;
+  font-size: 0.82rem;
+  color: var(--ks-muted);
+  text-align: center;
+}
+
+.kh-settings__dash-link {
+  display: block;
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ks-sage);
+  text-decoration: none;
+}
+
+.kh-settings__dash-link:hover {
+  text-decoration: underline;
+}

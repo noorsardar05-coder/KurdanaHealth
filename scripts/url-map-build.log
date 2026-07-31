@@ -1,0 +1,48 @@
+﻿nanit-proΓÇª OK
+owlet-dream-sockΓÇª OK
+eufy-spaceview-proΓÇª OK
+cubo-ai-plusΓÇª OK
+ergobaby-omni-breezeΓÇª FAIL (no amazon img)
+babybjorn-miniΓÇª FAIL (Unexpected token '<', "<!DOCTYPE "... is not valid JSON)
+babybjorn-harmonyΓÇª FAIL (Unexpected token '<', "<!DOCTYPE "... is not valid JSON)
+ergobaby-embraceΓÇª FAIL (no amazon img)
+stokke-limasΓÇª FAIL (no og)
+uppababy-vista-v2ΓÇª FAIL (no amazon img)
+bugaboo-butterflyΓÇª OK
+doona-plusΓÇª OK
+uppababy-minu-v2ΓÇª FAIL (no amazon img)
+bugaboo-fox-5ΓÇª OK
+medela-freestyle-flexΓÇª OK
+spectra-s1-plusΓÇª OK
+elvie-pumpΓÇª OK
+momcozy-s12-proΓÇª FAIL (Unexpected end of JSON input)
+philips-avent-doubleΓÇª OK
+philips-avent-naturalΓÇª OK
+comotomo-natural-feelΓÇª OK
+dr-browns-options-plusΓÇª FAIL (no og)
+tommee-tippee-closerΓÇª OK
+philips-avent-anti-colicΓÇª OK
+bibs-colourΓÇª FAIL (empty)
+philips-soothieΓÇª OK
+fridababy-nosefridaΓÇª FAIL (Unexpected end of JSON input)
+hatch-rest-plusΓÇª OK
+fridababy-humidifierΓÇª OK
+halo-sleepsack-swaddleΓÇª FAIL (empty)
+love-to-dream-swaddle-upΓÇª FAIL (empty)
+halo-bassinestΓÇª FAIL (empty)
+skip-hop-moonlightΓÇª FAIL (no og)
+stokke-sleepi-miniΓÇª FAIL (no og)
+braun-thermoscan-7ΓÇª FAIL (no amazon img)
+fridababy-3in1-earΓÇª OK
+skip-hop-moby-bathΓÇª FAIL (no og)
+stokke-flexi-bathΓÇª FAIL (no og)
+fridababy-nailfridaΓÇª OK
+baby-brezza-formula-proΓÇª FAIL (Unexpected end of JSON input)
+baby-brezza-sterilizerΓÇª OK
+philips-avent-warmerΓÇª OK
+medela-storage-bagsΓÇª OK
+momcozy-nursing-pillowΓÇª OK
+
+Collected 24 / 44
+Output: c:\Users\pc\Desktop\kurdanahealthh\public\ftm-essentials\url-map.json
+Missing: ergobaby-omni-breeze, babybjorn-mini, babybjorn-harmony, ergobaby-embrace, stokke-limas, uppababy-vista-v2, uppababy-minu-v2, momcozy-s12-pro, dr-browns-options-plus, bibs-colour, fridababy-nosefrida, halo-sleepsack-swaddle, love-to-dream-swaddle-up, halo-bassinest, skip-hop-moonlight, stokke-sleepi-mini, braun-thermoscan-7, skip-hop-moby-bath, stokke-flexi-bath, baby-brezza-formula-pro

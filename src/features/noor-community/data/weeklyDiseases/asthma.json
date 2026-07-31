@@ -1,0 +1,307 @@
+{
+  "id": "asthma",
+  "slug": "asthma",
+  "weekNumber": 0,
+  "releaseDate": "2026-07-21",
+  "estimatedMinutes": 8,
+  "bodySystem": "respiratory",
+  "heroIllustration": "lungs",
+  "badge": {
+    "id": "breath-wise",
+    "en": "Breath Wise",
+    "ckb": "ئاگاداری هەناسە"
+  },
+  "title": {
+    "en": "Asthma",
+    "ckb": "هەناسەتەنگی (ئەسم)"
+  },
+  "shortTitle": {
+    "en": "Breathing freely",
+    "ckb": "هەناسەدانی ئازاد"
+  },
+  "introduction": {
+    "en": "Asthma is a long-term condition where the airways in the lungs can become inflamed and narrow. This makes breathing harder, especially during flares. With the right plan from a clinician, many people manage asthma well day to day.",
+    "ckb": "هەناسەتەنگی دۆخێکی درێژخایەنە کە تێیدا ڕێڕەوی هەوا لە سێدا دەتوانێت هەو بکات و تەسک ببێتەوە. ئەمە هەناسەدان قورستر دەکات، بەتایبەت لە کاتی توندبوونەوەدا. لەگەڵ پلانی گونجاوی پزیشک، زۆر کەس بە باشی ڕۆژانە کۆنترۆڵی دەکەن."
+  },
+  "flow": [
+    {
+      "en": "Air normally flows through open, calm airways to the lungs.",
+      "ckb": "هەوا بە شێوەیەکی ئاسایی لە ڕێڕەوی کراوە و ئارامدا دەچێتە سێ."
+    },
+    {
+      "en": "Triggers can inflame and tighten the airways.",
+      "ckb": "هاندەرەکان دەتوانن ڕێڕەوەکان هەو بکەن و توند بکەنەوە."
+    },
+    {
+      "en": "Breathing feels tight or wheezy — early care helps.",
+      "ckb": "هەناسەدان توند یان فیو فیو هەست دەکرێت — چاودێری زوو یارمەتی دەدات."
+    }
+  ],
+  "symptoms": [
+    {
+      "id": "wheeze",
+      "title": { "en": "Wheezing", "ckb": "دەنگی فیو فیو لە کاتی هەناسەدا" },
+      "detail": {
+        "en": "A whistling sound can appear when air moves through narrowed airways.",
+        "ckb": "دەنگێکی فیو دەکرێت کاتێک هەوا لە ڕێڕەوی تەسکدا تێدەپەڕێت."
+      }
+    },
+    {
+      "id": "cough",
+      "title": { "en": "Cough, often at night", "ckb": "کۆکە، زۆرجار لە شەودا" },
+      "detail": {
+        "en": "Airway irritation can cause a persistent cough, sometimes worse at night.",
+        "ckb": "هەستیاربوونی ڕێڕەو دەتوانێت کۆکەی بەردەوام دروست بکات، هەندێک جار لە شەودا خراپتر."
+      }
+    },
+    {
+      "id": "tight",
+      "title": { "en": "Chest tightness", "ckb": "توندی سنگ" },
+      "detail": {
+        "en": "Many people describe a squeezing or heavy feeling in the chest.",
+        "ckb": "زۆر کەس هەست بە پەستان یان قورسی لە سنگدا دەکەن."
+      }
+    },
+    {
+      "id": "short",
+      "title": { "en": "Shortness of breath", "ckb": "کورتبوونەوەی هەناسە" },
+      "detail": {
+        "en": "It may feel harder to get a full breath during activity or flares.",
+        "ckb": "لەوانەیە لە کاتی چالاکی یان توندبوونەوەدا وەرگرتنی هەناسەی تەواو قورستر بێت."
+      }
+    }
+  ],
+  "causes": [
+    {
+      "en": "Long-term airway inflammation (the core process of asthma)",
+      "ckb": "هەوی درێژخایەنی ڕێڕەوی هەوا (پرۆسەی سەرەکیی هەناسەتەنگی)"
+    },
+    {
+      "en": "Genetic and environmental influences together",
+      "ckb": "کاریگەری بۆماوەیی و ژینگەیی پێکەوە"
+    }
+  ],
+  "riskFactors": [
+    {
+      "en": "Family history of asthma or allergies",
+      "ckb": "مێژووی خێزانی هەناسەتەنگی یان هەستیاری"
+    },
+    {
+      "en": "Exposure to smoke, dust, or strong air pollution",
+      "ckb": "بەرکەوتن بە دووکەڵ، تۆز، یان پیسبوونی بەهێزی هەوا"
+    },
+    {
+      "en": "Certain allergies and viral respiratory infections",
+      "ckb": "هەندێک هەستیاری و هەوکردنی ڤایرۆسی هەناسە"
+    },
+    {
+      "en": "Exercise or cold air as triggers for some people",
+      "ckb": "وەرزش یان هەوای سارد وەک هاندەر بۆ هەندێک کەس"
+    }
+  ],
+  "diagnosis": [
+    {
+      "en": "Discussion of symptoms, triggers, and family history",
+      "ckb": "قسەکردن لەسەر نیشانەکان، هاندەرەکان، و مێژووی خێزانی"
+    },
+    {
+      "en": "Physical examination of the chest and breathing",
+      "ckb": "پشکنینی جەستەیی بۆ سنگ و هەناسەدان"
+    },
+    {
+      "en": "Breathing tests (such as spirometry) when available",
+      "ckb": "تاقیکردنەوەی هەناسەدان (وەک سپیرۆمتری) کاتێک بەردەست بێت"
+    },
+    {
+      "en": "Specialist assessment if the picture is unclear",
+      "ckb": "هەڵسەنگاندنی پسپۆڕ ئەگەر دۆخەکە ڕوون نەبێت"
+    }
+  ],
+  "treatment": [
+    {
+      "en": "A personal written asthma action plan from a clinician",
+      "ckb": "پلانی نووسراوی تایبەتی هەناسەتەنگی لە پزیشکەوە"
+    },
+    {
+      "en": "Controller and reliever inhalers when prescribed",
+      "ckb": "هەناسەی کۆنترۆڵ و هەناسەی خێرا کاتێک دەرماننامە دەکرێت"
+    },
+    {
+      "en": "Learning correct inhaler technique",
+      "ckb": "فێربوونی شێوازی دروستی بەکارهێنانی هەناسە"
+    },
+    {
+      "en": "Reducing exposure to known personal triggers",
+      "ckb": "کەمکردنەوەی بەرکەوتن بە هاندەرە ناسراوەکانی خۆت"
+    }
+  ],
+  "prevention": [
+    {
+      "en": "Asthma itself may not be fully preventable, but flares often can be reduced",
+      "ckb": "لەوانەیە خودی هەناسەتەنگی بە تەواوی دوورنەخرێتەوە، بەڵام توندبوونەوە زۆرجار کەم دەکرێتەوە"
+    },
+    {
+      "en": "Avoid smoke and manage allergies with professional advice",
+      "ckb": "دوورکەوە لە دووکەڵ و هەستیاری بە ڕێنمایی پسپۆڕ کۆنترۆڵ بکە"
+    },
+    {
+      "en": "Take prescribed controller medicine as directed — do not stop on your own",
+      "ckb": "دەرمانی کۆنترۆڵ وەک پێویست بەکاربهێنە — خۆت مەیکۆڕەوە"
+    }
+  ],
+  "myths": [
+    {
+      "myth": {
+        "en": "Asthma is only a childhood problem.",
+        "ckb": "هەناسەتەنگی تەنها کێشەی منداڵانە."
+      },
+      "fact": {
+        "en": "Asthma can begin or continue in adulthood.",
+        "ckb": "هەناسەتەنگی دەتوانێت لە گەورەسالیشدا دەست پێبکات یان بەردەوام بێت."
+      }
+    },
+    {
+      "myth": {
+        "en": "If you feel fine, you can stop controller inhalers anytime.",
+        "ckb": "ئەگەر باشت، دەتوانیت هەر کاتێک هەناسەی کۆنترۆڵ بوەستێنیت."
+      },
+      "fact": {
+        "en": "Stopping prescribed controllers without advice can lead to dangerous flares.",
+        "ckb": "وەستاندنی دەرمانی کۆنترۆڵ بێ ڕێنمایی دەتوانێت ببێتە هۆی توندبوونەوەی مەترسیدار."
+      }
+    },
+    {
+      "myth": {
+        "en": "People with asthma should never exercise.",
+        "ckb": "کەسانی هەناسەتەنگی هەرگیز نابێت وەرزش بکەن."
+      },
+      "fact": {
+        "en": "With a good plan, many people with asthma exercise safely.",
+        "ckb": "لەگەڵ پلانی باش، زۆر کەسی هەناسەتەنگی بە سەلامەتی وەرزش دەکەن."
+      }
+    }
+  ],
+  "funFacts": [
+    {
+      "en": "Asthma is one of the most common long-term lung conditions worldwide.",
+      "ckb": "هەناسەتەنگی یەکێکە لە باوترین دۆخە درێژخایەنەکانی سێ لە جیهاندا."
+    },
+    {
+      "en": "Not every cough is asthma — and not every asthma flare looks the same.",
+      "ckb": "هەر کۆکەیەک هەناسەتەنگی نییە — و هەر توندبوونەوەیەک وەک یەک دیار نییە."
+    },
+    {
+      "en": "A spacer device can help more medicine reach the lungs from an inhaler.",
+      "ckb": "ئامێری سپەیسەر یارمەتی دەدات دەرمان زیاتر لە هەناسەوە بگاتە سێ."
+    }
+  ],
+  "seekHelp": [
+    {
+      "en": "Severe breathlessness, difficulty speaking, or lips turning blue",
+      "ckb": "کەمی توندی هەناسە، سەختی قسەکردن، یان شینی لێو"
+    },
+    {
+      "en": "Reliever inhaler not helping as usual",
+      "ckb": "هەناسەی خێرا وەک هەمیشە یارمەتی نادات"
+    },
+    {
+      "en": "Peak-flow or symptoms matching your action plan’s emergency zone",
+      "ckb": "نیشانەکان دەگەنە ناوچەی فریاگوزاری پلانی کارەکەت"
+    },
+    {
+      "en": "Any breathing emergency — call local emergency services immediately",
+      "ckb": "هەر فریاگوزارییەکی هەناسە — دەستبەجێ پەیوەندی بە فریاگوزاری ناوخۆیی بکە"
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Asthma mainly involves:",
+        "ckb": "هەناسەتەنگی سەرەکی پەیوەندی بەمەوە هەیە:"
+      },
+      "options": [
+        {
+          "en": "Inflamed, narrowed airways in the lungs",
+          "ckb": "ڕێڕەوی هەوای هەوکراو و تەسک لە سێدا"
+        },
+        {
+          "en": "Only broken ribs",
+          "ckb": "تەنها شکانی پەراسوو"
+        },
+        {
+          "en": "Low iron in red blood cells",
+          "ckb": "کەمی ئاسن لە خانەی سووری خوێندا"
+        }
+      ],
+      "correct": 0,
+      "explain": {
+        "en": "Asthma is an airway condition — inflammation and narrowing make breathing harder.",
+        "ckb": "هەناسەتەنگی دۆخی ڕێڕەوی هەوایە — هەو و تەسکی هەناسەدان قورستر دەکات."
+      }
+    },
+    {
+      "q": {
+        "en": "Controller inhalers are usually meant to:",
+        "ckb": "هەناسەی کۆنترۆڵ بەزۆری بۆ ئەمەن:"
+      },
+      "options": [
+        {
+          "en": "Be stopped whenever you feel well, without advice",
+          "ckb": "بوەستێنرێن کاتێک باش هەست دەکەیت، بێ ڕێنمایی"
+        },
+        {
+          "en": "Reduce ongoing airway inflammation when used as prescribed",
+          "ckb": "کەمکردنەوەی هەوی بەردەوامی ڕێڕەو کاتێک وەک پێویست بەکاردێن"
+        },
+        {
+          "en": "Replace emergency care in every situation",
+          "ckb": "جێگەی چاودێری فریاگوزاری بگرنەوە لە هەموو دۆخێکدا"
+        }
+      ],
+      "correct": 1,
+      "explain": {
+        "en": "Controllers work over time. Do not stop them without clinician advice.",
+        "ckb": "دەرمانی کۆنترۆڵ بە تێپەڕینی کات کار دەکات. بێ ڕێنمایی مەیانوەستێنە."
+      }
+    },
+    {
+      "q": {
+        "en": "Severe trouble breathing with little response to reliever medicine needs:",
+        "ckb": "کێشەی توندی هەناسەدان لەگەڵ وەڵامی کەم بۆ دەرمانی خێرا پێویستی بە:"
+      },
+      "options": [
+        {
+          "en": "Waiting a few days at home",
+          "ckb": "چەند ڕۆژ چاوەڕوانکردن لە ماڵەوە"
+        },
+        {
+          "en": "Urgent medical help / emergency services",
+          "ckb": "یارمەتی خێرای پزیشکی / فریاگوزاری"
+        },
+        {
+          "en": "Only drinking cold water",
+          "ckb": "تەنها خواردنەوەی ئاوی سارد"
+        }
+      ],
+      "correct": 1,
+      "explain": {
+        "en": "Breathing emergencies need immediate professional care.",
+        "ckb": "فریاگوزاری هەناسە پێویستی بە چاودێری خێرای پسپۆڕ هەیە."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "en": "World Health Organization — Asthma",
+      "ckb": "ڕێکخراوی تەندروستی جیهانی — هەناسەتەنگی"
+    },
+    {
+      "en": "Global Initiative for Asthma (GINA) public resources",
+      "ckb": "دەستپێشخەری جیهانی بۆ هەناسەتەنگی — سەرچاوە گشتییەکان"
+    },
+    {
+      "en": "Centers for Disease Control and Prevention — Asthma",
+      "ckb": "ناوەندەکانی کۆنترۆڵ و خۆپارێزی نەخۆشی — هەناسەتەنگی"
+    }
+  ]
+}

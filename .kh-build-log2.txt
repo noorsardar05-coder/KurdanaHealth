@@ -1,0 +1,23 @@
+﻿vite v5.4.21 building for production...
+transforming...
+Γ£ô 2326 modules transformed.
+rendering chunks...
+computing gzip size...
+.kh-beauty-out/index.html                           2.54 kB Γöé gzip:   1.19 kB
+.kh-beauty-out/assets/WorkoutPlayer-n7O76R8n.css   17.92 kB Γöé gzip:   4.05 kB
+.kh-beauty-out/assets/index-BcweGLe2.css          155.08 kB Γöé gzip:  28.74 kB
+.kh-beauty-out/assets/WorkoutPlayer-BqffpcAM.js    14.65 kB Γöé gzip:   4.41 kB
+.kh-beauty-out/assets/index-BDIGADjL.js           672.32 kB Γöé gzip: 214.52 kB
+node.exe : 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: 
+https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+Γ£ô built in 11.76s

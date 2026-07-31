@@ -1,0 +1,19 @@
+:root {
+  --nutrition-bg: #f7f4ec;
+  --nutrition-surface: #fffdf8;
+  --nutrition-oat: #e9e0d0;
+  --nutrition-sage: #a7b39b;
+  --nutrition-olive: #66705a;
+  --nutrition-terracotta: #c88968;
+  --nutrition-gold: #b69a62;
+  --nutrition-charcoal: #30332f;
+  --nutrition-muted: #72766f;
+  --nutrition-border: rgba(48, 51, 47, 0.12);
+  --nutrition-shadow: 0 10px 32px rgba(48, 51, 47, 0.07);
+  --nutrition-shadow-sm: 0 2px 10px rgba(48, 51, 47, 0.05);
+  --nutrition-radius: 20px;
+  --nutrition-radius-lg: 28px;
+  --nutrition-font: "Inter", system-ui, sans-serif;
+  --nutrition-display: "Newsreader", "Georgia", serif;
+  --nutrition-ku: "Noto Sans Arabic", "Inter", system-ui, sans-serif;
+}

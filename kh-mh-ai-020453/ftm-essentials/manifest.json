@@ -1,0 +1,207 @@
+{
+  "at": "2026-07-25T22:15:15.591Z",
+  "results": [
+    {
+      "id": "nanit-pro",
+      "file": "nanit-pro.webp",
+      "bytes": 516810,
+      "skipped": true
+    },
+    {
+      "id": "babybjorn-mini",
+      "file": "babybjorn-mini.jpg",
+      "bytes": 698274,
+      "skipped": true
+    },
+    {
+      "id": "babybjorn-harmony",
+      "file": "babybjorn-harmony.jpg",
+      "bytes": 740628,
+      "skipped": true
+    },
+    {
+      "id": "medela-freestyle-flex",
+      "file": "medela-freestyle-flex.png",
+      "bytes": 21311,
+      "skipped": true
+    },
+    {
+      "id": "elvie-pump",
+      "file": "elvie-pump.webp",
+      "bytes": 27432,
+      "skipped": true
+    },
+    {
+      "id": "philips-soothie",
+      "file": "philips-soothie.webp",
+      "bytes": 44916,
+      "skipped": true
+    },
+    {
+      "id": "fridababy-nosefrida",
+      "file": "fridababy-nosefrida.jpg",
+      "bytes": 129161,
+      "url": "https://cdn.shopify.com/s/files/1/0162/3257/9120/files/FB_NoseFridasolo_Thumbnail_badgeupdate3_1200x.jpg?v=1706049581"
+    },
+    {
+      "id": "hatch-rest-plus",
+      "file": "hatch-rest-plus.webp",
+      "bytes": 17060,
+      "skipped": true
+    },
+    {
+      "id": "fridababy-3in1-ear",
+      "file": "fridababy-3in1-ear.jpg",
+      "bytes": 34772,
+      "skipped": true
+    },
+    {
+      "id": "philips-avent-warmer",
+      "file": "philips-avent-warmer.webp",
+      "bytes": 27990,
+      "skipped": true
+    },
+    {
+      "id": "medela-storage-bags",
+      "file": "medela-storage-bags.png",
+      "bytes": 21311,
+      "skipped": true
+    },
+    {
+      "id": "momcozy-nursing-pillow",
+      "file": "momcozy-nursing-pillow.webp",
+      "bytes": 68436,
+      "skipped": true
+    }
+  ],
+  "failures": [
+    {
+      "id": "owlet-dream-sock",
+      "error": "unresolved"
+    },
+    {
+      "id": "eufy-spaceview-pro",
+      "error": "unresolved"
+    },
+    {
+      "id": "cubo-ai-plus",
+      "error": "unresolved"
+    },
+    {
+      "id": "ergobaby-omni-breeze",
+      "error": "unresolved"
+    },
+    {
+      "id": "ergobaby-embrace",
+      "error": "unresolved"
+    },
+    {
+      "id": "stokke-limas",
+      "error": "unresolved"
+    },
+    {
+      "id": "uppababy-vista-v2",
+      "error": "unresolved"
+    },
+    {
+      "id": "bugaboo-butterfly",
+      "error": "unresolved"
+    },
+    {
+      "id": "doona-plus",
+      "error": "unresolved"
+    },
+    {
+      "id": "uppababy-minu-v2",
+      "error": "unresolved"
+    },
+    {
+      "id": "bugaboo-fox-5",
+      "error": "unresolved"
+    },
+    {
+      "id": "spectra-s1-plus",
+      "error": "unresolved"
+    },
+    {
+      "id": "momcozy-s12-pro",
+      "error": "unresolved"
+    },
+    {
+      "id": "philips-avent-double",
+      "error": "unresolved"
+    },
+    {
+      "id": "philips-avent-natural",
+      "error": "unresolved"
+    },
+    {
+      "id": "comotomo-natural-feel",
+      "error": "unresolved"
+    },
+    {
+      "id": "dr-browns-options-plus",
+      "error": "unresolved"
+    },
+    {
+      "id": "tommee-tippee-closer",
+      "error": "unresolved"
+    },
+    {
+      "id": "philips-avent-anti-colic",
+      "error": "unresolved"
+    },
+    {
+      "id": "bibs-colour",
+      "error": "unresolved"
+    },
+    {
+      "id": "fridababy-humidifier",
+      "error": "unresolved"
+    },
+    {
+      "id": "halo-sleepsack-swaddle",
+      "error": "unresolved"
+    },
+    {
+      "id": "love-to-dream-swaddle-up",
+      "error": "unresolved"
+    },
+    {
+      "id": "halo-bassinest",
+      "error": "unresolved"
+    },
+    {
+      "id": "skip-hop-moonlight",
+      "error": "unresolved"
+    },
+    {
+      "id": "stokke-sleepi-mini",
+      "error": "unresolved"
+    },
+    {
+      "id": "braun-thermoscan-7",
+      "error": "unresolved"
+    },
+    {
+      "id": "skip-hop-moby-bath",
+      "error": "unresolved"
+    },
+    {
+      "id": "stokke-flexi-bath",
+      "error": "unresolved"
+    },
+    {
+      "id": "fridababy-nailfrida",
+      "error": "unresolved"
+    },
+    {
+      "id": "baby-brezza-formula-pro",
+      "error": "unresolved"
+    },
+    {
+      "id": "baby-brezza-sterilizer",
+      "error": "unresolved"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "kurdana-health",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "vite --host 127.0.0.1 --port 5173",
+    "dev": "vite --host 127.0.0.1 --port 5173",
+    "api": "node server/mental-companion.mjs",
+    "build": "vite build --outDir kh-build-now --emptyOutDir true && node scripts/publish-dist.mjs && npm run sync:antibiotics-flu",
+    "preview": "vite preview --host 127.0.0.1 --port 5500",
+    "live:build": "node scripts/generate-curated-exercises.mjs && node scripts/build-for-live.mjs",
+    "live:watch": "node scripts/build-for-live.mjs --watch",
+    "sync:antibiotics-flu": "node --input-type=module -e \"import fs from 'node:fs'; fs.cpSync('public/antibiotics-flu','antibiotics-flu',{recursive:true}); fs.cpSync('public/shared','shared',{recursive:true})\"",
+    "generate:exercises": "node scripts/generate-curated-exercises.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.18",
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "firebase": "^11.1.0",
+    "framer-motion": "^12.42.2",
+    "i18next": "^24.2.0",
+    "lucide-react": "^1.23.0",
+    "openai": "^6.49.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.2.0",
+    "react-router-dom": "^6.28.0",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^5.4.11"
+  }
+}

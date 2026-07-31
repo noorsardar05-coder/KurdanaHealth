@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Page shell: airy, almost-white — light, not “painted” color blocks.
+*/
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    min-height: 100%;
+    background-color: #ffffff;
+    overflow-x: clip;
+  }
+
+  body {
+    @apply min-h-screen text-slate-800 antialiased;
+    font-family: Poppins, Inter, system-ui, sans-serif;
+    background: transparent;
+    overflow-x: clip;
+  }
+}
+
+/* Main content width: centered, full use of viewport — no squeezed column */
+@layer components {
+  .app-container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: clamp(0.75rem, 3vw, 1.5rem);
+    padding-right: clamp(0.75rem, 3vw, 1.5rem);
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 640px) {
+    .app-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .app-container {
+      max-width: 1400px;
+    }
+  }
+
+  /* Welcome block: soft glow behind the white card (no solid pastel slab) */
+  .welcome-glow-zone {
+    background:
+      radial-gradient(circle at top left, rgba(120, 180, 140, 0.15), transparent 40%),
+      radial-gradient(circle at bottom right, rgba(120, 160, 220, 0.15), transparent 40%),
+      #f8f9fb;
+  }
+
+  /* Antibiotics symptom analyzer — live panel refresh */
+  .symptom-live-panel {
+    animation: symptomLiveIn 0.38s ease-out both;
+  }
+
+  @keyframes symptomLiveIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer utilities {
+  .bg-app-shell {
+    background-color: #f3f7fb;
+    background-image: linear-gradient(135deg, #f9fbfa 0%, #eef5f2 50%, #f3f7fb 100%);
+  }
+}
+
+#root {
+  min-height: 100%;
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .welcome-page .welcome-hero-inner {
+    animation: welcomeFadeIn 0.85s ease-out both;
+  }
+
+  .welcome-page .welcome-hero-inner .welcome-title {
+    animation: welcomeFadeIn 0.75s ease-out 0.05s both;
+  }
+
+  .welcome-page .welcome-hero-inner .welcome-subtitle {
+    animation: welcomeFadeIn 0.85s ease-out 0.18s both;
+  }
+
+  .welcome-page .welcome-hero-inner .welcome-byline {
+    animation: welcomeFadeIn 0.85s ease-out 0.28s both;
+  }
+
+  .welcome-page .welcome-lang {
+    animation: welcomeFadeIn 0.85s ease-out 0.22s both;
+  }
+
+  .welcome-page .welcome-identity-block {
+    animation: welcomeFadeIn 1s ease-out 0.45s both;
+  }
+}
+
+@keyframes welcomeFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-page .welcome-hero-inner,
+  .welcome-page .welcome-lang,
+  .welcome-page .welcome-hero-inner .welcome-title,
+  .welcome-page .welcome-hero-inner .welcome-subtitle,
+  .welcome-page .welcome-hero-inner .welcome-byline,
+  .welcome-page .welcome-identity-block {
+    animation: none;
+  }
+
+  .symptom-live-panel {
+    animation: none;
+  }
+
+  .dashboard-lang-fade {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dashboard-lang-fade {
+    animation: dashboardLangFade 0.32s ease-out both;
+  }
+}
+
+@keyframes dashboardLangFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

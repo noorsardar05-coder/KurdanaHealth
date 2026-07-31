@@ -1,0 +1,724 @@
+/* Noor Community — scientific, calm, exhibition-ready */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap");
+
+.noor {
+  --noor-ink: #14242c;
+  --noor-ink-soft: #3d5560;
+  --noor-muted: #6a7f88;
+  --noor-bg: #eef3f1;
+  --noor-bg-deep: #d9e5e1;
+  --noor-surface: #f7faf9;
+  --noor-line: rgba(20, 36, 44, 0.1);
+  --noor-teal: #1f6f6a;
+  --noor-teal-soft: #c8e4e0;
+  --noor-amber: #c48a3a;
+  --noor-amber-soft: #f3e4c8;
+  --noor-rose: #a85d5d;
+  --noor-max: 720px;
+  --noor-top: 64px;
+  --noor-nav: 72px;
+  --noor-font: "Source Sans 3", system-ui, sans-serif;
+  --noor-display: "Fraunces", "Times New Roman", serif;
+  --noor-radius: 22px;
+  --noor-shadow: 0 18px 50px rgba(20, 36, 44, 0.08);
+
+  min-height: 100dvh;
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, #d7ebe7 0%, transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 0%, #e8dfd0 0%, transparent 50%),
+    linear-gradient(180deg, var(--noor-bg), #e7eeeb 40%, var(--noor-bg-deep));
+  color: var(--noor-ink);
+  font-family: var(--noor-font);
+  direction: ltr;
+}
+
+.noor.is-ku {
+  direction: rtl;
+  font-family: "Noto Sans Arabic", "Source Sans 3", sans-serif;
+}
+
+.noor.is-ku .noor-display {
+  font-family: "Noto Sans Arabic", "Fraunces", serif;
+}
+
+.noor-shell {
+  width: min(100%, var(--noor-max));
+  margin: 0 auto;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.noor-top {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: var(--noor-top);
+  padding: 12px 18px;
+  background: rgba(247, 250, 249, 0.82);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--noor-line);
+}
+
+.noor-top__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.noor-top__name {
+  font-family: var(--noor-display);
+  font-size: 1.15rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.noor-top__sub {
+  font-size: 0.72rem;
+  color: var(--noor-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 42vw;
+}
+
+.noor-top__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.noor-lang {
+  display: flex;
+  border: 1px solid var(--noor-line);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--noor-surface);
+}
+
+.noor-lang button {
+  border: 0;
+  background: transparent;
+  padding: 7px 11px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--noor-muted);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.noor-lang button.is-on {
+  background: var(--noor-ink);
+  color: #fff;
+}
+
+.noor-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  border: 1px solid var(--noor-line);
+  background: var(--noor-surface);
+  color: var(--noor-ink-soft);
+  text-decoration: none;
+}
+
+.noor-main {
+  flex: 1;
+  padding: 20px 18px calc(var(--noor-nav) + 28px);
+}
+
+.noor-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  background: rgba(247, 250, 249, 0.9);
+  backdrop-filter: blur(14px);
+  border-top: 1px solid var(--noor-line);
+}
+
+.noor-nav__inner {
+  width: min(100%, var(--noor-max));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.noor-nav__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  border: 0;
+  background: transparent;
+  color: var(--noor-muted);
+  font-size: 0.68rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 14px;
+  min-height: 44px;
+}
+
+.noor-nav__item.is-on {
+  color: var(--noor-teal);
+  background: var(--noor-teal-soft);
+}
+
+.noor-display {
+  font-family: var(--noor-display);
+  letter-spacing: -0.03em;
+}
+
+.noor-hero {
+  position: relative;
+  padding: 28px 22px 26px;
+  border-radius: calc(var(--noor-radius) + 4px);
+  background:
+    linear-gradient(145deg, rgba(31, 111, 106, 0.12), transparent 50%),
+    linear-gradient(180deg, #fbfcfb, #e7f1ef);
+  border: 1px solid var(--noor-line);
+  box-shadow: var(--noor-shadow);
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+
+.noor-hero__art {
+  position: absolute;
+  inset-inline-end: -20px;
+  top: -30px;
+  width: 200px;
+  height: 200px;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.noor-hero__eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--noor-teal);
+  margin: 0 0 10px;
+}
+
+.noor-hero h1 {
+  font-size: clamp(1.85rem, 5vw, 2.45rem);
+  line-height: 1.12;
+  margin: 0 0 12px;
+  max-width: 14ch;
+  position: relative;
+}
+
+.noor-hero__sub {
+  margin: 0 0 18px;
+  color: var(--noor-ink-soft);
+  font-size: 1.02rem;
+  line-height: 1.5;
+  max-width: 34ch;
+  position: relative;
+}
+
+.noor-hero__slogan {
+  margin: 0 0 20px;
+  font-size: 0.92rem;
+  color: var(--noor-muted);
+  font-style: italic;
+  position: relative;
+}
+
+.noor-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+}
+
+.noor-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.noor-btn:active {
+  transform: scale(0.98);
+}
+
+.noor-btn--primary {
+  background: var(--noor-ink);
+  color: #fff;
+}
+
+.noor-btn--secondary {
+  background: transparent;
+  border-color: var(--noor-line);
+  color: var(--noor-ink);
+}
+
+.noor-btn--teal {
+  background: var(--noor-teal);
+  color: #fff;
+}
+
+.noor-btn--ghost {
+  background: transparent;
+  color: var(--noor-ink-soft);
+  border-color: transparent;
+}
+
+.noor-btn--wide {
+  width: 100%;
+}
+
+.noor-section {
+  margin-bottom: 22px;
+}
+
+.noor-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--noor-muted);
+  margin: 0 0 10px;
+}
+
+.noor-card {
+  background: var(--noor-surface);
+  border: 1px solid var(--noor-line);
+  border-radius: var(--noor-radius);
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(20, 36, 44, 0.04);
+}
+
+.noor-card--tap {
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.noor-card--tap:hover {
+  border-color: rgba(31, 111, 106, 0.35);
+}
+
+.noor-week-card {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.noor-week-card__art {
+  width: 88px;
+  height: 88px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, var(--noor-teal-soft), #eef6f4);
+  display: grid;
+  place-items: center;
+}
+
+.noor-week-card h3 {
+  margin: 0 0 4px;
+  font-size: 1.15rem;
+  font-family: var(--noor-display);
+}
+
+.noor-week-card p {
+  margin: 0;
+  color: var(--noor-ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.noor-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.noor-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--noor-bg);
+  border: 1px solid var(--noor-line);
+  font-size: 0.78rem;
+  color: var(--noor-ink-soft);
+  font-weight: 600;
+}
+
+.noor-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.noor-stat {
+  padding: 14px;
+  border-radius: 18px;
+  background: var(--noor-surface);
+  border: 1px solid var(--noor-line);
+}
+
+.noor-stat__k {
+  font-size: 0.72rem;
+  color: var(--noor-muted);
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+.noor-stat__v {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 650;
+  color: var(--noor-ink);
+  line-height: 1.35;
+}
+
+.noor-progress {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--noor-bg-deep);
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.noor-progress__bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--noor-teal), #2f9a8f);
+  border-radius: inherit;
+  transition: width 0.35s ease;
+}
+
+.noor-archive-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.noor-safety {
+  margin-top: 8px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: var(--noor-amber-soft);
+  color: #6a4a1e;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.noor-lesson__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.noor-lesson__title {
+  margin: 0;
+  font-size: 1.55rem;
+  font-family: var(--noor-display);
+  line-height: 1.15;
+}
+
+.noor-lesson__step {
+  font-size: 0.78rem;
+  color: var(--noor-muted);
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.noor-h2 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+  font-family: var(--noor-display);
+}
+
+.noor-body {
+  margin: 0;
+  color: var(--noor-ink-soft);
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+.noor-body + .noor-body {
+  margin-top: 10px;
+}
+
+.noor-flow {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.noor-flow__item {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 14px;
+  border-radius: 16px;
+  background: var(--noor-bg);
+  border: 1px solid var(--noor-line);
+}
+
+.noor-flow__num {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: var(--noor-teal);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.noor-flow__label {
+  margin: 0 0 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--noor-teal);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.noor-symptom-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.noor-symptom {
+  text-align: start;
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid var(--noor-line);
+  background: var(--noor-surface);
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+.noor-symptom.is-open {
+  border-color: rgba(31, 111, 106, 0.4);
+  background: #f2f9f7;
+}
+
+.noor-symptom strong {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.noor-symptom p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--noor-ink-soft);
+  line-height: 1.45;
+}
+
+.noor-list {
+  margin: 0;
+  padding-inline-start: 1.1rem;
+  color: var(--noor-ink-soft);
+  line-height: 1.55;
+}
+
+.noor-list li + li {
+  margin-top: 8px;
+}
+
+.noor-split {
+  display: grid;
+  gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .noor-split {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.noor-myth {
+  border: 1px solid var(--noor-line);
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--noor-surface);
+  cursor: pointer;
+  text-align: start;
+  width: 100%;
+  font-family: inherit;
+  color: inherit;
+  padding: 0;
+}
+
+.noor-myth__panel {
+  padding: 14px 16px;
+}
+
+.noor-myth__tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.noor-myth__tag--myth {
+  background: #f3d9d9;
+  color: var(--noor-rose);
+}
+
+.noor-myth__tag--fact {
+  background: var(--noor-teal-soft);
+  color: var(--noor-teal);
+}
+
+.noor-myth__fact {
+  border-top: 1px solid var(--noor-line);
+  background: #f3faf8;
+}
+
+.noor-facts {
+  display: grid;
+  gap: 10px;
+}
+
+.noor-fact {
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f7f3ea, #eef6f4);
+  border: 1px solid var(--noor-line);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--noor-ink-soft);
+}
+
+.noor-body-svg {
+  width: 100%;
+  max-width: 280px;
+  margin: 12px auto 0;
+  display: block;
+}
+
+.noor-quiz__q {
+  margin: 0 0 14px;
+  font-size: 1.15rem;
+  font-family: var(--noor-display);
+  line-height: 1.3;
+}
+
+.noor-quiz__opts {
+  display: grid;
+  gap: 8px;
+}
+
+.noor-quiz__opt {
+  text-align: start;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--noor-line);
+  background: var(--noor-surface);
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.noor-quiz__opt.is-on {
+  border-color: var(--noor-teal);
+  background: var(--noor-teal-soft);
+}
+
+.noor-quiz__opt.is-correct {
+  border-color: #2f8a5b;
+  background: #e5f5ec;
+}
+
+.noor-quiz__opt.is-wrong {
+  border-color: var(--noor-rose);
+  background: #fbebeb;
+}
+
+.noor-explain {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: var(--noor-bg);
+  font-size: 0.9rem;
+  color: var(--noor-ink-soft);
+  line-height: 1.5;
+}
+
+.noor-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--noor-amber-soft), #fff8ea);
+  border: 1px solid rgba(196, 138, 58, 0.25);
+}
+
+.noor-badge__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: var(--noor-amber);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+}
+
+.noor-empty {
+  padding: 28px 18px;
+  text-align: center;
+  color: var(--noor-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 420px) {
+  .noor-symptom-grid {
+    grid-template-columns: 1fr;
+  }
+  .noor-stats {
+    grid-template-columns: 1fr;
+  }
+  .noor-week-card {
+    grid-template-columns: 72px 1fr;
+  }
+}

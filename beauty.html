@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSM Beauty Department</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+  <div class="bg-orb orb-a" aria-hidden="true"></div>
+  <div class="bg-orb orb-b" aria-hidden="true"></div>
+  <div class="bg-orb orb-c" aria-hidden="true"></div>
+
+  <main class="app-shell">
+    <header class="hero glass">
+      <div class="topbar">
+        <div class="brand-block">
+          <p class="brand">NSM</p>
+          <p class="brand-tag" data-t="brandTag"></p>
+        </div>
+        <button type="button" id="langToggle" class="chip" aria-label="Switch language"></button>
+      </div>
+      <h1 data-t="heroTitle"></h1>
+      <p class="subtitle" data-t="heroSubtitle"></p>
+      <div class="quote-block">
+        <button type="button" id="heroQuote" class="quote-nsm"><span id="quoteText"></span><span class="quote-sig"> — NSM</span></button>
+        <p class="hint" data-t="quoteHint"></p>
+      </div>
+      <div class="cta-row">
+        <button type="button" class="btn" data-jump="explore" data-t="goQuiz"></button>
+        <button type="button" class="btn ghost" data-jump="learn" data-t="goLearn"></button>
+      </div>
+    </header>
+
+    <nav class="tabs glass" aria-label="Beauty sections">
+      <button type="button" class="tab active" data-tab="explore" data-t="tabExplore"></button>
+      <button type="button" class="tab" data-tab="learn" data-t="tabLearn"></button>
+      <button type="button" class="tab" data-tab="play" data-t="tabPlay"></button>
+      <button type="button" class="tab" data-tab="track" data-t="tabTrack"></button>
+      <button type="button" class="tab" data-tab="discover" data-t="tabDiscover"></button>
+    </nav>
+
+    <section id="explore" class="panel active" aria-labelledby="explore-heading">
+      <div class="section-head">
+        <h2 id="explore-heading" class="section-title" data-t="exploreTitle"></h2>
+        <p class="muted section-desc" data-t="exploreSub"></p>
+      </div>
+      <div class="explore-grid">
+        <article class="card glass quiz-card">
+          <h3 class="card-label" data-t="quizCardLabel"></h3>
+          <div class="progress quiz-progress"><span id="quizProgress"></span></div>
+          <div id="quizBox" class="quiz-box"></div>
+        </article>
+        <article class="card glass result-wrap">
+          <h3 class="card-label" data-t="resultTitle"></h3>
+          <div id="quizResult" class="result-card"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="learn" class="panel" aria-labelledby="learn-heading">
+      <div class="section-head">
+        <h2 id="learn-heading" class="section-title" data-t="learnTitle"></h2>
+        <p class="muted section-desc" data-t="learnSub"></p>
+      </div>
+      <div class="learn-grid">
+        <article class="card glass learn-library">
+          <div class="learn-tools">
+            <input id="ingredientSearch" type="search" autocomplete="off" />
+            <div id="ingredientFilters" class="filter-row"></div>
+          </div>
+          <p id="ingredientCount" class="muted mini count-line"></p>
+          <div id="ingredientGrid" class="ingredient-grid"></div>
+        </article>
+        <article class="card glass learn-guides">
+          <h3 class="card-label" data-t="beautyGuides"></h3>
+          <div class="accordion" id="learnGuides"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="play" class="panel" aria-labelledby="play-heading">
+      <div class="section-head">
+        <h2 id="play-heading" class="section-title" data-t="playTitle"></h2>
+        <p class="muted section-desc" data-t="playSub"></p>
+      </div>
+      <div class="play-grid">
+        <article class="card glass play-card">
+          <h3 class="card-label" data-t="skinGameTitle"></h3>
+          <div id="skinGameRoot"></div>
+        </article>
+        <article class="card glass play-card">
+          <h3 class="card-label" data-t="matchGameTitle"></h3>
+          <div id="matchGameRoot"></div>
+        </article>
+        <article class="card glass play-card">
+          <h3 class="card-label" data-t="routineGameTitle"></h3>
+          <p class="muted small" data-t="routineGameSub"></p>
+          <div id="routineGameRoot"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="track" class="panel" aria-labelledby="track-heading">
+      <article class="card glass track-card">
+        <div class="section-head tight">
+          <h2 id="track-heading" class="section-title" data-t="trackTitle"></h2>
+          <p class="muted section-desc" data-t="trackSub"></p>
+        </div>
+        <div id="habitList" class="habit-list"></div>
+        <div class="row track-actions">
+          <button type="button" id="saveDay" class="btn" data-t="saveDay"></button>
+          <button type="button" id="resetTrack" class="btn ghost" data-t="resetDay"></button>
+        </div>
+        <div class="progress track-bar"><span id="habitProgress"></span></div>
+        <p id="trackMeta" class="mini track-meta"></p>
+      </article>
+    </section>
+
+    <section id="discover" class="panel" aria-labelledby="discover-heading">
+      <div class="section-head">
+        <h2 id="discover-heading" class="section-title" data-t="discoverTitle"></h2>
+        <p class="muted section-desc" data-t="discoverSub"></p>
+      </div>
+      <div class="discover-grid">
+        <article class="card glass">
+          <h3 class="card-label" data-t="trendsLabel"></h3>
+          <div id="trendCards" class="trend-row"></div>
+        </article>
+        <article class="card glass">
+          <h3 class="card-label" data-t="dailyTipsTitle"></h3>
+          <p id="dailyTip" class="keyline tip-line"></p>
+          <button type="button" id="nextTip" class="btn soft" data-t="nextTip"></button>
+        </article>
+        <article class="card glass span-2">
+          <h3 class="card-label" data-t="routineIdeasTitle"></h3>
+          <div id="routineIdeas" class="routine-row"></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="ingredientModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="modalTitle"></h3>
+        <button type="button" id="closeModal" class="chip" aria-label="Close">×</button>
+      </div>
+      <div id="modalBody" class="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

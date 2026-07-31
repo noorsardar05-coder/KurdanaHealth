@@ -1,0 +1,9 @@
+[2026-07-31T00:17:29.851Z] [live] start
+[2026-07-31T00:17:32.905Z] [live] warning: could not remove workout-media (close Go Live and delete dist/workout-media manually)
+[2026-07-31T00:17:32.909Z] [live] building dist for Go Live…
+[2026-07-31T00:17:32.922Z] [live] tailwind…
+[2026-07-31T00:17:37.906Z] [live] tailwind done
+[2026-07-31T00:17:38.139Z] [live] feature css done
+[2026-07-31T00:17:38.140Z] [live] bundling app.js…
+[2026-07-31T00:17:39.272Z] [live] js done
+[2026-07-31T00:17:39.285Z] [live] index.html written

@@ -1,0 +1,158 @@
+{
+  "rare-softpinch": {
+    "score": 7,
+    "brand": "Rare Beauty by Selena Gomez",
+    "name": "Soft Pinch Liquid Blush",
+    "img": "https://www.sephora.com/productimages/sku/s2911741-main-zoom.jpg?imwidth=600&pb=allure-2022-bestofbeauty-badge"
+  },
+  "ct-pillow": {
+    "score": 7,
+    "brand": "Charlotte Tilbury",
+    "name": "Mini Pillow Talk Lipstick & Liner Set",
+    "img": "https://www.sephora.com/productimages/sku/s2801371-main-zoom.jpg?imwidth=600"
+  },
+  "ct-hairbrush": {
+    "score": 7,
+    "brand": "Charlotte Tilbury",
+    "name": "Airbrush Flawless Finish Refillable Blurring & Setting Powder",
+    "img": "https://www.sephora.com/productimages/sku/s2605988-main-zoom.jpg?imwidth=600"
+  },
+  "ct-fairywand": {
+    "score": 7,
+    "brand": "Charlotte Tilbury",
+    "name": "Beauty Highlighter Wand",
+    "img": "https://www.sephora.com/productimages/sku/s2201424-main-zoom.jpg?imwidth=600"
+  },
+  "nars-orgasm": {
+    "score": 4.5,
+    "brand": "NARS",
+    "name": "Talc-Free Powder Blush",
+    "img": "https://www.sephora.com/productimages/sku/s2756351-main-zoom.jpg?imwidth=600&pb=allure-2024-bestofbeauty"
+  },
+  "nars-radiant": {
+    "score": 7,
+    "brand": "NARS",
+    "name": "Radiant Creamy Concealer with Hydrating Medium Coverage",
+    "img": "https://www.sephora.com/productimages/sku/s2172310-main-zoom.jpg?imwidth=600"
+  },
+  "nars-laguna": {
+    "score": 5.333333333333333,
+    "brand": "NARS",
+    "name": "Laguna Talc-Free Bronzer Powder",
+    "img": "https://www.sephora.com/productimages/sku/s2670552-main-zoom.jpg?imwidth=600"
+  },
+  "fenty-profilt": {
+    "score": 7,
+    "brand": "Fenty Beauty by Rihanna",
+    "name": "Pro Filt’r Soft Matte Longwear Liquid Foundation",
+    "img": "https://www.sephora.com/productimages/sku/s2590081-main-zoom.jpg?imwidth=600"
+  },
+  "fenty-gloss": {
+    "score": 7,
+    "brand": "Fenty Beauty by Rihanna",
+    "name": "Gloss Bomb Universal Lip Gloss Luminizer",
+    "img": "https://www.sephora.com/productimages/sku/s3007762-main-zoom.jpg?imwidth=600"
+  },
+  "huda-easybake": {
+    "score": 7,
+    "brand": "HUDA BEAUTY",
+    "name": "Easy Bake Blurring Loose Baking & Setting Powder",
+    "img": "https://www.sephora.com/productimages/sku/s2114072-main-zoom.jpg?imwidth=600"
+  },
+  "huda-obsessions": {
+    "score": 7,
+    "brand": "HUDA BEAUTY",
+    "name": "Nude Obsessions Eyeshadow Palette",
+    "img": "https://www.sephora.com/productimages/sku/s2288090-main-zoom.jpg?imwidth=600"
+  },
+  "dior-addict": {
+    "score": 5.75,
+    "brand": "DIOR",
+    "name": "Lip Glow Oil Hydrating High-Shine Gloss",
+    "img": "https://www.sephora.com/productimages/sku/s2920676-main-zoom.jpg?imwidth=600"
+  },
+  "dior-miss": {
+    "score": 7,
+    "brand": "DIOR",
+    "name": "Miss Dior Eau de Parfum",
+    "img": "https://www.sephora.com/productimages/sku/s2467355-main-zoom.jpg?imwidth=600"
+  },
+  "clinique-almost": {
+    "score": 7,
+    "brand": "CLINIQUE",
+    "name": "Almost Lipstick in Black and Pink Honey",
+    "img": "https://www.sephora.com/productimages/sku/s70680-main-zoom.jpg?imwidth=600"
+  },
+  "shiseido-benefiance": {
+    "score": 7,
+    "brand": "Shiseido",
+    "name": "Benefiance Wrinkle Smoothing Cream",
+    "img": "https://www.sephora.com/productimages/sku/s2234144-main-zoom.jpg?imwidth=600"
+  },
+  "kerastase-genesis": {
+    "score": 4.5,
+    "brand": "Kérastase",
+    "name": "Genesis Strengthening Shampoo for Normal to Oily Hair",
+    "img": "https://www.sephora.com/productimages/sku/s2325108-main-zoom.jpg?imwidth=600"
+  },
+  "kerastase-mask": {
+    "score": 4.5,
+    "brand": "Kérastase",
+    "name": "Nutritive Ultra-Hydrating Mask for Dry Hair",
+    "img": "https://www.sephora.com/productimages/sku/s2673473-main-zoom.jpg?imwidth=600"
+  },
+  "olaplex-7": {
+    "score": 7,
+    "brand": "Olaplex",
+    "name": "No. 7 Bonding Frizz Reduction & Heat Protectant Hair Oil",
+    "img": "https://www.sephora.com/productimages/sku/s2266765-main-zoom.jpg?imwidth=600"
+  },
+  "olaplex-4": {
+    "score": 7,
+    "brand": "Olaplex",
+    "name": "No.4 Bond Maintenance®  Strengthening, Hydrating Hair Repair Shampoo for Medium Hair",
+    "img": "https://www.sephora.com/productimages/sku/s2118867-main-zoom.jpg?imwidth=600"
+  },
+  "torriden-dive": {
+    "score": 7,
+    "brand": "Torriden",
+    "name": "DIVE IN 5D Hyaluronic Acid Ultra Hydrating Serum for Plump & Glow Skin",
+    "img": "https://www.sephora.com/productimages/sku/s3039609-main-zoom.jpg?imwidth=600"
+  },
+  "boj-dynasty": {
+    "score": 7,
+    "brand": "Beauty of Joseon",
+    "name": "Dynasty Cream",
+    "img": "https://www.sephora.com/productimages/sku/s2896215-main-zoom.jpg?imwidth=600"
+  },
+  "tool-jade": {
+    "score": 5.333333333333333,
+    "brand": "SEPHORA COLLECTION",
+    "name": "Rose Quartz Facial Roller",
+    "img": "https://www.sephora.com/productimages/sku/s2759934-main-zoom.jpg?imwidth=600&pb=2023-03-sephora-value-2023"
+  },
+  "tool-gua": {
+    "score": 7,
+    "brand": "SEPHORA COLLECTION",
+    "name": "Rose Quartz Gua Sha",
+    "img": "https://www.sephora.com/productimages/sku/s2759967-main-zoom.jpg?imwidth=600&pb=2023-03-sephora-value-2023"
+  },
+  "tool-brush": {
+    "score": 7,
+    "brand": "SEPHORA COLLECTION",
+    "name": "PRO Blush Brush #93",
+    "img": "https://www.sephora.com/productimages/sku/s2290237-main-zoom.jpg?imwidth=600&pb=2023-03-sephora-value-2023"
+  },
+  "tool-derma": {
+    "score": 7,
+    "brand": "FOREO",
+    "name": "LUNA™ Mini 3",
+    "img": "https://www.sephora.com/productimages/sku/s2317840-main-zoom.jpg?imwidth=600"
+  },
+  "tool-eyelash": {
+    "score": 7,
+    "brand": "TWEEZERMAN",
+    "name": "ProCurl Eyelash Curler for Round & Prominent Eyes",
+    "img": "https://www.sephora.com/productimages/sku/s1148022-main-zoom.jpg?imwidth=600"
+  }
+}

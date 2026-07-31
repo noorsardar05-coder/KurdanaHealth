@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BodyWise — Human Body Learning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&family=Instrument+Serif:ital@0;1&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=4" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">BW</span>
+      <div>
+        <p class="brand-name" data-i18n="brandName">BodyWise</p>
+        <p class="brand-sub" data-i18n="brandSub">Human Body Learning System</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button type="button" class="lang-toggle" id="langToggle" aria-label="Language"></button>
+    </div>
+  </header>
+
+  <nav class="tab-bar" role="tablist" aria-label="Main">
+    <button type="button" class="tab is-active" role="tab" aria-selected="true" data-tab="systems" data-i18n="tabSystems">Systems</button>
+    <button type="button" class="tab" role="tab" aria-selected="false" data-tab="visual" data-i18n="tabVisual">Visual</button>
+    <button type="button" class="tab" role="tab" aria-selected="false" data-tab="learn" data-i18n="tabLearn">Learn</button>
+    <button type="button" class="tab" role="tab" aria-selected="false" data-tab="discover" data-i18n="tabDiscover">Discover</button>
+  </nav>
+
+  <main class="shell">
+    <section id="panel-systems" class="panel is-visible" role="tabpanel">
+      <div class="panel-head panel-head--hero">
+        <h1 data-i18n="systemsTitle">Organ systems</h1>
+        <p class="lead" data-i18n="systemsLead">Choose a system to explore structure, function, and a short mastery quiz.</p>
+        <div class="hero-quote" aria-live="polite">
+          <button type="button" class="hero-quote__btn" id="quoteBtn">
+            <span class="hero-quote__label" data-i18n="quoteLabel">— Noor —</span>
+            <span id="quoteText" class="hero-quote__text"></span>
+            <span class="hero-quote__sig"> — NSM</span>
+          </button>
+          <p class="hero-quote__hint muted" data-i18n="quoteHint">Tap to change</p>
+        </div>
+      </div>
+      <div id="badgeRow" class="badge-row" aria-label="Badges"></div>
+      <div id="systemsGrid" class="systems-grid"></div>
+
+      <section id="detailPanel" class="detail-panel learning-module" aria-live="polite">
+        <div id="detailPanelInner" class="detail-panel__inner">
+          <div class="detail-placeholder" id="detailPlaceholder">
+            <span class="detail-placeholder__icon" aria-hidden="true">◇</span>
+            <p data-i18n="pickSystem">Choose a system above to open this learning space.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="panel-visual" class="panel" hidden role="tabpanel">
+      <div class="panel-head">
+        <h1 data-i18n="visualTitle">Body map</h1>
+        <p class="lead" data-i18n="visualLead">Tap a region to see which systems are most active there.</p>
+      </div>
+      <div class="visual-layout">
+        <div class="svg-wrap">
+          <svg id="bodySvg" viewBox="0 0 200 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="gBody" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#dbeafe" />
+                <stop offset="100%" stop-color="#cffafe" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="100" cy="320" rx="70" ry="12" fill="#e2e8f0" opacity="0.5" />
+            <path id="silhouette" d="M100 38c12 0 22 10 22 22 0 8-4 15-10 19 16 6 28 22 30 40l4 42c2 18-2 36-12 52l-8 62h-26l-8-62c-10-16-14-34-12-52l4-42c2-18 14-34 30-40-6-4-10-11-10-19 0-12 10-22 22-22z" fill="url(#gBody)" stroke="#1e3a5f" stroke-width="1.2" />
+            <path id="zone-head" class="body-zone" data-zone="head" d="M100 38c12 0 22 10 22 22 0 12-10 22-22 22s-22-10-22-22c0-12 10-22 22-22z" fill="#3b82f640" stroke="#1e3a5f" stroke-width="1" />
+            <path id="zone-chest" class="body-zone" data-zone="chest" d="M68 92h64c4 18 6 38 4 58H64c-2-20 0-40 4-58z" fill="#0ea5e930" stroke="#1e3a5f" stroke-width="1" />
+            <path id="zone-abdomen" class="body-zone" data-zone="abdomen" d="M64 150h72c-2 22-8 44-18 62H82c-10-18-16-40-18-62z" fill="#14b8a630" stroke="#1e3a5f" stroke-width="1" />
+            <path id="zone-limbs" class="body-zone" data-zone="limbs" d="M56 100l-16 88h20l12-70 10-18H68zM144 100l16 88h-20l-12-70-10-18h28zM78 214l-10 96h22l8-96zM122 214l10 96H110l-8-96z" fill="#6366f130" stroke="#1e3a5f" stroke-width="1" />
+          </svg>
+          <p class="svg-hint" data-i18n="visualHint">Regions highlight on hover; click for details.</p>
+        </div>
+        <aside id="visualAside" class="visual-aside">
+          <p class="muted" data-i18n="visualPick">Select a body region.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="panel-learn" class="panel" hidden role="tabpanel">
+      <div class="panel-head">
+        <h1 data-i18n="learnTitle">How it fits together</h1>
+        <p class="lead" data-i18n="learnLead">Short guides on cooperation between systems and everyday choices.</p>
+      </div>
+      <div id="learnStack" class="learn-stack"></div>
+    </section>
+
+    <section id="panel-discover" class="panel" hidden role="tabpanel">
+      <div class="panel-head">
+        <h1 data-i18n="discoverTitle">Discover</h1>
+        <p class="lead" data-i18n="discoverLead">Facts, myth checks, and quick cards.</p>
+      </div>
+      <div class="discover-grid">
+        <div class="discover-card">
+          <h2 data-i18n="factsTitle">Body facts</h2>
+          <div id="factCard" class="fact-block"></div>
+          <button type="button" class="btn-secondary" id="nextFact" data-i18n="nextFact">Next fact</button>
+        </div>
+        <div class="discover-card">
+          <h2 data-i18n="mythTitle">Myth vs fact</h2>
+          <div id="mythCard" class="myth-block"></div>
+          <button type="button" class="btn-secondary" id="nextMyth" data-i18n="nextMyth">Next</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="quizModal" class="modal modal--quiz hidden" role="dialog" aria-modal="true" aria-labelledby="quizTitle">
+    <div class="modal-card modal-card--quiz">
+      <div class="quiz-top">
+        <p id="quizTitle" class="quiz-title"></p>
+        <button type="button" class="icon-btn" id="quizClose" aria-label="Close">×</button>
+      </div>
+      <div class="progress-wrap">
+        <div id="quizProgress" class="progress-bar"><span id="quizProgressFill"></span></div>
+        <p id="quizCounter" class="quiz-counter"></p>
+      </div>
+      <div id="quizBody"></div>
+    </div>
+  </div>
+
+  <canvas id="confetti" class="confetti-canvas" aria-hidden="true"></canvas>
+
+  <script src="script.js?v=4"></script>
+</body>
+</html>

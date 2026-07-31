@@ -1,0 +1,100 @@
+﻿lrp-effaclar|La Roche-Posay|Effaclar Purifying Foaming Gel
+lrp-cicaplast|La Roche-Posay|Cicaplast Baume B5+
+lrp-anthelios|La Roche-Posay|Anthelios UVMune 400 Invisible Fluid SPF50+
+lrp-hyalu|La Roche-Posay|Hyalu B5 Serum
+cerave-foam|CeraVe|Foaming Facial Cleanser
+cerave-cream|CeraVe|Moisturizing Cream
+cerave-pm|CeraVe|PM Facial Moisturizing Lotion
+vichy-mineral89|Vichy|Min├⌐ral 89 Hyaluronic Acid Booster
+vichy-liftactiv|Vichy|LiftActiv Vitamin C Brightening Skin Corrector
+avene-tol|Av├¿ne|Tolerance Control Soothing Skin Recovery Cream
+avene-cleanance|Av├¿ne|Cleanance Cleansing Gel
+bioderma-sensibio|Bioderma|Sensibio H2O Micellar Water
+bioderma-sebium|Bioderma|S├⌐bium Global
+boj-spf|Beauty of Joseon|Relief Sun: Rice + Probiotics SPF50+
+boj-glow|Beauty of Joseon|Glow Serum Propolis + Niacinamide
+boj-retin|Beauty of Joseon|Revive Serum Ginseng + Retinal
+cosrx-snail|COSRX|Advanced Snail 96 Mucin Power Essence
+cosrx-aha|COSRX|AHA/BHA Clarifying Treatment Toner
+roundlab-dokdo|Round Lab|1025 Dokdo Cleanser
+roundlab-birch|Round Lab|Birch Juice Moisturizing Sunscreen
+anua-heartleaf|Anua|Heartleaf 77% Soothing Toner
+skin1004-ampoule|SKIN1004|Madagascar Centella Ampoule
+skin1004-spf|SKIN1004|Hyalu-Cica Water-Fit Sun Serum SPF50+
+laneige-lip|Laneige|Lip Sleeping Mask
+laneige-cream|Laneige|Water Bank Blue Hyaluronic Cream
+medicube-zero|Medicube|Zero Pore Blackhead Mud Mask
+torriden-dive|Torriden|DIVE-IN Low Molecular Hyaluronic Acid Serum
+purito-centella|Purito|Centella Unscented Serum
+isntree-ha|Isntree|Hyaluronic Acid Watery Sun Gel SPF50+
+clinique-ddmj|Clinique|Dramatically Different Moisturizing Lotion+
+clinique-take|Clinique|Take The Day Off Cleansing Balm
+el-adv-night|Est├⌐e Lauder|Advanced Night Repair Synchronized Multi-Recovery Complex
+shiseido-ess|Shiseido|Ultimune Power Infusing Serum
+dior-capture|Dior Beauty|Capture Totale Super Potent Serum
+rare-softpinch|Rare Beauty|Soft Pinch Liquid Blush
+rare-mascara|Rare Beauty|Perfect Strokes Universal Volumizing Mascara
+ct-pillow|Charlotte Tilbury|Pillow Talk Lipstick
+ct-hollywood|Charlotte Tilbury|Airbrush Flawless Finish Powder
+nars-orgasm|NARS|Blush in Orgasm
+nars-radiant|NARS|Radiant Creamy Concealer
+fenty-profilt|Fenty Beauty|Pro Filt'r Soft Matte Longwear Foundation
+fenty-gloss|Fenty Beauty|Gloss Bomb Universal Lip Luminizer
+mac-ruby|MAC|Retro Matte Lipstick in Ruby Woo
+mac-fix|MAC|Studio Fix Fluid SPF 15 Foundation
+huda-easybake|Huda Beauty|Easy Bake Loose Baking & Setting Powder
+dior-forever|Dior Beauty|Dior Forever Foundation
+dior-addict|Dior Beauty|Dior Addict Lip Glow Oil
+kerastase-genesis|K├⌐rastase|Genesis Bain Hydra-Fortifiant Shampoo
+kerastase-elixir|K├⌐rastase|Elixir Ultime L'Huile Originale Hair Oil
+k18-leavein|K18|Leave-In Molecular Repair Hair Mask
+olaplex-3|Olaplex|No.3 Hair Perfector
+olaplex-7|Olaplex|No.7 Bonding Oil
+moroccanoil-treat|Moroccanoil|Moroccanoil Treatment
+redken-abc|Redken|Acidic Bonding Concentrate Conditioner
+dior-miss|Dior Beauty|Miss Dior Eau de Parfum
+el-beautiful|Est├⌐e Lauder|Beautiful Eau de Parfum
+shiseido-ginza|Shiseido|Ginza Eau de Parfum
+tool-jade|Beauty Tools|Dual-Ended Jade Roller
+tool-gua|Beauty Tools|Rose Quartz Gua Sha
+tool-sponge|Beauty Tools|Makeup Blending Sponge
+tool-brush|Beauty Tools|Soft Angled Cheek Brush
+tool-derma|Beauty Tools|Soft Facial Cleansing Brush
+lrp-toleriane|La Roche-Posay|Toleriane Hydrating Gentle Cleanser
+lrp-retinol|La Roche-Posay|Redermic Retinol Serum
+cerave-sa|CeraVe|Hydrating Hyaluronic Acid Serum
+cerave-eye|CeraVe|Eye Repair Cream
+vichy-normaderm|Vichy|Normaderm Phytosolution Double-Correction Daily Care
+avene-eau|Av├¿ne|Thermal Spring Water Mist
+bioderma-atoderm|Bioderma|Atoderm Intensive Baume
+boj-dynasty|Beauty of Joseon|Dynasty Cream
+cosrx-bha|COSRX|BHA Blackhead Power Liquid
+anua-cleanser|Anua|Heartleaf Quercetinol Pore Deep Cleansing Foam
+purito-spf|Purito|Daily Soft Touch Sunscreen SPF50+
+isntree-onion|Isntree|Onion Newpair Essence Toner
+medicube-age|Medicube|Age-R Booster Pro (educational device overview)
+torriden-cleanser|Torriden|DIVE-IN Low Molecular Hyaluronic Acid Cleansing Foam
+clinique-moisture|Clinique|Moisture Surge 100H Auto-Replenishing Hydrator
+el-revital|Est├⌐e Lauder|Revitalizing Supreme+ Youth Power Cream
+shiseido-benefiance|Shiseido|Benefiance Wrinkle Smoothing Cream
+rare-primer|Rare Beauty|Always an Optimist Pore Diffusing Primer
+ct-hollywoodwand|Charlotte Tilbury|Beauty Light Wand
+nars-laguna|NARS|Laguna Bronzing Powder
+fenty-match|Fenty Beauty|Match Stix Contour Skinstick
+huda-obsessions|Huda Beauty|Nude Obsessions Eyeshadow Palette
+mac-fix-fix|MAC|Prep + Prime Fix+
+laneige-cream-skin|Laneige|Cream Skin Refiner
+roundlab-toner|Round Lab|1025 Dokdo Toner
+skin1004-cleanser|SKIN1004|Madagascar Centella Ampoule Foam
+kerastase-mask|K├⌐rastase|Nutritive Masquintense
+redken-shampoo|Redken|All Soft Shampoo
+moroccanoil-hydrate|Moroccanoil|Hydrating Shampoo
+olaplex-4|Olaplex|No.4 Bond Maintenance Shampoo
+k18-shampoo|K18|Peptide Prep Detox Shampoo
+avene-spf|Av├¿ne|Fluid SPF50+
+bioderma-spf|Bioderma|Photoderm Aquafluide SPF50+
+vichy-spf|Vichy|Capital Soleil UV-Age Daily SPF50+
+tool-eyelash|Beauty Tools|Heated Lash Curler (USB)
+tool-ice|Beauty Tools|Facial Ice Globe Pair
+clinique-almost|Clinique|Almost Lipstick in Black Honey
+laneige-glowy|Laneige|Glowy Makeup Serum

@@ -1,0 +1,117 @@
+Product Image Verification Report
+Generated: 2026-07-15T17:47:46.725Z
+Coverage: 100/100
+Unique URLs: 100
+Duplicates: none
+Missing: none
+Failed validation: none
+
+HERO PRODUCTS:
+  lrp-effaclar: OK https://images.openbeautyfacts.org/images/products/333/787/241/1083/front_fr.7.400.jpg (obf:Effaclar Gel moussant purifiant)
+  cerave-foam: OK https://www.sephora.com/productimages/sku/s2025633-main-zoom.jpg?imwidth=600 (sephora:s2025633)
+  boj-spf: OK https://www.sephora.com/productimages/sku/s2893485-main-zoom.jpg?imwidth=600 (sephora:s2893485)
+  cosrx-snail: OK https://cdn.shopify.com/s/files/1/0513/3775/6828/files/james_800x1067_1_1_4e9750cc-2cd6-4817-ace5-be2305a85806.jpg (shopify)
+  vichy-mineral89: OK https://www.sephora.com/productimages/sku/s2210623-main-zoom.jpg?imwidth=600 (sephora:s2210623)
+  el-adv-night: OK https://www.sephora.com/productimages/sku/s2379683-main-zoom.jpg?imwidth=600 (sephora:s2379683)
+
+id	brand	url	source	size_bytes	status
+lrp-effaclar	La Roche-Posay	https://images.openbeautyfacts.org/images/products/333/787/241/1083/front_fr.7.400.jpg	obf:Effaclar Gel moussant purifiant	14884	OK
+lrp-cicaplast	La Roche-Posay	https://images.openbeautyfacts.org/images/products/333/787/551/7300/front_fr.6.400.jpg	obf	17657	OK
+lrp-anthelios	La Roche-Posay	https://images.openbeautyfacts.org/images/products/869/059/521/4177/front_tr.5.400.jpg	obf:Anthelios	25626	OK
+lrp-hyalu	La Roche-Posay	https://www.sephora.com/productimages/sku/s2379691-main-zoom.jpg?imwidth=600	sephora:s2379691	28040	OK
+cerave-foam	CeraVe	https://www.sephora.com/productimages/sku/s2025633-main-zoom.jpg?imwidth=600	sephora:s2025633	27510	OK
+cerave-cream	CeraVe	https://images.openbeautyfacts.org/images/products/360/600/053/7743/front_en.37.400.jpg	obf	24803	OK
+cerave-pm	CeraVe	https://images.openbeautyfacts.org/images/products/360/600/053/7453/front_en.3.400.jpg	obf	11315	OK
+vichy-mineral89	Vichy	https://www.sephora.com/productimages/sku/s2210623-main-zoom.jpg?imwidth=600	sephora:s2210623	19047	OK
+vichy-liftactiv	Vichy	https://www.sephora.com/productimages/sku/s2210631-main-zoom.jpg?imwidth=600	sephora:s2210631	21832	OK
+avene-tol	Avène	https://images.openbeautyfacts.org/images/products/328/277/013/8801/front_fr.12.400.jpg	obf:Toleriane	26963	OK
+avene-cleanance	Avène	https://images.openbeautyfacts.org/images/products/328/277/936/5529/front_fr.6.400.jpg	obf	27064	OK
+bioderma-sensibio	Bioderma	https://images.openbeautyfacts.org/images/products/370/112/981/2112/front_en.3.400.jpg	obf	24502	OK
+bioderma-sebium	Bioderma	https://images.openbeautyfacts.org/images/products/340/157/865/3709/front_fr.5.400.jpg	obf:Sebium	22921	OK
+boj-spf	Beauty of Joseon	https://www.sephora.com/productimages/sku/s2893485-main-zoom.jpg?imwidth=600	sephora:s2893485	22680	OK
+boj-glow	Beauty of Joseon	https://cdn.shopify.com/s/files/1/0558/4135/7989/files/glow-serum-propolis-niacinamide-1-front.webp	shopify	151832	OK
+boj-retin	Beauty of Joseon	https://www.sephora.com/productimages/sku/s2896223-main-zoom.jpg?imwidth=600	sephora:s2896223	21706	OK
+cosrx-snail	COSRX	https://cdn.shopify.com/s/files/1/0513/3775/6828/files/james_800x1067_1_1_4e9750cc-2cd6-4817-ace5-be2305a85806.jpg	shopify	26610	OK
+cosrx-aha	COSRX	https://cdn.shopify.com/s/files/1/0513/3775/6828/files/ahabha-clarifying-treatment-toner-cosrx-official-1.jpg	shopify	18993	OK
+roundlab-dokdo	Round Lab	https://cdn.shopify.com/s/files/1/0651/7656/8022/files/Dokdo_cleanser_renewed.webp	shopify	46951	OK
+roundlab-birch	Round Lab	https://cdn.shopify.com/s/files/1/0651/7656/8022/files/BIRCH_JUICE_MOISTURIZING_UVLOCK3_Large_10126e46-dfcc-4cd5-970c-146d4be65989.webp?v=1772852134	shopify:roundlab.com/birch-moisturizing-uv-sunscreen	50511	OK
+anua-heartleaf	Anua	https://cdn.shopify.com/s/files/1/0753/1429/9158/files/anua-us-toner-heartleaf-77-soothing-toner-1239193744.jpg	shopify	46179	OK
+skin1004-ampoule	SKIN1004	https://images.openbeautyfacts.org/images/products/880/957/626/0601/front_en.3.400.jpg	obf:Madagascar Centella Ampoule	8959	OK
+skin1004-spf	SKIN1004	https://images.openbeautyfacts.org/images/products/880/991/383/0177/front_fr.3.400.jpg	obf:Hyalu-Cica Water-Fit Sun Serum	16736	OK
+laneige-lip	Laneige	https://cdn.shopify.com/s/files/1/0255/0189/2660/files/LSM_AMS_Infographic_2000x2000_Product_1_1.jpg	shopify	165253	OK
+laneige-cream	Laneige	https://cdn.shopify.com/s/files/1/0255/0189/2660/files/LN_WBCM_24AD_Product_02.jpg	shopify	89148	OK
+medicube-zero	Medicube	https://cdn.shopify.com/s/files/1/0156/3905/2336/files/00_2ddf4c5b-f021-4196-a560-5f52d5c59b89.jpg	shopify	142961	OK
+torriden-dive	Torriden	https://www.sephora.com/productimages/sku/s3039609-main-zoom.jpg?imwidth=600	sephora:s3039609	22018	OK
+purito-centella	Purito	https://images.openbeautyfacts.org/images/products/880/956/310/0095/front_en.6.400.jpg	obf:Centella Unscented Serum	36719	OK
+isntree-ha	Isntree	https://www.sephora.com/productimages/sku/s2929289-main-zoom.jpg?imwidth=600	sephora:s2929289	27781	OK
+clinique-ddmj	Clinique	https://www.sephora.com/productimages/sku/s1538354-main-zoom.jpg?imwidth=600	sephora:s1538354	36192	OK
+clinique-take	Clinique	https://www.sephora.com/productimages/sku/s2039477-main-zoom.jpg?imwidth=600	sephora:s2039477	46422	OK
+el-adv-night	Estée Lauder	https://www.sephora.com/productimages/sku/s2379683-main-zoom.jpg?imwidth=600	sephora:s2379683	32504	OK
+shiseido-ess	Shiseido	https://www.sephora.com/productimages/sku/s1932920-main-zoom.jpg?imwidth=600	sephora:s1932920	29428	OK
+dior-capture	Dior Beauty	https://www.sephora.com/productimages/sku/s2835759-main-zoom.jpg?imwidth=600	sephora:s2835759	16596	OK
+rare-softpinch	Rare Beauty	https://www.sephora.com/productimages/sku/s2911741-main-zoom.jpg?imwidth=600	sephora:s2911741	23829	OK
+rare-mascara	Rare Beauty	https://www.sephora.com/productimages/sku/s2474138-main-zoom.jpg?imwidth=600	sephora:s2474138	18818	OK
+ct-pillow	Charlotte Tilbury	https://www.sephora.com/productimages/sku/s2801371-main-zoom.jpg?imwidth=600	sephora:s2801371	27684	OK
+ct-hollywood	Charlotte Tilbury	https://www.sephora.com/productimages/sku/s2605988-main-zoom.jpg?imwidth=600	sephora:s2605988	59268	OK
+nars-orgasm	NARS	https://www.sephora.com/productimages/sku/s2927366-main-zoom.jpg?imwidth=600	sephora:s2927366	60648	OK
+nars-radiant	NARS	https://www.sephora.com/productimages/sku/s2172310-main-zoom.jpg?imwidth=600	sephora:s2172310	83254	OK
+fenty-profilt	Fenty Beauty	https://www.sephora.com/productimages/sku/s2590081-main-zoom.jpg?imwidth=600	sephora:s2590081	37165	OK
+fenty-gloss	Fenty Beauty	https://www.sephora.com/productimages/sku/s3007762-main-zoom.jpg?imwidth=600	sephora:s3007762	48506	OK
+mac-ruby	MAC	https://www.sephora.com/productimages/sku/s2799120-main-zoom.jpg?imwidth=600	sephora:s2799120	13544	OK
+mac-fix	MAC	https://www.sephora.com/productimages/sku/s2779098-main-zoom.jpg?imwidth=600	sephora:s2779098	28733	OK
+huda-easybake	Huda Beauty	https://www.sephora.com/productimages/sku/s2114072-main-zoom.jpg?imwidth=600	sephora:s2114072	75904	OK
+dior-forever	Dior Beauty	https://www.sephora.com/productimages/sku/s2933869-main-zoom.jpg?imwidth=600	sephora:s2933869	44749	OK
+dior-addict	Dior Beauty	https://www.sephora.com/productimages/sku/s2830479-main-zoom.jpg?imwidth=600	sephora:s2830479	34524	OK
+kerastase-genesis	Kérastase	https://www.sephora.com/productimages/sku/s2325108-main-zoom.jpg?imwidth=600	sephora:s2325108	34966	OK
+kerastase-elixir	Kérastase	https://www.sephora.com/productimages/sku/s2798791-main-zoom.jpg?imwidth=600	sephora:s2798791	27097	OK
+k18-leavein	K18	https://www.sephora.com/productimages/sku/s2547248-main-zoom.jpg?imwidth=600	sephora:s2547248	22913	OK
+olaplex-3	Olaplex	https://www.sephora.com/productimages/sku/s2944429-main-zoom.jpg?imwidth=600	sephora:s2944429	25743	OK
+olaplex-7	Olaplex	https://www.sephora.com/productimages/sku/s2266765-main-zoom.jpg?imwidth=600	sephora:s2266765	35686	OK
+moroccanoil-treat	Moroccanoil	https://www.sephora.com/productimages/sku/s1869494-main-zoom.jpg?imwidth=600	sephora:s1869494	39161	OK
+redken-abc	Redken	https://images.openbeautyfacts.org/images/products/361/262/338/3452/front_fr.3.400.jpg	obf	19169	OK
+dior-miss	Dior Beauty	https://www.sephora.com/productimages/sku/s2467355-main-zoom.jpg?imwidth=600	sephora:s2467355	65018	OK
+el-beautiful	Estée Lauder	https://www.sephora.com/productimages/sku/s513168-main-zoom.jpg?imwidth=600	sephora:s513168	19688	OK
+shiseido-ginza	Shiseido	https://images.openbeautyfacts.org/images/products/076/861/419/1100/front_fr.7.400.jpg	obf:Ginza Eau de Parfum	23572	OK
+tool-jade	Beauty Tools	https://www.sephora.com/productimages/sku/s2759934-main-zoom.jpg?imwidth=600	sephora:s2759934	32286	OK
+tool-gua	Beauty Tools	https://www.sephora.com/productimages/sku/s2759967-main-zoom.jpg?imwidth=600	sephora:s2759967	32539	OK
+tool-sponge	Beauty Tools	https://www.sephora.com/productimages/sku/s2894251-main-zoom.jpg?imwidth=600	sephora:s2894251	68868	OK
+tool-brush	Beauty Tools	https://www.sephora.com/productimages/sku/s2518942-main-zoom.jpg?imwidth=600	sephora:s2518942	11711	OK
+tool-derma	Beauty Tools	https://www.sephora.com/productimages/sku/s2683209-main-zoom.jpg?imwidth=600	sephora:s2683209	66072	OK
+lrp-toleriane	La Roche-Posay	https://images.openbeautyfacts.org/images/products/333/787/554/5778/front_en.9.400.jpg	obf	21009	OK
+lrp-retinol	La Roche-Posay	https://images.openbeautyfacts.org/images/products/333/787/569/4469/front_en.7.400.jpg	obf:Retinol B3 Serum	9921	OK
+cerave-sa	CeraVe	https://images.openbeautyfacts.org/images/products/333/787/559/7180/front_en.35.400.jpg	obf:SA Smoothing Cleanser	14852	OK
+cerave-eye	CeraVe	https://images.openbeautyfacts.org/images/products/333/787/559/8996/front_en.28.400.jpg	obf:Eye Repair Cream	16817	OK
+vichy-normaderm	Vichy	https://images.openbeautyfacts.org/images/products/333/787/555/3278/front_fr.4.400.jpg	obf:Normaderm Phytosolution	15285	OK
+avene-eau	Avène	https://images.openbeautyfacts.org/images/products/328/277/900/3124/front_en.10.400.jpg	obf:Eau Thermale	8208	OK
+bioderma-atoderm	Bioderma	https://images.openbeautyfacts.org/images/products/340/138/146/3298/front_fr.3.400.jpg	obf	37336	OK
+boj-dynasty	Beauty of Joseon	https://cdn.shopify.com/s/files/1/0558/4135/7989/files/dynasty-cream-1-front.webp	shopify	132400	OK
+cosrx-bha	COSRX	https://cdn.shopify.com/s/files/1/0513/3775/6828/files/bha-blackhead-power-liquid-cosrx-official-1.jpg	shopify	21071	OK
+anua-cleanser	Anua	https://cdn.shopify.com/s/files/1/0753/1429/9158/files/anua-us-cleanser-heartleaf-quercetinol-pore-deep-cleansing-foam-1239193718.jpg	shopify	60144	OK
+purito-spf	Purito	https://images.openbeautyfacts.org/images/products/880/956/310/3072/front_ru.3.400.jpg	obf:Daily Go-To Sunscreen	14022	OK
+isntree-onion	Isntree	https://www.sephora.com/productimages/sku/s2960003-main-zoom.jpg?imwidth=600	sephora:s2960003	28436	OK
+medicube-age	Medicube	https://cdn.shopify.com/s/files/1/0156/3905/2336/files/250820_BoosterPro01_1.jpg	shopify	125789	OK
+torriden-cleanser	Torriden	https://www.sephora.com/productimages/sku/s3039559-main-zoom.jpg?imwidth=600	sephora:s3039559	14019	OK
+clinique-moisture	Clinique	https://www.sephora.com/productimages/sku/s2421683-main-zoom.jpg?imwidth=600	sephora:s2421683	31308	OK
+el-revital	Estée Lauder	https://www.sephora.com/productimages/sku/s2532232-main-zoom.jpg?imwidth=600	sephora:s2532232	57564	OK
+shiseido-benefiance	Shiseido	https://www.sephora.com/productimages/sku/s2234144-main-zoom.jpg?imwidth=600	sephora:s2234144	67045	OK
+rare-primer	Rare Beauty	https://www.sephora.com/productimages/sku/s2448082-main-zoom.jpg?imwidth=600	sephora:s2448082	5730	OK
+ct-hollywoodwand	Charlotte Tilbury	https://www.sephora.com/productimages/sku/s2201424-main-zoom.jpg?imwidth=600	sephora:s2201424	37835	OK
+nars-laguna	NARS	https://www.sephora.com/productimages/sku/s2670552-main-zoom.jpg?imwidth=600	sephora:s2670552	69186	OK
+fenty-match	Fenty Beauty	https://www.sephora.com/productimages/sku/s2589927-main-zoom.jpg?imwidth=600	sephora:s2589927	43474	OK
+huda-obsessions	Huda Beauty	https://www.sephora.com/productimages/sku/s2288090-main-zoom.jpg?imwidth=600	sephora:s2288090	95239	OK
+mac-fix-fix	MAC	https://www.sephora.com/productimages/sku/s2799096-main-zoom.jpg?imwidth=600	sephora:s2799096	23907	OK
+laneige-cream-skin	Laneige	https://www.sephora.com/productimages/sku/s2671873-main-zoom.jpg?imwidth=600	sephora:s2671873	11586	OK
+roundlab-toner	Round Lab	https://cdn.shopify.com/s/files/1/0651/7656/8022/files/Dokdo_Toner_2025.png	shopify	46564	OK
+skin1004-cleanser	SKIN1004	https://images.openbeautyfacts.org/images/products/880/957/626/1769/front_en.3.400.jpg	obf:Ampoule Foam Cleanser	18422	OK
+kerastase-mask	Kérastase	https://www.sephora.com/productimages/sku/s2673507-main-zoom.jpg?imwidth=600	sephora:s2673507	21474	OK
+redken-shampoo	Redken	https://images.openbeautyfacts.org/images/products/088/448/645/2986/front_en.3.400.jpg	obf:Extreme Shampoo	15526	OK
+moroccanoil-hydrate	Moroccanoil	https://www.sephora.com/productimages/sku/s2030336-main-zoom.jpg?imwidth=600	sephora:s2030336	30396	OK
+olaplex-4	Olaplex	https://www.sephora.com/productimages/sku/s2118867-main-zoom.jpg?imwidth=600	sephora:s2118867	25855	OK
+k18-shampoo	K18	https://www.sephora.com/productimages/sku/s2592863-main-zoom.jpg?imwidth=600	sephora:s2592863	28686	OK
+avene-spf	Avène	https://images.openbeautyfacts.org/images/products/328/277/014/1214/front_fr.6.400.jpg	obf:Intense Protect SPF50+	19614	OK
+bioderma-spf	Bioderma	https://images.openbeautyfacts.org/images/products/340/152/852/0846/front_fr.3.400.jpg	obf:Photoderm SPF	11741	OK
+vichy-spf	Vichy	https://images.openbeautyfacts.org/images/products/333/787/132/7804/front_en.18.400.jpg	obf:Capital Soleil SPF	11871	OK
+tool-eyelash	Beauty Tools	https://www.sephora.com/productimages/sku/s2726248-main-zoom.jpg?imwidth=600	sephora:s2726248	51842	OK
+tool-ice	Beauty Tools	https://www.sephora.com/productimages/sku/s2927945-main-zoom.jpg?imwidth=600	sephora:s2927945	29984	OK
+clinique-almost	Clinique	https://www.sephora.com/productimages/sku/s70680-main-zoom.jpg?imwidth=600	sephora:s70680	10293	OK
+laneige-glowy	Laneige	https://www.sephora.com/productimages/sku/s2931764-main-zoom.jpg?imwidth=600	sephora:s2931764	14978	OK

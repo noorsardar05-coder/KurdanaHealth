@@ -1,0 +1,15 @@
+{
+  // Recommended dev workflow: npm run dev → http://127.0.0.1:5173/
+  // Live Server (port 5500): stop Go Live, run `npm run build`, then Go Live again.
+  "liveServer.settings.root": "/dist",
+  "liveServer.settings.file": "index.html",
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.ignoreFiles": [
+    ".vscode/**",
+    "**/*.scss",
+    "**/*.sass",
+    "**/node_modules/**",
+    "src/**"
+  ]
+}

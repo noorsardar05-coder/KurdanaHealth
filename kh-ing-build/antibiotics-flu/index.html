@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <title>Kurdana Health — Antibiotics &amp; Flu Season</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared/kurdana-game-celebration.css?v=1">
+  <link rel="stylesheet" href="style.css?v=20260707-premium">
+</head>
+<body class="afs-body lang-en">
+  <div class="afs-bg" aria-hidden="true"></div>
+  <a href="#afs-main" class="afs-skip" data-str="skipToContent">Skip to content</a>
+
+  <div class="afs-shell" id="afs-main">
+    <header class="afs-topbar">
+      <div class="afs-brand">
+        <span class="afs-logo" aria-hidden="true">🩺</span>
+        <span class="afs-badge" data-str="badge">Public health intelligence</span>
+      </div>
+      <button type="button" id="afsLangBtn" class="afs-lang-btn" aria-label="Switch language">
+        <span class="afs-lang-icon" aria-hidden="true">🌐</span>
+        <span id="afsLangLabel">English</span>
+      </button>
+    </header>
+
+    <!-- Hero -->
+    <section class="afs-hero afs-glass">
+      <h1 data-str="heroTitle">Antibiotics &amp; Flu Season</h1>
+      <p class="afs-hero-lead" data-str="heroSub">Understand symptoms, use antibiotics wisely, and care for your health with clarity.</p>
+      <div class="afs-hero-btns">
+        <button type="button" class="afs-btn afs-btn-primary" id="afsHeroSymptom" data-str="ctaSymptom">Start AI Symptom Guide</button>
+        <button type="button" class="afs-btn afs-btn-secondary" id="afsHeroLibrary" data-str="ctaLibrary">Antibiotics Library</button>
+        <button type="button" class="afs-btn afs-btn-secondary" id="afsHeroFlu" data-str="ctaFlu">Track Flu Recovery</button>
+      </div>
+      <blockquote class="afs-quote">
+        <p data-str="heroQuote">“Not every illness needs medicine. Sometimes it needs wisdom.”</p>
+      </blockquote>
+      <p class="afs-disclaimer afs-disclaimer-hero" data-str="disclaimer">Educational information only. This does not replace medical advice, examination, or diagnosis.</p>
+    </section>
+
+    <!-- Quick nav cards -->
+    <nav class="afs-quick-nav" id="quickNav" aria-label="Quick navigation"></nav>
+
+    <!-- Tabs -->
+    <nav class="afs-tabs" role="tablist" aria-label="Department sections">
+      <button type="button" class="afs-tab active" role="tab" data-tab="symptom" aria-selected="true" data-str="tabSymptom">AI Symptom Guide</button>
+      <button type="button" class="afs-tab" role="tab" data-tab="flu" aria-selected="false" data-str="tabFlu">Flu Recovery Tracker</button>
+      <button type="button" class="afs-tab" role="tab" data-tab="library" aria-selected="false" data-str="tabLibrary">Antibiotics Library</button>
+      <button type="button" class="afs-tab" role="tab" data-tab="infection" aria-selected="false" data-str="tabInfection">Viral vs Bacterial Guide</button>
+      <button type="button" class="afs-tab" role="tab" data-tab="play" aria-selected="false" data-str="tabPlay">Play &amp; Learn</button>
+      <button type="button" class="afs-tab" role="tab" data-tab="discover" aria-selected="false" data-str="tabDiscover">Discover Articles</button>
+    </nav>
+
+    <!-- AI SYMPTOM GUIDE -->
+    <section id="panel-symptom" class="afs-panel active" data-panel="symptom" role="tabpanel">
+      <div class="afs-section-head">
+        <h2 data-str="symptomTitle">AI Symptom Guide</h2>
+        <p class="afs-muted" data-str="symptomDesc">Select what applies. This tool reflects possible patterns—not a diagnosis.</p>
+      </div>
+
+      <div class="afs-not-diagnosis afs-glass" role="note">
+        <span class="afs-not-diagnosis-icon" aria-hidden="true">ℹ️</span>
+        <p data-str="notDiagnosis">This is not a diagnosis. Educational pattern reflection only.</p>
+      </div>
+
+      <div id="afsUrgentBanner" class="afs-urgent afs-hidden" role="alert"></div>
+
+      <!-- Step wizard -->
+      <div class="afs-wizard afs-glass">
+        <div class="afs-wizard-steps" id="symptomSteps" role="list"></div>
+        <div class="afs-wizard-body" id="symptomStepBody"></div>
+        <div class="afs-wizard-nav">
+          <button type="button" class="afs-btn afs-btn-secondary afs-hidden" id="symptomPrev" data-str="btnPrev">Back</button>
+          <button type="button" class="afs-btn afs-btn-primary" id="symptomNext" data-str="btnNext">Continue</button>
+          <button type="button" class="afs-btn afs-btn-primary afs-hidden" id="analyzeBtn" data-str="btnAnalyze">Analyze pattern</button>
+        </div>
+      </div>
+
+      <div id="analysisResult" class="afs-hidden afs-mt"></div>
+
+      <article class="afs-card afs-glass afs-mt" id="timelineCard">
+        <h3 class="afs-card-title" data-str="timelineTitle">Illness timeline guide</h3>
+        <div id="timelineBody" class="afs-timeline"></div>
+      </article>
+
+      <article class="afs-card afs-glass afs-mt">
+        <h3 class="afs-card-title" data-str="abxDecisionTitle">Do I need antibiotics?</h3>
+        <div id="abxEducation" class="afs-prose"></div>
+        <div id="abxDynamic" class="afs-highlight-box afs-mt"></div>
+      </article>
+    </section>
+
+    <!-- FLU TRACKER -->
+    <section id="panel-flu" class="afs-panel" data-panel="flu" role="tabpanel" hidden>
+      <div class="afs-section-head">
+        <h2 data-str="fluTitle">Flu &amp; recovery tracker</h2>
+        <p class="afs-muted" data-str="fluDesc">Daily logs stay on this device for your user profile.</p>
+      </div>
+      <div class="afs-grid-2">
+        <article class="afs-card afs-glass">
+          <h3 data-str="logTitle">New entry</h3>
+          <form id="fluForm" class="afs-form">
+            <label><span data-str="fieldDate">Date</span><input type="date" id="fluDate" required></label>
+            <label><span data-str="fieldTemp">Temperature (°C)</span><input type="number" id="fluTemp" step="0.1" min="35" max="42" placeholder="37.0"></label>
+            <label><span data-str="fieldSeverity">Severity (1–5)</span><input type="number" id="fluSeverity" min="1" max="5" value="3"></label>
+            <label><span data-str="fieldHydration">Hydration (0–10)</span><input type="number" id="fluHydration" min="0" max="10" value="5"></label>
+            <label><span data-str="fieldSleep">Sleep (hours)</span><input type="number" id="fluSleep" step="0.5" min="0" max="24" value="7"></label>
+            <label><span data-str="fieldMeds">Medicine taken (notes)</span><input type="text" id="fluMeds" placeholder="" data-ph-meds></label>
+            <label><span data-str="fieldSymptoms">Symptoms today</span><textarea id="fluSymptoms" rows="2"></textarea></label>
+            <label><span data-str="fieldNotes">Notes</span><textarea id="fluNotes" rows="2"></textarea></label>
+            <button type="submit" class="afs-btn afs-btn-primary" data-str="btnSaveLog">Save entry</button>
+          </form>
+        </article>
+        <article class="afs-card afs-glass">
+          <h3 data-str="trendsTitle">Trends</h3>
+          <div id="fluTrends" class="afs-trend-grid"></div>
+          <button type="button" class="afs-btn afs-btn-ghost afs-mt" id="clearAllLogs" data-str="btnClearAll">Clear all logs</button>
+        </article>
+      </div>
+      <div class="afs-mt">
+        <h3 data-str="historyTitle">History</h3>
+        <div id="fluHistory" class="afs-history"></div>
+        <p id="fluHistoryEmpty" class="afs-empty afs-hidden" data-str="historyEmpty">No logs yet — add your first entry above.</p>
+      </div>
+    </section>
+
+    <!-- LIBRARY -->
+    <section id="panel-library" class="afs-panel" data-panel="library" role="tabpanel" hidden>
+      <div class="afs-section-head">
+        <h2 data-str="libraryTitle">Common antibiotics educational library</h2>
+        <p class="afs-muted" data-str="libraryNote">This does not list every antibiotic ever made—only common examples for learning.</p>
+      </div>
+      <article class="afs-edu-banner afs-glass">
+        <ul class="afs-list" id="libraryEduList"></ul>
+      </article>
+      <div class="afs-library-tools">
+        <input type="search" id="drugSearch" class="afs-input" data-ph-search placeholder="">
+        <select id="drugFilterClass" class="afs-select"><option value="" data-str="filterAllClasses">All classes</option></select>
+        <select id="drugFilterUse" class="afs-select"><option value="" data-str="filterAllUses">All uses</option></select>
+        <label class="afs-checkbox-label"><input type="checkbox" id="drugFilterNotViral"> <span data-str="filterNotFlu">Not for flu/cold</span></label>
+      </div>
+      <div id="drugGrid" class="afs-drug-grid"></div>
+    </section>
+
+    <!-- VIRAL VS BACTERIAL GUIDE -->
+    <section id="panel-infection" class="afs-panel" data-panel="infection" role="tabpanel" hidden>
+      <div class="afs-section-head">
+        <h2 data-str="infectionTitle">Viral vs bacterial guide</h2>
+        <p class="afs-muted" data-str="infectionDesc">Educational overview—always follow your clinician's advice.</p>
+      </div>
+      <div class="afs-compare-banner afs-glass">
+        <div class="afs-compare-col">
+          <span class="afs-compare-icon viral" aria-hidden="true">🦠</span>
+          <h4 data-str="viralLabel">Viral illnesses</h4>
+          <p class="afs-muted small" data-str="viralSummary">Flu, most colds — antibiotics usually do not help.</p>
+        </div>
+        <div class="afs-compare-col">
+          <span class="afs-compare-icon bacterial" aria-hidden="true">🔬</span>
+          <h4 data-str="bacterialLabel">Bacterial infections</h4>
+          <p class="afs-muted small" data-str="bacterialSummary">May need antibiotics — only a clinician can decide.</p>
+        </div>
+      </div>
+      <div id="infectionGrid" class="afs-infection-grid"></div>
+    </section>
+
+    <!-- PLAY -->
+    <section id="panel-play" class="afs-panel" data-panel="play" role="tabpanel" hidden>
+      <div class="afs-section-head">
+        <h2 data-str="playTitle">Play &amp; Learn</h2>
+        <p class="afs-muted" data-str="playDesc">Build safe habits—scores save locally.</p>
+        <p class="afs-score-pill"><span data-str="quizScoreLabel">Learning score:</span> <strong id="playScoreDisplay">0</strong></p>
+      </div>
+      <div id="badgeShelf" class="afs-badge-shelf afs-glass"></div>
+      <div class="afs-play-stack">
+        <article class="afs-card afs-glass" id="gameMythHost"></article>
+        <article class="afs-card afs-glass" id="gameResistHost"></article>
+        <article class="afs-card afs-glass" id="gameVirusHost"></article>
+        <article class="afs-card afs-glass" id="gamePlanHost"></article>
+      </div>
+    </section>
+
+    <!-- DISCOVER -->
+    <section id="panel-discover" class="afs-panel" data-panel="discover" role="tabpanel" hidden>
+      <div class="afs-section-head">
+        <h2 data-str="discoverTitle">Discover Articles</h2>
+        <p class="afs-muted" data-str="discoverDesc">Short reads for smarter care.</p>
+      </div>
+      <div id="discoverArticles" class="afs-articles"></div>
+    </section>
+
+    <footer class="afs-footer">
+      <p class="afs-footer-disclaimer" data-str="footerDisclaimer">Educational information only. This does not replace medical advice, examination, or diagnosis.</p>
+      <p class="afs-muted small">Kurdana Health · Antibiotics &amp; Flu Season</p>
+    </footer>
+  </div>
+
+  <script src="../shared/kurdana-game-celebration.js?v=1"></script>
+  <script src="afs-i18n.js?v=20260707-premium"></script>
+  <script src="afs-data.js?v=20260707-premium"></script>
+  <script src="afs-app.js?v=20260707-premium"></script>
+</body>
+</html>

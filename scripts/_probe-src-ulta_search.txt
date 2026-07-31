@@ -1,0 +1,12 @@
+<html>
+<head>
+<style type=text/css>
+</style>
+</head>
+<body>
+404 - Page Not Found
+<br>
+<br>
+Go to <a href="https://www.ulta.com/">home</a>.
+</body>
+</html>

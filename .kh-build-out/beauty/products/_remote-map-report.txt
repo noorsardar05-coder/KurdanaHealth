@@ -1,0 +1,117 @@
+Generated: 2026-07-15T17:06:18.639Z
+Total products: 100
+Coverage: 91/100
+
+Missing ids:
+  - vichy-liftactiv
+  - roundlab-dokdo
+  - isntree-ha
+  - redken-abc
+  - lrp-retinol
+  - cosrx-bha
+  - anua-cleanser
+  - isntree-onion
+  - roundlab-toner
+
+URL collision skips (duplicate URLs rejected): 8
+  https://www.sephora.com/productimages/sku/s2379691-main-zoom.jpg?imwidth=600
+  https://images.openbeautyfacts.org/images/products/880/941/647/0054/front_en.3.400.jpg
+  https://images.openbeautyfacts.org/images/products/880/964/073/5622/front_nl.4.400.jpg
+  https://images.openbeautyfacts.org/images/products/880/973/860/0214/front_ru.3.400.jpg
+  https://images.openbeautyfacts.org/images/products/880/957/626/0601/front_en.3.400.jpg
+  https://images.openbeautyfacts.org/images/products/880/991/383/0177/front_fr.3.400.jpg
+  https://www.sephora.com/productimages/sku/s2683209-main-zoom.jpg?imwidth=600&pb=2023-03-sephora-value-2023
+  https://www.sephora.com/productimages/sku/s2759934-main-zoom.jpg?imwidth=600&pb=2023-03-sephora-value-2023
+
+Assigned sources:
+  anua-heartleaf: obf: Anua Heartleaf Quercetinol Cleansing Foam
+  avene-cleanance: obf: Cleanance Cleansing Gel
+  avene-eau: obf: Eau Thermale Avène Peaux sensibles Avene Apaisante, anti-irritante hermal Spring Wa EAU THERMALE
+  avene-spf: obf: Intense Protect 50+
+  avene-tol: obf: Tolérance control
+  bioderma-atoderm: obf: Atoderm intensive baume
+  bioderma-sebium: obf: Sébium gel mousse
+  bioderma-sensibio: obf: Sensibio H2O Lingettes Micellar Water Makup Remover Wipes
+  bioderma-spf: obf: Huile de douche 
+  boj-dynasty: sephora: Beauty of Joseon | Dynasty Cream
+  boj-glow: sephora: Beauty of Joseon | Glow Serum for Oil Control with Propolis & Niacinamide
+  boj-retin: sephora: Beauty of Joseon | Revive Eye Serum
+  boj-spf: sephora: Beauty of Joseon | Day Dew Sunscreen Lightweight SPF 50
+  cerave-cream: obf: daily moisturizing cream
+  cerave-eye: obf: moisturising cream
+  cerave-foam: curated-fallback
+  cerave-pm: obf: PM Facial Moisturizing Lotion
+  cerave-sa: obf: Hydrating Cleanser
+  clinique-almost: sephora: CLINIQUE | Almost Lipstick in Black and Pink Honey
+  clinique-ddmj: sephora: CLINIQUE | Dramatically Different Moisturizing Lotion+™ for Barrier Repair
+  clinique-moisture: sephora: CLINIQUE | Mini Moisture Surge™ 100H Auto-Replenishing Hydrator Gel-Cream Moisturizer with Hyaluronic Acid
+  clinique-take: sephora: CLINIQUE | Mini Take The Day Off Cleansing Balm Makeup Remover
+  cosrx-aha: obf: Cosrx BHA Blackhead Power Liquid
+  cosrx-snail: curated-fallback
+  ct-hollywood: sephora: Charlotte Tilbury | Airbrush Flawless Finish Refillable Blurring & Setting Powder
+  ct-hollywoodwand: sephora: Charlotte Tilbury | Beauty Highlighter Wand
+  ct-pillow: sephora: Charlotte Tilbury | Mini Pillow Talk Lipstick & Liner Set
+  dior-addict: sephora: DIOR | Dior Addict Lip Glow Balm
+  dior-capture: sephora: DIOR | Capture Le Sérum
+  dior-forever: sephora: DIOR | Forever Skin Glow Liquid Foundation 24HR Wear
+  dior-miss: sephora: DIOR | Miss Dior Eau de Parfum
+  el-adv-night: sephora: Estée Lauder | Advanced Night Repair Synchronized Multi-Recovery Complex Serum with Hyaluronic Acid
+  el-beautiful: obf: E.Lauder Advanced Night Repair 50ml
+  el-revital: sephora: Estée Lauder | Revitalizing Supreme+ Youth Power Cream Moisturizer with Hyaluronic Acid
+  fenty-gloss: sephora: Fenty Beauty by Rihanna | Gloss Bomb Universal Lip Gloss Luminizer
+  fenty-match: sephora: Fenty Beauty by Rihanna | Match Stix Matte Contour Skinstick
+  fenty-profilt: sephora: Fenty Beauty by Rihanna | Pro Filt’r Soft Matte Longwear Liquid Foundation
+  huda-easybake: sephora: HUDA BEAUTY | Easy Bake Blurring Loose Baking & Setting Powder
+  huda-obsessions: sephora: HUDA BEAUTY | Nude Obsessions Eyeshadow Palette
+  k18-leavein: sephora: K18 Biomimetic Hairscience | Leave-In Molecular Repair Hair Mask
+  k18-shampoo: sephora: K18 Biomimetic Hairscience | PEPTIDE PREP™ Clarifying Detox Shampoo
+  kerastase-elixir: sephora: Kérastase | Mini Elixir Ultime Hydrating Hair Oil
+  kerastase-genesis: sephora: Kérastase | Genesis Strengthening Shampoo for Normal to Oily Hair
+  kerastase-mask: sephora: Kérastase | Nutritive Heat Protecting Leave-In Spray for Dry Hair
+  laneige-cream: sephora: LANEIGE | Water Bank Blue Hyaluronic Cream Moisturizer for Moisture Barrier Repair
+  laneige-cream-skin: sephora: LANEIGE | Mini Cream Skin Milky Toner with Ceramides & Peptides for Nourishing Hydration
+  laneige-glowy: sephora: LANEIGE | Water Bank Aqua Facial Serum BHA + AHA - Gently Exfoliate, Hydrate & Glow
+  laneige-lip: sephora: LANEIGE | Lip Sleeping Mask – Intense Hydration Lip Treatment with Vitamin C
+  lrp-anthelios: obf: La Roche-Posay Anthelios UVMune 400 Anti-Dark Spots Fluid SPF50+ Yüz Güneş Kremi
+  lrp-cicaplast: obf: Cicaplast Baume B5 SPF50
+  lrp-effaclar: sephora: Paula's Choice | RESIST Perfectly Balanced Foaming Cleanser with Hyaluronic Acid
+  lrp-hyalu: sephora: Estée Lauder | Mini Advanced Night Repair Multi-Recovery Complex Serum with Hyaluronic Acid
+  lrp-toleriane: obf: Toleriane Hydrating Gentle Cleanser
+  mac-fix: sephora: MAC Cosmetics | Studio Fix Fluid SPF 15 24HR Buildable Soft-Matte Foundation + Oil Control
+  mac-fix-fix: sephora: MAC Cosmetics | Fix+ Hydrating & Multitasking Setting Spray
+  mac-ruby: sephora: MAC Cosmetics | Mini M·A·Cximal Silky Matte 12HR Wear Lipstick
+  medicube-age: obf: Medicube Collagen Jelly Cream 50ml
+  medicube-zero: obf: Zero Pore Pad
+  moroccanoil-hydrate: sephora: Moroccanoil | Hydrating Shampoo with Argan Oil
+  moroccanoil-treat: sephora: Moroccanoil | Mini Moroccanoil Treatment Hair Oil
+  nars-laguna: sephora: NARS | Laguna Talc-Free Bronzer Powder
+  nars-orgasm: sephora: NARS | Mini Multiple Soft Blur Blush Stick Duo
+  nars-radiant: sephora: NARS | Radiant Creamy Concealer with Hydrating Medium Coverage
+  olaplex-3: sephora: Olaplex | No.3PLUS Complete Bond Repair Pre-Shampoo Hair Treatment
+  olaplex-4: sephora: Olaplex | No.4 Bond Maintenance®  Strengthening, Hydrating Hair Repair Shampoo for Medium Hair
+  olaplex-7: sephora: Olaplex | No. 7 Bonding Frizz Reduction & Heat Protectant Hair Oil
+  purito-centella: obf: Centella Green Level Recovery Cream
+  purito-spf: obf: Wonder releaf centella daily sun lotion
+  rare-mascara: sephora: Rare Beauty by Selena Gomez | Perfect Strokes Universal Volumizing Mascara
+  rare-primer: sephora: Rare Beauty by Selena Gomez | Mini Pore Diffusing Primer- Always An Optimist Collection
+  rare-softpinch: sephora: Rare Beauty by Selena Gomez | Soft Pinch Liquid Blush
+  redken-shampoo: obf: All Soft Shampoo
+  roundlab-birch: obf: Round Lab Birch Juice Toner
+  shiseido-benefiance: sephora: Shiseido | Benefiance Wrinkle Smoothing Cream
+  shiseido-ess: obf: Future Solution LX Sérum Intensif Contours Fermeté Shiseido
+  shiseido-ginza: obf: Benefiance NutriPerfect Crème de Jour SPF15 Shiseido
+  skin1004-ampoule: obf: SKIN1004 Madagascar Centella Ampoule 55ml
+  skin1004-cleanser: obf: SKIN1004 Madagascar Centella Probio-Cica Enrich Cream
+  skin1004-spf: obf: SKIN1004 Madagascar Centella Probio-Cica Bakuchiol Eye Cream
+  tool-brush: sephora: Rare Beauty by Selena Gomez | Soft Pinch Blush Brush
+  tool-derma: sephora: SEPHORA COLLECTION | Facial Cleansing Pad
+  tool-eyelash: sephora: SEPHORA COLLECTION | Eyelash Curler
+  tool-gua: sephora: SEPHORA COLLECTION | Rose Quartz Gua Sha
+  tool-ice: sephora: Shark Beauty | Shark™ FacialPro™ Glow Glow-Boosting At-Home Facial System
+  tool-jade: sephora: SEPHORA COLLECTION | Rose Quartz Facial Roller
+  tool-sponge: sephora: Rare Beauty by Selena Gomez | Soft Touch Makeup Blending Sponge​
+  torriden-cleanser: sephora: Torriden | DIVE IN 8D Hyaluronic Acid Cleansing Foam for Gentle Daily Cleanse & Refreshing Glow
+  torriden-dive: sephora: Torriden | DIVE IN 5D Hyaluronic Acid Ultra Hydrating Serum for Plump & Glow Skin
+  vichy-mineral89: curated-fallback
+  vichy-normaderm: obf: Vichy Déodorant Minéral Sans Sels D'aluminium Roll on
+  vichy-spf: obf: idéal soleil

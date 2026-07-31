@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSM — First-Time Mothers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-mesh" aria-hidden="true"></div>
+  <div class="float-shape fs1" aria-hidden="true"></div>
+  <div class="float-shape fs2" aria-hidden="true"></div>
+  <div class="float-shape fs3" aria-hidden="true"></div>
+
+  <a href="#main" class="skip-link" data-i18n="skipContent">Skip to content</a>
+
+  <main class="shell" id="main">
+    <header class="hero glass">
+      <div class="topbar">
+        <div class="brand-block">
+          <p class="brand">NSM</p>
+          <p class="brand-tag" data-i18n="brandTag">First-Time Mothers</p>
+        </div>
+        <div class="topbar-actions">
+          <button type="button" id="langToggle" class="chip lang-chip" aria-label="Language"></button>
+        </div>
+      </div>
+      <p class="eyebrow" data-i18n="heroEyebrow">Department of Care</p>
+      <h1 data-i18n="heroTitle">First-Time Mothers</h1>
+      <p class="subtitle" data-i18n="heroSubtitle">A calm companion for guidance, healing, and the early days of motherhood.</p>
+      <div class="quote-block hero-quote-wrap">
+        <button type="button" id="heroQuoteBtn" class="quote-nsm" aria-live="polite">
+          <span id="heroQuoteText"></span><span class="quote-sig"> — NSM</span>
+        </button>
+        <p class="hint" data-i18n="quoteHint">Tap for another gentle thought</p>
+      </div>
+      <div class="hero-cta">
+        <button type="button" class="btn primary" id="ctaCheckIn" data-i18n="ctaCheckIn">Start Check-In</button>
+        <button type="button" class="btn secondary" id="ctaExplore" data-i18n="ctaExplore">Explore Mother Care</button>
+        <button type="button" class="btn ghost" id="ctaGuidance" data-i18n="ctaGuidance">Get Guidance</button>
+      </div>
+      <p class="disclaimer muted small" data-i18n="heroDisclaimer">This space offers general wellness support, not medical diagnosis. Reach out to a qualified professional for clinical concerns.</p>
+    </header>
+
+    <nav class="tabs glass" aria-label="Department sections" role="tablist">
+      <button type="button" class="tab active" role="tab" aria-selected="true" data-tab="explore" data-i18n="tabExplore">Explore</button>
+      <button type="button" class="tab" role="tab" aria-selected="false" data-tab="learn" data-i18n="tabLearn">Learn</button>
+      <button type="button" class="tab" role="tab" aria-selected="false" data-tab="care" data-i18n="tabCare">Care Tools</button>
+      <button type="button" class="tab" role="tab" aria-selected="false" data-tab="track" data-i18n="tabTrack">Track</button>
+      <button type="button" class="tab" role="tab" aria-selected="false" data-tab="discover" data-i18n="tabDiscover">Discover</button>
+    </nav>
+
+    <!-- EXPLORE -->
+    <section id="panel-explore" class="panel active" role="tabpanel" aria-labelledby="explore-heading">
+      <div class="section-head">
+        <h2 id="explore-heading" class="section-title" data-i18n="exploreTitle">Explore</h2>
+        <p class="muted section-desc" data-i18n="exploreSub">Your gentle entry point — check in, learn your patterns, and find what you need today.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card glass">
+          <h3 class="card-label" data-i18n="checkInTitle">Mother Check-In</h3>
+          <div id="checkInRoot"></div>
+        </article>
+        <article class="card glass">
+          <h3 class="card-label" data-i18n="dashboardTitle">Personalized Support Dashboard</h3>
+          <div id="supportDashboard"></div>
+        </article>
+      </div>
+
+      <div class="grid-2 mt">
+        <article class="card glass quiz-card">
+          <h3 class="card-label" data-i18n="quizTitle">Advanced Motherhood Quiz</h3>
+          <div class="progress quiz-progress" aria-hidden="true"><span id="quizProgressBar"></span></div>
+          <div id="quizRoot"></div>
+          <div id="quizResult" class="quiz-result hidden" aria-live="polite"></div>
+        </article>
+        <article class="card glass">
+          <h3 class="card-label" data-i18n="guidanceCardsTitle">Gentle guidance</h3>
+          <div id="guidanceCards" class="guidance-grid"></div>
+        </article>
+      </div>
+
+      <article class="card glass mt quote-section">
+        <h3 class="card-label" data-i18n="noorSectionTitle">A moment with Noor</h3>
+        <button type="button" id="exploreQuoteBtn" class="quote-nsm wide" aria-live="polite">
+          <span id="exploreQuoteText"></span><span class="quote-sig"> — NSM</span>
+        </button>
+        <p class="hint center" data-i18n="quoteHint">Tap for another gentle thought</p>
+      </article>
+    </section>
+
+    <!-- LEARN -->
+    <section id="panel-learn" class="panel" hidden role="tabpanel" aria-labelledby="learn-heading">
+      <div class="section-head">
+        <h2 id="learn-heading" class="section-title" data-i18n="learnTitle">Learn</h2>
+        <p class="muted section-desc" data-i18n="learnSub">A curated library — clear, warm, and easy to scan when you only have a few minutes.</p>
+      </div>
+      <div class="learn-nav glass" id="learnTopicNav"></div>
+      <div id="learnContent" class="learn-body"></div>
+    </section>
+
+    <!-- CARE TOOLS -->
+    <section id="panel-care" class="panel" hidden role="tabpanel" aria-labelledby="care-heading">
+      <div class="section-head">
+        <h2 id="care-heading" class="section-title" data-i18n="careTitle">Care Tools</h2>
+        <p class="muted section-desc" data-i18n="careSub">Practical helpers for real moments — step by step, without judgment.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card glass">
+          <h3 class="card-label" data-i18n="toolNowTitle">What do I do right now?</h3>
+          <div id="toolNowRoot"></div>
+        </article>
+        <article class="card glass">
+          <h3 class="card-label" data-i18n="toolFeedTitle">Feeding helper</h3>
+          <div id="toolFeedRoot"></div>
+        </article>
+      </div>
+
+      <div class="grid-2 mt">
+        <article class="card glass">
+          <h3 class="card-label" data-i18n="toolSleepTitle">Sleep support</h3>
+          <div id="toolSleepRoot"></div>
+        </article>
+        <article class="card glass">
+          <h3 class="card-label" data-i18n="reassureCardsTitle">Reassurance cards</h3>
+          <div id="reassureCards" class="reassure-deck"></div>
+        </article>
+      </div>
+
+      <article class="card glass mt">
+        <h3 class="card-label" data-i18n="pathwayTitle">Quick support pathway</h3>
+        <p class="muted small mb" data-i18n="pathwayIntro">Choose what you need most — we will point you to the right place.</p>
+        <div id="pathwayRoot"></div>
+      </article>
+    </section>
+
+    <!-- TRACK -->
+    <section id="panel-track" class="panel" hidden role="tabpanel" aria-labelledby="track-heading">
+      <div class="section-head">
+        <h2 id="track-heading" class="section-title" data-i18n="trackTitle">Track</h2>
+        <p class="muted section-desc" data-i18n="trackSub">Gentle logs that stay on your device — patterns, not pressure.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card glass">
+          <h3 class="card-label" data-i18n="logTodayTitle">Log today</h3>
+          <form id="trackForm" class="track-form"></form>
+          <button type="button" class="btn primary full mt" id="saveLog" data-i18n="saveLog">Save entry</button>
+        </article>
+        <article class="card glass">
+          <h3 class="card-label" data-i18n="summaryTitle">Recent summary</h3>
+          <div id="trackSummary"></div>
+        </article>
+      </div>
+
+      <article class="card glass mt">
+        <h3 class="card-label" data-i18n="insightsTitle">Gentle insights</h3>
+        <div id="trackInsights"></div>
+      </article>
+
+      <article class="card glass mt">
+        <h3 class="card-label" data-i18n="historyTitle">Daily log</h3>
+        <div id="trackHistory" class="history-list"></div>
+      </article>
+    </section>
+
+    <!-- DISCOVER -->
+    <section id="panel-discover" class="panel" hidden role="tabpanel" aria-labelledby="discover-heading">
+      <div class="section-head">
+        <h2 id="discover-heading" class="section-title" data-i18n="discoverTitle">Discover</h2>
+        <p class="muted section-desc" data-i18n="discoverSub">Small extras — daily light, wins, and calm reminders.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card glass discover-daily">
+          <h3 class="card-label" data-i18n="dailyTipTitle">Today’s motherhood tip</h3>
+          <p id="dailyTip" class="discover-text"></p>
+          <button type="button" class="btn ghost sm" id="refreshDaily" data-i18n="anotherTip">Another tip</button>
+        </article>
+        <article class="card glass">
+          <h3 class="card-label" data-i18n="smallWinsTitle">Small wins</h3>
+          <ul id="smallWinsList" class="wins-list"></ul>
+        </article>
+      </div>
+
+      <div class="grid-2 mt">
+        <article class="card glass">
+          <h3 class="card-label" data-i18n="calmCardsTitle">Calming cards</h3>
+          <div id="calmCards" class="calm-deck"></div>
+        </article>
+        <article class="card glass">
+          <h3 class="card-label" data-i18n="discoverMythTitle">Myth vs fact — quick</h3>
+          <div id="discoverMyth"></div>
+        </article>
+      </div>
+
+      <div class="grid-2 mt">
+        <article class="card glass">
+          <h3 class="card-label" data-i18n="stageGuideTitle">Simple guide by stage</h3>
+          <div id="stageGuide"></div>
+        </article>
+        <article class="card glass quote-section">
+          <h3 class="card-label" data-i18n="discoverQuoteTitle">Noor for you</h3>
+          <button type="button" id="discoverQuoteBtn" class="quote-nsm wide" aria-live="polite">
+            <span id="discoverQuoteText"></span><span class="quote-sig"> — NSM</span>
+          </button>
+          <p class="hint center" data-i18n="quoteHint">Tap for another gentle thought</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="site-footer glass">
+      <p class="muted small" data-i18n="footerNote">Made with care for first-time mothers. NSM — Noor-style support.</p>
+    </footer>
+  </main>
+
+  <canvas id="celebrateCanvas" aria-hidden="true"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>

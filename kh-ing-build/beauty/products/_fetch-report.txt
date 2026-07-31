@@ -1,0 +1,100 @@
+lrp-effaclar	NO_URL
+lrp-cicaplast	OK	17657	https://images.openbeautyfacts.org/images/products/333/787/551/7300/front_fr.6.400.jpg
+lrp-anthelios	NO_URL
+lrp-hyalu	OK	16376	https://images.openbeautyfacts.org/images/products/333/787/558/3657/front_nl.4.400.jpg
+cerave-foam	KEEP
+cerave-cream	OK	24803	https://images.openbeautyfacts.org/images/products/360/600/053/7743/front_en.37.400.jpg
+cerave-pm	OK	11315	https://images.openbeautyfacts.org/images/products/360/600/053/7453/front_en.3.400.jpg
+vichy-mineral89	NO_URL
+vichy-liftactiv	NO_URL
+avene-tol	NO_URL
+avene-cleanance	OK	27064	https://images.openbeautyfacts.org/images/products/328/277/936/5529/front_fr.6.400.jpg
+bioderma-sensibio	OK	24502	https://images.openbeautyfacts.org/images/products/370/112/981/2112/front_en.3.400.jpg
+bioderma-sebium	NO_URL
+boj-spf	OK	7937	https://images.openbeautyfacts.org/images/products/880/996/813/0277/front_nl.21.400.jpg
+boj-glow	NO_URL
+boj-retin	NO_URL
+cosrx-snail	NO_URL
+cosrx-aha	NO_URL
+roundlab-dokdo	NO_URL
+roundlab-birch	NO_URL
+anua-heartleaf	NO_URL
+skin1004-ampoule	OK	8959	https://images.openbeautyfacts.org/images/products/880/957/626/0601/front_en.3.400.jpg
+skin1004-spf	NO_URL
+laneige-lip	OK	12243	https://images.openbeautyfacts.org/images/products/880/964/305/3273/front_en.4.400.jpg
+laneige-cream	NO_URL
+medicube-zero	NO_URL
+torriden-dive	NO_URL
+purito-centella	NO_URL
+isntree-ha	NO_URL
+clinique-ddmj	OK	13934	https://images.openbeautyfacts.org/images/products/002/071/459/8907/front_en.3.400.jpg
+clinique-take	OK	27556	https://images.openbeautyfacts.org/images/products/002/071/482/1234/front_en.3.400.jpg
+el-adv-night	NO_URL
+shiseido-ess	NO_URL
+dior-capture	NO_URL
+rare-softpinch	NO_URL
+rare-mascara	KEEP
+ct-pillow	NO_URL
+ct-hollywood	NO_URL
+nars-orgasm	NO_URL
+nars-radiant	NO_URL
+fenty-profilt	NO_URL
+fenty-gloss	NO_URL
+mac-ruby	NO_URL
+mac-fix	OK	17114	https://images.openbeautyfacts.org/images/products/077/360/210/3515/front_en.9.400.jpg
+huda-easybake	NO_URL
+dior-forever	OK	13773	https://images.openbeautyfacts.org/images/products/334/890/161/4900/front_en.4.400.jpg
+dior-addict	NO_URL
+kerastase-genesis	NO_URL
+kerastase-elixir	NO_URL
+k18-leavein	KEEP
+olaplex-3	NO_URL
+olaplex-7	NO_URL
+moroccanoil-treat	OK	22314	https://images.openbeautyfacts.org/images/products/729/001/152/1011/front_en.5.400.jpg
+redken-abc	KEEP
+dior-miss	NO_URL
+el-beautiful	KEEP
+shiseido-ginza	NO_URL
+tool-jade	NO_URL
+tool-gua	NO_URL
+tool-sponge	NO_URL
+tool-brush	NO_URL
+tool-derma	NO_URL
+lrp-toleriane	OK	21009	https://images.openbeautyfacts.org/images/products/333/787/554/5778/front_en.9.400.jpg
+lrp-retinol	NO_URL
+cerave-sa	NO_URL
+cerave-eye	OK	23220	https://images.openbeautyfacts.org/images/products/871/534/202/7883/front_fr.4.400.jpg
+vichy-normaderm	NO_URL
+avene-eau	OK	6891	https://images.openbeautyfacts.org/images/products/328/277/900/3131/front_fr.12.400.jpg
+bioderma-atoderm	OK	37336	https://images.openbeautyfacts.org/images/products/340/138/146/3298/front_fr.3.400.jpg
+boj-dynasty	NO_URL
+cosrx-bha	OK	12791	https://images.openbeautyfacts.org/images/products/880/941/647/0054/front_en.3.400.jpg
+anua-cleanser	NO_URL
+purito-spf	NO_URL
+isntree-onion	NO_URL
+medicube-age	NO_URL
+torriden-cleanser	NO_URL
+clinique-moisture	OK	31218	https://images.openbeautyfacts.org/images/products/019/233/306/6942/front_en.3.400.jpg
+el-revital	KEEP
+shiseido-benefiance	NO_URL
+rare-primer	KEEP
+ct-hollywoodwand	NO_URL
+nars-laguna	NO_URL
+fenty-match	NO_URL
+huda-obsessions	NO_URL
+mac-fix-fix	OK	18570	https://images.openbeautyfacts.org/images/products/871/928/104/0118/front_fr.11.400.jpg
+laneige-cream-skin	NO_URL
+roundlab-toner	NO_URL
+skin1004-cleanser	NO_URL
+kerastase-mask	NO_URL
+redken-shampoo	OK	15526	https://images.openbeautyfacts.org/images/products/088/448/645/2986/front_en.3.400.jpg
+moroccanoil-hydrate	OK	15479	https://images.openbeautyfacts.org/images/products/872/067/412/6098/front_fr.4.400.jpg
+olaplex-4	NO_URL
+k18-shampoo	KEEP
+avene-spf	OK	30523	https://images.openbeautyfacts.org/images/products/360/054/257/3771/front_nl.6.400.jpg
+bioderma-spf	NO_URL
+vichy-spf	NO_URL
+tool-eyelash	NO_URL
+tool-ice	KEEP
+clinique-almost	NO_URL
+laneige-glowy	KEEP
