@@ -7,7 +7,7 @@
     "start": "vite --host 127.0.0.1 --port 5173",
     "dev": "vite --host 127.0.0.1 --port 5173",
     "api": "node server/mental-companion.mjs",
-    "build": "vite build --outDir kh-build-now --emptyOutDir true && node scripts/publish-dist.mjs && npm run sync:antibiotics-flu",
+    "build": "vite build --outDir dist --emptyOutDir true",
     "preview": "vite preview --host 127.0.0.1 --port 5500",
     "live:build": "node scripts/generate-curated-exercises.mjs && node scripts/build-for-live.mjs",
     "live:watch": "node scripts/build-for-live.mjs --watch",
