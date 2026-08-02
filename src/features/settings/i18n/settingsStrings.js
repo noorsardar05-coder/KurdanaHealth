@@ -2,7 +2,7 @@ export const SETTINGS_I18N = {
   en: {
     title: "Settings",
     subtitle: "Manage your app preferences.",
-    languageTitle: "Language",
+    languageTitle: "Change language",
     languageSub: "Choose the language used across Kurdana Health.",
     languageHint: "Changes apply immediately across the app.",
     back: "Back",
@@ -11,7 +11,7 @@ export const SETTINGS_I18N = {
   ku: {
     title: "ڕێکخستنەکان",
     subtitle: "هەڵبژاردنەکانی ئەپ بەڕێوەببە.",
-    languageTitle: "زمان",
+    languageTitle: "گۆڕینی زمان",
     languageSub: "زمانی بەکاردەهێنرێت لە کوردانە هێڵس.",
     languageHint: "گۆڕانکاریەکان دەستبەجێ لە هەموو ئەپەکەدا جێبەجێ دەبن.",
     back: "گەڕانەوە",

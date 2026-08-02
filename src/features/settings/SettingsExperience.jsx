@@ -51,15 +51,15 @@ export default function SettingsExperience() {
 
           <div className="kh-settings__lang-cards">
             <LanguageCard
-              label="English"
-              selected={lang === "en"}
-              onClick={() => handleSelect("en")}
-            />
-            <LanguageCard
-              label="کوردی"
+              label="کوردی — Kurdish"
               selected={lang === "ku"}
               onClick={() => handleSelect("ku")}
               kurdish
+            />
+            <LanguageCard
+              label="English"
+              selected={lang === "en"}
+              onClick={() => handleSelect("en")}
             />
           </div>
         </section>

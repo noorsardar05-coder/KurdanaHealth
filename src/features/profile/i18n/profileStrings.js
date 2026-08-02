@@ -1,6 +1,11 @@
 /** Health profile onboarding — EN + KU */
 export const PROFILE_I18N = {
   en: {
+    chooseLanguage: "Choose your language",
+    chooseLanguageKu: "زمانەکەت هەڵبژێرە",
+    langKurdishPrimary: "کوردی",
+    langKurdishSecondary: "Kurdish",
+    langEnglish: "English",
     welcomeTitle: "Let's get to know you",
     welcomeSub: "We'll personalize your Kurdana Health experience in less than a minute.",
     stepOf: "Step",
@@ -47,12 +52,17 @@ export const PROFILE_I18N = {
     namePlaceholder: "Your name",
   },
   ku: {
-    welcomeTitle: "با یەکتر بناسین",
-    welcomeSub: "لە ماوەی یەک خولەکدا ئەزموونێکی تایبەت بۆ تۆ دروست دەکەین.",
+    chooseLanguage: "Choose your language",
+    chooseLanguageKu: "زمانەکەت هەڵبژێرە",
+    langKurdishPrimary: "کوردی",
+    langKurdishSecondary: "Kurdish",
+    langEnglish: "English",
+    welcomeTitle: "با یەکتر ئاشنا بین",
+    welcomeSub: "لە کەمتر لە خولەکێکدا ئەزموونی کوردانە هێڵس بۆ تۆ تایبەت دەکەین.",
     stepOf: "هەنگاو",
     of: "لە",
     qName: "ناوت چییە؟",
-    qNameHint: "لە گەشتەکەتدا بە ناوت پێشوازیت دەکەین.",
+    qNameHint: "لە سەرانسەری گەشتەکەتدا بە ناوت بانگت دەکەین.",
     qGender: "خۆت چۆن دەناسیت؟",
     qAge: "تەمەنت چەندە؟",
     qBody: "باڵا و کێشت",
@@ -85,7 +95,8 @@ export const PROFILE_I18N = {
     micro1: "هەر وەڵامێک یارمەتیمان دەدات ئەزموونەکەت تایبەت بکەین.",
     micro2: "زانیاریەکانت لە ئامێرەکەتدا دەمێنێتەوە.",
     micro3: "هەرگیز زانیاریەکانت نافرۆشین.",
-    privacy: "زانیاریەکانت تایبەت دەمێنێتەوە و تەنها بۆ کەسیکردن بەکاردەهێنرێت.",
+    privacy:
+      "زانیارییەکانت تایبەت دەمێنن و تەنها بۆ تایبەتکردنی ئەزموونەکەت بەکاردێن.",
     continue: "بەردەوام",
     finish: "دەستپێکردنی گەشتەکەم",
     english: "English",
@@ -94,6 +105,7 @@ export const PROFILE_I18N = {
   },
 };
 
+/** Profile questions only (language selection is Step 0, before these). */
 export const PROFILE_STEPS = 6;
 
 export const ACTIVITY_OPTIONS = [

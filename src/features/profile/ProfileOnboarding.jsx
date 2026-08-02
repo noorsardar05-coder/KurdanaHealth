@@ -14,6 +14,7 @@ import {
   Brain,
   Scale,
   Sparkles,
+  Languages,
 } from "lucide-react";
 import { useLanguage } from "../../context/LanguageContext.jsx";
 import { setUser } from "../../utils/storage";
@@ -94,11 +95,34 @@ function SliderField({ label, value, min, max, step, unit, onChange }) {
   );
 }
 
+function LanguageOption({ primary, secondary, selected, onClick, featured, dir, langAttr }) {
+  return (
+    <motion.button
+      type="button"
+      className={`kh-profile__lang-option ${featured ? "kh-profile__lang-option--featured" : ""} ${selected ? "selected" : ""}`}
+      onClick={onClick}
+      whileTap={{ scale: 0.985 }}
+      aria-pressed={selected}
+    >
+      <span className="kh-profile__lang-option-text" dir={dir} lang={langAttr}>
+        <span className="kh-profile__lang-option-primary">{primary}</span>
+        {secondary && (
+          <span className="kh-profile__lang-option-secondary">{secondary}</span>
+        )}
+      </span>
+      <span className="kh-profile__choice-radio" aria-hidden="true" />
+    </motion.button>
+  );
+}
+
 export default function ProfileOnboarding() {
   const navigate = useNavigate();
   const { language: ctxLang, setLanguage: setCtxLang } = useLanguage();
   const lang = ctxLang === "ku" ? "ku" : "en";
 
+  // Always show language Step 0 when starting onboarding (this route has no user yet).
+  // Logged-in returning users change language in Settings instead.
+  const [phase, setPhase] = useState("language");
   const [step, setStep] = useState(0);
   const [name, setName] = useState("");
   const [gender, setGender] = useState("");
@@ -113,11 +137,13 @@ export default function ProfileOnboarding() {
     [lang]
   );
 
+  const isLanguagePhase = phase === "language";
   const micro = tr(MICRO_KEYS[step % MICRO_KEYS.length]);
   const progress = ((step + 1) / PROFILE_STEPS) * 100;
   const isLast = step === PROFILE_STEPS - 1;
 
   const canContinue = useMemo(() => {
+    if (isLanguagePhase) return false;
     switch (step) {
       case 0:
         return name.trim().length >= 2;
@@ -134,7 +160,17 @@ export default function ProfileOnboarding() {
       default:
         return false;
     }
-  }, [step, name, gender, age, height, weight, activity, goal]);
+  }, [isLanguagePhase, step, name, gender, age, height, weight, activity, goal]);
+
+  const selectLanguage = useCallback(
+    (next) => {
+      const chosen = next === "ku" ? "ku" : "en";
+      setCtxLang(chosen);
+      setPhase("profile");
+      setStep(0);
+    },
+    [setCtxLang]
+  );
 
   const advance = useCallback(() => {
     if (!canContinue) return;
@@ -163,176 +199,224 @@ export default function ProfileOnboarding() {
 
   return (
     <main
-      className={`kh-profile ${lang === "ku" ? "lang-ku" : ""}`}
-      dir={lang === "ku" ? "rtl" : "ltr"}
-      lang={lang === "ku" ? "ku" : "en"}
+      className={`kh-profile ${lang === "ku" && !isLanguagePhase ? "lang-ku" : ""}`}
+      dir={lang === "ku" && !isLanguagePhase ? "rtl" : "ltr"}
+      lang={lang === "ku" && !isLanguagePhase ? "ku" : "en"}
     >
       <ProfileShell />
 
       <div className="kh-profile__inner">
-        <div className="kh-profile__progress">
-          <p className="kh-profile__step-label">
-            {tr("stepOf")} {step + 1} {tr("of")} {PROFILE_STEPS}
-          </p>
-          <div className="kh-profile__progress-track">
-            <motion.div
-              className="kh-profile__progress-fill"
-              animate={{ width: `${progress}%` }}
-              transition={{ duration: 0.5, ease: EASE }}
-            />
+        {!isLanguagePhase && (
+          <div className="kh-profile__progress">
+            <p className="kh-profile__step-label">
+              {tr("stepOf")} {step + 1} {tr("of")} {PROFILE_STEPS}
+            </p>
+            <div className="kh-profile__progress-track">
+              <motion.div
+                className="kh-profile__progress-fill"
+                animate={{ width: `${progress}%` }}
+                transition={{ duration: 0.5, ease: EASE }}
+              />
+            </div>
           </div>
-        </div>
+        )}
 
         <header className="kh-profile__header">
-          <h1 className="kh-profile__title">{tr("welcomeTitle")}</h1>
-          <p className="kh-profile__subtitle">{tr("welcomeSub")}</p>
+          {isLanguagePhase ? (
+            <>
+              <p className="kh-profile__lang-eyebrow">
+                <Languages size={14} strokeWidth={1.75} />
+                KurdanaHealth
+              </p>
+              <h1 className="kh-profile__title">{PROFILE_I18N.en.chooseLanguage}</h1>
+              <p className="kh-profile__subtitle kh-profile__subtitle--ku" dir="rtl" lang="ku">
+                {PROFILE_I18N.en.chooseLanguageKu}
+              </p>
+            </>
+          ) : (
+            <>
+              <h1 className="kh-profile__title">{tr("welcomeTitle")}</h1>
+              <p className="kh-profile__subtitle">{tr("welcomeSub")}</p>
+            </>
+          )}
         </header>
 
-        <div className="kh-profile__illus">
-          <ProfileIllustration />
-        </div>
+        {!isLanguagePhase && (
+          <div className="kh-profile__illus">
+            <ProfileIllustration />
+          </div>
+        )}
 
         <div className="kh-profile__card">
           <AnimatePresence mode="wait">
-            <motion.div key={step} {...stepMotion}>
-              {step === 0 && (
-                <>
-                  <h2 className="kh-profile__question">{tr("qName")}</h2>
-                  <p className="kh-profile__hint">{tr("qNameHint")}</p>
-                  <input
-                    type="text"
-                    className="kh-profile__input"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    onKeyDown={handleKeyDown}
-                    placeholder={tr("namePlaceholder")}
-                    autoFocus
-                    autoComplete="name"
+            {isLanguagePhase ? (
+              <motion.div key="language" {...stepMotion}>
+                <div className="kh-profile__lang-options">
+                  <LanguageOption
+                    featured
+                    primary={PROFILE_I18N.en.langKurdishPrimary}
+                    secondary={`— ${PROFILE_I18N.en.langKurdishSecondary}`}
+                    selected={false}
+                    onClick={() => selectLanguage("ku")}
+                    dir="rtl"
+                    langAttr="ku"
                   />
-                </>
-              )}
-
-              {step === 1 && (
-                <>
-                  <h2 className="kh-profile__question">{tr("qGender")}</h2>
-                  <div className="kh-profile__choices">
-                    {GENDER_OPTIONS.map(({ id, labelKey, Icon }) => (
-                      <ChoiceButton
-                        key={id}
-                        selected={gender === id}
-                        onClick={() => setGender(id)}
-                        Icon={Icon}
-                        title={tr(labelKey)}
-                      />
-                    ))}
-                  </div>
-                </>
-              )}
-
-              {step === 2 && (
-                <>
-                  <h2 className="kh-profile__question">{tr("qAge")}</h2>
-                  <SliderField
-                    label={tr("qAge")}
-                    value={age}
-                    min={13}
-                    max={90}
-                    step={1}
-                    unit={tr("years")}
-                    onChange={setAge}
+                  <LanguageOption
+                    primary={PROFILE_I18N.en.langEnglish}
+                    selected={false}
+                    onClick={() => selectLanguage("en")}
+                    dir="ltr"
+                    langAttr="en"
                   />
-                </>
-              )}
+                </div>
+              </motion.div>
+            ) : (
+              <motion.div key={step} {...stepMotion}>
+                {step === 0 && (
+                  <>
+                    <h2 className="kh-profile__question">{tr("qName")}</h2>
+                    <p className="kh-profile__hint">{tr("qNameHint")}</p>
+                    <input
+                      type="text"
+                      className="kh-profile__input"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      onKeyDown={handleKeyDown}
+                      placeholder={tr("namePlaceholder")}
+                      autoFocus
+                      autoComplete="name"
+                    />
+                  </>
+                )}
 
-              {step === 3 && (
-                <>
-                  <h2 className="kh-profile__question">{tr("qBody")}</h2>
-                  <p className="kh-profile__hint">{tr("qBodyHint")}</p>
-                  <SliderField
-                    label={tr("height")}
-                    value={height}
-                    min={140}
-                    max={210}
-                    step={1}
-                    unit={tr("cm")}
-                    onChange={setHeight}
-                  />
-                  <SliderField
-                    label={tr("weight")}
-                    value={weight}
-                    min={40}
-                    max={150}
-                    step={1}
-                    unit={tr("kg")}
-                    onChange={setWeight}
-                  />
-                </>
-              )}
+                {step === 1 && (
+                  <>
+                    <h2 className="kh-profile__question">{tr("qGender")}</h2>
+                    <div className="kh-profile__choices">
+                      {GENDER_OPTIONS.map(({ id, labelKey, Icon }) => (
+                        <ChoiceButton
+                          key={id}
+                          selected={gender === id}
+                          onClick={() => setGender(id)}
+                          Icon={Icon}
+                          title={tr(labelKey)}
+                        />
+                      ))}
+                    </div>
+                  </>
+                )}
 
-              {step === 4 && (
-                <>
-                  <h2 className="kh-profile__question">{tr("qActivity")}</h2>
-                  <div className="kh-profile__choices">
-                    {ACTIVITY_OPTIONS.map(({ id, titleKey, descKey }) => (
-                      <ChoiceButton
-                        key={id}
-                        selected={activity === id}
-                        onClick={() => setActivity(id)}
-                        Icon={Activity}
-                        title={tr(titleKey)}
-                        desc={tr(descKey)}
-                      />
-                    ))}
-                  </div>
-                </>
-              )}
+                {step === 2 && (
+                  <>
+                    <h2 className="kh-profile__question">{tr("qAge")}</h2>
+                    <SliderField
+                      label={tr("qAge")}
+                      value={age}
+                      min={13}
+                      max={90}
+                      step={1}
+                      unit={tr("years")}
+                      onChange={setAge}
+                    />
+                  </>
+                )}
 
-              {step === 5 && (
-                <>
-                  <h2 className="kh-profile__question">{tr("qGoals")}</h2>
-                  <div className="kh-profile__choices">
-                    {GOAL_OPTIONS.map(({ id, key }) => (
-                      <ChoiceButton
-                        key={id}
-                        selected={goal === id}
-                        onClick={() => setGoal(id)}
-                        Icon={GOAL_ICONS[id] || Heart}
-                        title={tr(key)}
-                      />
-                    ))}
-                  </div>
-                </>
-              )}
-            </motion.div>
+                {step === 3 && (
+                  <>
+                    <h2 className="kh-profile__question">{tr("qBody")}</h2>
+                    <p className="kh-profile__hint">{tr("qBodyHint")}</p>
+                    <SliderField
+                      label={tr("height")}
+                      value={height}
+                      min={140}
+                      max={210}
+                      step={1}
+                      unit={tr("cm")}
+                      onChange={setHeight}
+                    />
+                    <SliderField
+                      label={tr("weight")}
+                      value={weight}
+                      min={40}
+                      max={150}
+                      step={1}
+                      unit={tr("kg")}
+                      onChange={setWeight}
+                    />
+                  </>
+                )}
+
+                {step === 4 && (
+                  <>
+                    <h2 className="kh-profile__question">{tr("qActivity")}</h2>
+                    <div className="kh-profile__choices">
+                      {ACTIVITY_OPTIONS.map(({ id, titleKey, descKey }) => (
+                        <ChoiceButton
+                          key={id}
+                          selected={activity === id}
+                          onClick={() => setActivity(id)}
+                          Icon={Activity}
+                          title={tr(titleKey)}
+                          desc={tr(descKey)}
+                        />
+                      ))}
+                    </div>
+                  </>
+                )}
+
+                {step === 5 && (
+                  <>
+                    <h2 className="kh-profile__question">{tr("qGoals")}</h2>
+                    <div className="kh-profile__choices">
+                      {GOAL_OPTIONS.map(({ id, key }) => (
+                        <ChoiceButton
+                          key={id}
+                          selected={goal === id}
+                          onClick={() => setGoal(id)}
+                          Icon={GOAL_ICONS[id] || Heart}
+                          title={tr(key)}
+                        />
+                      ))}
+                    </div>
+                  </>
+                )}
+              </motion.div>
+            )}
           </AnimatePresence>
 
-          <p className="kh-profile__micro">{micro}</p>
+          {!isLanguagePhase && (
+            <>
+              <p className="kh-profile__micro">{micro}</p>
 
-          <div className="kh-profile__privacy">
-            <Lock size={14} strokeWidth={1.5} />
-            <span>{tr("privacy")}</span>
-          </div>
+              <div className="kh-profile__privacy">
+                <Lock size={14} strokeWidth={1.5} />
+                <span>{tr("privacy")}</span>
+              </div>
+            </>
+          )}
         </div>
 
-        <div className="kh-profile__actions">
-          <motion.button
-            type="button"
-            className="kh-profile__continue"
-            disabled={!canContinue}
-            onClick={advance}
-            whileHover={canContinue ? { scale: 1.01 } : {}}
-            whileTap={canContinue ? { scale: 0.985 } : {}}
-          >
-            {isLast ? tr("finish") : tr("continue")}
-            <motion.span
-              animate={canContinue ? { x: [0, 4, 0] } : { x: 0 }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-              className="inline-flex"
+        {!isLanguagePhase && (
+          <div className="kh-profile__actions">
+            <motion.button
+              type="button"
+              className="kh-profile__continue"
+              disabled={!canContinue}
+              onClick={advance}
+              whileHover={canContinue ? { scale: 1.01 } : {}}
+              whileTap={canContinue ? { scale: 0.985 } : {}}
             >
-              <ArrowRight size={18} strokeWidth={2} className="rtl:rotate-180" />
-            </motion.span>
-          </motion.button>
-        </div>
+              {isLast ? tr("finish") : tr("continue")}
+              <motion.span
+                animate={canContinue ? { x: [0, 4, 0] } : { x: 0 }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                className="inline-flex"
+              >
+                <ArrowRight size={18} strokeWidth={2} className="rtl:rotate-180" />
+              </motion.span>
+            </motion.button>
+          </div>
+        )}
       </div>
     </main>
   );

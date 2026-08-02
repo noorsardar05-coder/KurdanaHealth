@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { useLanguage } from "../../context/LanguageContext.jsx";
-import { getAppEntryRoute, getLanguage, setLanguage as persistLanguage } from "../../utils/storage";
+import { getAppEntryRoute } from "../../utils/storage";
 import KHIntroShell from "./components/KHIntroShell.jsx";
 import BrandMark from "./components/BrandMark.jsx";
 import {
@@ -55,7 +54,6 @@ function SceneBrand() {
 
 export default function OnboardingExperience() {
   const navigate = useNavigate();
-  const { setLanguage } = useLanguage();
   const [scene, setScene] = useState(1);
   const doneRef = useRef(false);
 
@@ -70,10 +68,7 @@ export default function OnboardingExperience() {
       t2 = setTimeout(() => {
         if (cancelled || doneRef.current) return;
         doneRef.current = true;
-
-        const lang = getLanguage() || "en";
-        persistLanguage(lang);
-        setLanguage(lang);
+        // Language is chosen on the login Step 0 screen — do not auto-persist here.
         navigate(getAppEntryRoute(), { replace: true });
       }, SCENE_MS);
     }, SCENE_MS);
@@ -83,7 +78,7 @@ export default function OnboardingExperience() {
       clearTimeout(t1);
       clearTimeout(t2);
     };
-  }, [navigate, setLanguage]);
+  }, [navigate]);
 
   return (
     <KHIntroShell showOrbit={scene === 1}>
