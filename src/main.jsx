@@ -5,6 +5,7 @@ import { LanguageProvider } from "./context/LanguageContext.jsx";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 import App from "./App.jsx";
 import SpaceVisitTracker from "./components/SpaceVisitTracker.jsx";
+import AnalyticsTracker from "./components/AnalyticsTracker.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -12,6 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <ErrorBoundary>
       <LanguageProvider>
         <HashRouter>
+          <AnalyticsTracker />
           <SpaceVisitTracker />
           <App />
         </HashRouter>
