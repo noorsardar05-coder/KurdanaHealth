@@ -202,6 +202,7 @@ export default function ProfileOnboarding() {
       className={`kh-profile ${lang === "ku" && !isLanguagePhase ? "lang-ku" : ""}`}
       dir={lang === "ku" && !isLanguagePhase ? "rtl" : "ltr"}
       lang={lang === "ku" && !isLanguagePhase ? "ku" : "en"}
+      data-nosnippet
     >
       <ProfileShell />
 

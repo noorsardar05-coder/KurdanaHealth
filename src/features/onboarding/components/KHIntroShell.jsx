@@ -6,7 +6,7 @@ import "../onboarding.css";
 
 export default function KHIntroShell({ children, showOrbit = false }) {
   return (
-    <div className="kh-intro">
+    <div className="kh-intro" data-nosnippet>
       <div className="kh-intro__shell">
         <AnimatedAura />
         <KurdishPatternBackground />
