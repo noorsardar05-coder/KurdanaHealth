@@ -3,7 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kurdana Health</title>
+    <title>KurdanaHealth | Health, Medicine, Science, AI and the Future</title>
+    <meta
+      name="description"
+      content="KurdanaHealth is where health, medicine, science, AI, and the future come together as a lifestyle. Created by Noor Sardar Mustafa."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="Noor Sardar Mustafa" />
+    <link rel="canonical" href="https://kurdanahealth.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="KurdanaHealth" />
+    <meta
+      property="og:description"
+      content="KurdanaHealth is where health, medicine, science, AI, and the future come together as a lifestyle. Created by Noor Sardar Mustafa."
+    />
+    <meta property="og:url" content="https://kurdanahealth.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="KurdanaHealth" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="KurdanaHealth" />
+    <meta
+      name="twitter:description"
+      content="KurdanaHealth is where health, medicine, science, AI, and the future come together as a lifestyle. Created by Noor Sardar Mustafa."
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://kurdanahealth.com/#website",
+            "name": "KurdanaHealth",
+            "alternateName": "Kurdana Health",
+            "url": "https://kurdanahealth.com/"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://kurdanahealth.com/#organization",
+            "name": "KurdanaHealth",
+            "url": "https://kurdanahealth.com/",
+            "founder": {
+              "@type": "Person",
+              "name": "Noor Sardar Mustafa"
+            },
+            "description": "KurdanaHealth is where health, medicine, science, AI, and the future come together as a lifestyle. Created by Noor Sardar Mustafa."
+          },
+          {
+            "@type": "Person",
+            "@id": "https://kurdanahealth.com/#founder",
+            "name": "Noor Sardar Mustafa",
+            "jobTitle": "Founder and Creator of KurdanaHealth",
+            "affiliation": {
+              "@type": "Organization",
+              "name": "KurdanaHealth",
+              "url": "https://kurdanahealth.com/"
+            }
+          }
+        ]
+      }
+    </script>
+
     <!-- Shell background: visible before JS/CSS bundle (avoids white flash if assets load late) -->
     <style>
       html {
@@ -24,11 +88,32 @@
     />
   </head>
   <body>
-    <div id="root"></div>
+    <!--
+      Pre-React crawlable markup: React replaces #root on mount.
+      Keeps HashRouter intact while giving search engines brand/founder text in the HTML.
+    -->
+    <div id="root">
+      <header>
+        <h1>KurdanaHealth</h1>
+        <p>
+          KurdanaHealth is where health, medicine, science, AI, and the future come together as a
+          lifestyle. Created by Noor Sardar Mustafa.
+        </p>
+        <p>Founder and Creator: Noor Sardar Mustafa</p>
+        <nav aria-label="KurdanaHealth">
+          <a href="https://kurdanahealth.com/">KurdanaHealth Home</a>
+        </nav>
+      </header>
+    </div>
     <noscript>
-      <p style="max-width: 32rem; margin: 2rem auto; padding: 0 1.5rem; font-family: system-ui, sans-serif; color: #334155; line-height: 1.6;">
-        Kurdana Health needs JavaScript enabled.
-      </p>
+      <main style="max-width: 36rem; margin: 2rem auto; padding: 0 1.5rem; font-family: system-ui, sans-serif; color: #334155; line-height: 1.6;">
+        <h1>KurdanaHealth</h1>
+        <p>
+          KurdanaHealth is where health, medicine, science, AI, and the future come together as a
+          lifestyle. Created by Noor Sardar Mustafa.
+        </p>
+        <p>Please enable JavaScript to use KurdanaHealth.</p>
+      </main>
     </noscript>
     <script>
       if (location.protocol === "file:") {
